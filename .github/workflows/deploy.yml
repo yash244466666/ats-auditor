@@ -11,7 +11,9 @@ permissions:
   contents: read
 
 concurrency:
-  group: deploy-${{ github.event.workflow_run.head_branch }}
+  # One deploy at a time for the whole repository: the VPS is a 1 GB Micro and
+  # two concurrent image builds can exhaust its memory.
+  group: deploy-vps
   cancel-in-progress: false
 
 jobs:
