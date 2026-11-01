@@ -6,13 +6,13 @@
 
 **Status:** v0.4.0 developer preview. This project is independently developed and is not affiliated with, endorsed by, or a copy of Upplai. Its estimated scores are heuristic and do not represent actual employer ATS decisions or predict hiring outcomes. The benchmark dataset is small and includes calibration cases; reported fit must not be mistaken for external validation.
 
-**Safety:** Never upload real applicant resumes to public issues, pull requests, or benchmark fixtures. Use fictional data. The included MCP server is experimental and **must not be publicly accessible without robust authentication and tenant isolation**.
+**Current security limitation:** The production MCP endpoint is currently public **without authentication**; authentication is deferred. Do **not** submit real resumes, private job descriptions or other sensitive personal data until authorization, rate limits and tenant isolation are implemented. Use fictional test data. See [SECURITY.md](SECURITY.md).
 
 ## GitHub and VPS release automation
 
-See [`deploy/README.md`](deploy/README.md) for the `main` / `dev` pipelines, VPS bootstrap, DNS, Caddy TLS and required GitHub secrets. Production is live at `https://atsmcp.yashcodes.com/mcp` (streamable HTTP, stateless: resend the resume and job description on every call). That endpoint is currently **public and unauthenticated** — anyone with the URL can score a resume. Add OAuth or verified client mTLS before treating it as a private service.
+See [verified status](docs/PROJECT_STATUS.md) and [VPS deployment](deploy/README.md) for the `main` / `dev` pipelines, SSH deployment gate, Caddy TLS and GitHub secrets. Production is deployed at `https://atsmcp.yashcodes.com/mcp` (Streamable HTTP). Production is stateless: send **both** the full resume and job description with every call. The endpoint remains **public and unauthenticated**; user authentication is planned for a later milestone.
 
-**Status:** Working, locally tested Python scoring engine + HTTP API; MCP adapter source included. The MCP dependency is listed but was not available for installation in this offline build environment, so the remote MCP transport is **not tested here**. This is an independent implementation, not a copy of Upplai's proprietary software.
+**Verified runtime (2026-11-02):** The Python scoring engine, HTTP API and native MCP adapter are implemented; CI runs Python 3.11–3.13 tests, creates the MCP server, builds and starts the Docker image, and checks `/health`. [CI](https://github.com/yash244466666/ats-auditor/actions/runs/41349223958) and [production deployment](https://github.com/yash244466666/ats-auditor/actions/runs/41349261322) both passed for commit `d74350bf`. Live ChatGPT connector calls to both MCP tools returned populated structured scores and text results after [PR #11](https://github.com/yash244466666/ats-auditor/pull/11). Scores remain experimental heuristics, not official ATS outputs.
 
 The project implements a workflow similar to the observed Upplai tool:
 
@@ -74,16 +74,16 @@ pip install -e '.[mcp]'
 ats-auditor-mcp
 ```
 
-The standard SDK should host Streamable HTTP MCP on port 8000, conventionally at `/mcp`. Confirm the route using MCP Inspector and your installed SDK version.
+The MCP SDK serves Streamable HTTP on port 8000 inside the container, with Caddy publishing production at `https://atsmcp.yashcodes.com/mcp`. The native MCP tools have been called successfully from ChatGPT with fictional test data.
 
-To connect ChatGPT, deploy behind **HTTPS and real authentication**, or use an approved secure tunnel. In ChatGPT web: Plugins → `+` → Add custom MCP server → enter your HTTPS `/mcp` endpoint → inspect tools → create plugin. The exact flow is subject to workspace permissions and product changes. See https://developers.openai.com/plugins/build/mcp-server and https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt.
+The MCP server is already deployed and its two tools were successfully invoked by a ChatGPT-connected MCP integration. For additional connections, ChatGPT's plugin/MCP setup depends on account and workspace support. Authentication has **not** been implemented; do not test with sensitive applicant data. See https://developers.openai.com/plugins/build/mcp-server and https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt.
 
 The bundled MCP tool names are:
 
 - `get_resume_ats_score` — compatible 3-primary-parameter workflow, optional `session_id`, `scoring_mode`.
 - `compare_resume_quality` — evidence-based assessment that flags stuffing.
 
-ChatGPT cannot connect directly to a `localhost` endpoint. The server must be accessible from ChatGPT by one of the supported secure methods. It is deployed at `https://atsmcp.yashcodes.com/mcp`; registering it as a ChatGPT plugin is still a manual, workspace-dependent step.
+ChatGPT cannot connect to `localhost` on the VPS. The published URL is `https://atsmcp.yashcodes.com/mcp`, and tools are already available through a connected ChatGPT MCP integration in the verified conversation. The bundled **private skills plugin** and the **hosted MCP server connection** are separate: installing a skills-only bundle does not itself activate remote tool access.
 
 ## Scoring modes
 
@@ -98,9 +98,9 @@ Neither is an actual employer ATS decision. Both work on extracted text, not on 
 ## Privacy and security
 
 - The CLI and core do not send resumes to any external service or model.
-- The HTTP and MCP servers are self-hosted; inputs stay on your infrastructure.
-- Resume and job inputs are held in-process only, scoped by `session_id`, and expire after one hour of inactivity. Restarting the server clears them.
-- **Do not expose the demo server publicly without authentication, per-user identity mapping, TLS, rate limiting, and audit rules.** `session_id` is not authentication.
+- The HTTP and MCP servers are self-hosted. Caller-provided resume/job text is processed by the VPS deployment; do not claim end-to-end privacy without authentication and a review of logging and retention.
+- The **local-development** service may cache resume/job text by `session_id` for up to one hour. **Production MCP** is stateless and creates a fresh isolated service instance for each call; both complete input texts are required each time. Stateless operation is not authentication.
+- **The public production MCP route is currently unauthenticated. Do not send real applicant data until OAuth 2.1 or a verified compatible alternative, per-user authorization, tenant isolation, rate limiting and safe audit controls are deployed.** `session_id` is not authentication.
 - HTTP API supports a simple development `ATS_API_KEY` environment variable; production MCP should instead use robust OAuth or mTLS controls suited to the deployment.
 - Example data is fictional. No user's personal resume is bundled.
 
@@ -109,7 +109,7 @@ Neither is an actual employer ATS decision. Both work on extracted text, not on 
 - Internal weights, model prompts, embedding methods, code, training data, and score normalization are not accessible, so exact output parity cannot be guaranteed.
 - Only selected behavior is reverse engineered using black-box observations and public claims. A full benchmarking effort requires a labeled evaluation set, repeatability tests, rate-limit awareness, and comparisons across multiple job families.
 - This replica does not yet parse binary PDF or DOCX, implement recruiter scoring, edit resumes, integrate with Google Drive, or provide a custom in-chat UI. Those are separate phases.
-- Optional MCP adapter is provided as source. Validate it in an environment with the official MCP SDK installed before using it in ChatGPT.
+- The MCP adapter has passed in-process MCP client-call regression tests and real ChatGPT tool calls with fictional text. Remote deployment success and these smoke tests do not establish scoring accuracy, privacy safeguards or production readiness for sensitive data.
 
 For reproducible multi-resume observations, see `benchmarks/INDEPENDENT_VALIDATION.md`. For inferred scoring behavior, see `docs/REVERSE_ENGINEERING.md`.
 
@@ -123,4 +123,4 @@ This is a controlled benchmark demonstrating how frequency-sensitive scoring can
 
 ## Benchmark evaluation
 
-Read `benchmarks/CALIBRATION_REPORT.md` for seven-job score tables, source URLs, limitations and repeatable comparisons. Use `python benchmarks/compare_all.py --resume /path/to/private-resume.txt`. The user resume is not distributed with this package. Connecting ChatGPT to the deployed `https://atsmcp.yashcodes.com/mcp` endpoint is a separate, manual step.
+Read `benchmarks/CALIBRATION_REPORT.md` for seven-job score tables, source URLs, limitations and repeatable comparisons. Use `python benchmarks/compare_all.py --resume /path/to/private-resume.txt`. The user resume is not distributed with this package. The endpoint is already connected and both MCP tools have returned scores in a ChatGPT conversation; additional installations or account connections remain separate steps.

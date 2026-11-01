@@ -3,6 +3,10 @@
 Live at **https://atsmcp.yashcodes.com/mcp** (MCP streamable-http) on `vps-2`.
 Health probe: `https://atsmcp.yashcodes.com/health`.
 
+**Verified 2026-11-02:** [`main` CI run 41349223958](https://github.com/yash244466666/ats-auditor/actions/runs/41349223958) and [production deploy run 41349261322](https://github.com/yash244466666/ats-auditor/actions/runs/41349261322) both succeeded for commit `d74350bf`. A connected ChatGPT MCP tool call returned structured scores for both `get_resume_ats_score` and `compare_resume_quality` with fictional inputs, after [PR #11](https://github.com/yash244466666/ats-auditor/pull/11). This is not a continuous external uptime check.
+
+**Authentication is not yet implemented:** the public `/mcp` endpoint is unauthenticated. Do **not** send real resumes or confidential job information until a future authentication/authorization milestone. See [SECURITY.md](../SECURITY.md) and [dated project status](../docs/PROJECT_STATUS.md).
+
 ## Branch policy
 
 - `dev`: CI passes -> deploy to staging on VPS loopback `127.0.0.1:8801`.
@@ -13,13 +17,15 @@ Health probe: `https://atsmcp.yashcodes.com/health`.
 - `main` is pull-request-only (CI required, linear history, no force-push or
   deletion). `dev` requires the same CI and blocks force-push/deletion for
   everyone, while the repository owner keeps the ability to push directly.
-- Keep `main` and `dev` identical: after merging a release to `main`, run
-  `scripts/sync-branches.sh` to fast-forward `dev` to `main`.
+- Synchronize release changes back into `dev` after merging to protected `main`. Use
+  `scripts/sync-branches.sh`; it synchronizes using GitHub's merge API rather
+  than force-pushing or assuming the branches share identical commit SHAs.
 
 ## How a deploy runs
 
 1. Push to `dev` (or `main`) -> **CI** (`ci.yml`) runs pytest on 3.11/3.12/3.13,
-   constructs the MCP server, and builds + starts the Docker image, hitting
+   including in-process client calls against both MCP scoring tools. It also
+   constructs the MCP server, builds + starts the Docker image, and hits
    `/health` inside it.
 2. On CI success, **Deploy to VPS** (`deploy.yml`) checks out the tested SHA,
    streams `git ls-files` as a tarball over SSH, and the server-side gate
@@ -89,5 +95,8 @@ docker exec caddy caddy reload   --config /etc/caddy/Caddyfile --adapter caddyfi
 ## Dependency note
 
 `pyproject.toml` pins `mcp>=1.28,<2`. The server uses `FastMCP`; mcp 2.x renamed
-it to `MCPServer` and the container exits at import time. CI now starts the
-built image and calls `/health`, so a repeat of that break fails the build.
+it to `MCPServer` and the container exits at import time. CI starts the
+built image, calls `/health`, and exercises real in-memory MCP client tool calls
+that assert nonempty readable and structured scoring results. MCP results use
+`CallToolResult` with `TextContent` and `structuredContent` to support clients
+that consume either representation.
