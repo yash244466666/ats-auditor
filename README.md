@@ -10,7 +10,7 @@
 
 ## GitHub and VPS release automation
 
-See [`deploy/README.md`](deploy/README.md) for the `main` / `dev` pipelines, VPS bootstrap, DNS, Caddy TLS and required GitHub secrets. The public MCP endpoint is intentionally blocked pending OAuth or verified client mTLS. **Do not expose the private scoring service before authentication is configured.**
+See [`deploy/README.md`](deploy/README.md) for the `main` / `dev` pipelines, VPS bootstrap, DNS, Caddy TLS and required GitHub secrets. Production is live at `https://atsmcp.yashcodes.com/mcp` (streamable HTTP, stateless: resend the resume and job description on every call). That endpoint is currently **public and unauthenticated** — anyone with the URL can score a resume. Add OAuth or verified client mTLS before treating it as a private service.
 
 **Status:** Working, locally tested Python scoring engine + HTTP API; MCP adapter source included. The MCP dependency is listed but was not available for installation in this offline build environment, so the remote MCP transport is **not tested here**. This is an independent implementation, not a copy of Upplai's proprietary software.
 
@@ -83,7 +83,7 @@ The bundled MCP tool names are:
 - `get_resume_ats_score` — compatible 3-primary-parameter workflow, optional `session_id`, `scoring_mode`.
 - `compare_resume_quality` — evidence-based assessment that flags stuffing.
 
-ChatGPT cannot connect directly to a `localhost` endpoint. The server must be accessible from ChatGPT by one of the supported secure methods. I have **not** deployed or registered this plugin.
+ChatGPT cannot connect directly to a `localhost` endpoint. The server must be accessible from ChatGPT by one of the supported secure methods. It is deployed at `https://atsmcp.yashcodes.com/mcp`; registering it as a ChatGPT plugin is still a manual, workspace-dependent step.
 
 ## Scoring modes
 
@@ -123,4 +123,4 @@ This is a controlled benchmark demonstrating how frequency-sensitive scoring can
 
 ## Benchmark evaluation
 
-Read `benchmarks/CALIBRATION_REPORT.md` for seven-job score tables, source URLs, limitations and repeatable comparisons. Use `python benchmarks/compare_all.py --resume /path/to/private-resume.txt`. The user resume is not distributed with this package. The plugin is still skills-only in ChatGPT until a separately deployed, authenticated HTTPS MCP server is connected.
+Read `benchmarks/CALIBRATION_REPORT.md` for seven-job score tables, source URLs, limitations and repeatable comparisons. Use `python benchmarks/compare_all.py --resume /path/to/private-resume.txt`. The user resume is not distributed with this package. Connecting ChatGPT to the deployed `https://atsmcp.yashcodes.com/mcp` endpoint is a separate, manual step.
