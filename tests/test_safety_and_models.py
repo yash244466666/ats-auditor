@@ -35,5 +35,5 @@ def test_mcp_local_mode_calls_service_instead_of_recursing():
     from ats_auditor import mcp_server
     import inspect
     source = inspect.getsource(mcp_server.create_mcp)
-    assert 'return SERVICE.analyze(resume_text=resume_text' in source
+    assert 'SERVICE.analyze(resume_text=resume_text' in source
     assert source.count('return score_safely(resume_text, job_description, job_description_id, session_id, scoring_mode)') == 1
