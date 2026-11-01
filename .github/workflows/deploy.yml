@@ -48,12 +48,12 @@ jobs:
         env:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_USER: ${{ secrets.VPS_USER }}
-          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_SSH_PASSWORD: ${{ secrets.VPS_SSH_PASSWORD }}
           VPS_SSH_KNOWN_HOSTS: ${{ secrets.VPS_SSH_KNOWN_HOSTS }}
         run: |
           set -euo pipefail
           missing=0
-          for name in VPS_HOST VPS_USER VPS_SSH_KEY VPS_SSH_KNOWN_HOSTS; do
+          for name in VPS_HOST VPS_USER VPS_SSH_PASSWORD VPS_SSH_KNOWN_HOSTS; do
             if [[ -z "${!name:-}" ]]; then
               echo "::error title=Missing deployment secret::Set $name in repository or deployment environment secrets."
               missing=1
@@ -63,34 +63,40 @@ jobs:
             echo "VPS deployment is not configured. CI checks passed, but nothing was deployed."
             exit 1
           fi
+      - name: Install password-based SSH helper
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq sshpass
       - name: Configure pinned SSH host key
+        shell: bash
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
           SSH_KNOWN_HOSTS: ${{ secrets.VPS_SSH_KNOWN_HOSTS }}
         run: |
-          set -eu
+          set -euo pipefail
           umask 077
-          mkdir -p ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-          test -s ~/.ssh/id_ed25519 && test -s ~/.ssh/known_hosts
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          test -s "$HOME/.ssh/known_hosts"
       - name: Upload and deploy tested revision
         env:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_SSH_PORT: ${{ secrets.VPS_SSH_PORT }}
+          SSHPASS: ${{ secrets.VPS_SSH_PASSWORD }}
         shell: bash
         run: |
           set -euo pipefail
           : "${VPS_HOST:?Missing VPS_HOST}"; : "${VPS_USER:?Missing VPS_USER}"
           SSH_PORT="${VPS_SSH_PORT:-22}"
-          SSH_OPTS=(-i "$HOME/.ssh/id_ed25519" -p "$SSH_PORT" -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=15)
+          SSH_OPTS=(-p "$SSH_PORT" -o BatchMode=no -o PubkeyAuthentication=no -o PreferredAuthentications=password -o NumberOfPasswordPrompts=1 -o StrictHostKeyChecking=yes -o ConnectTimeout=15)
+          SSH_CMD=(sshpass -e ssh "${SSH_OPTS[@]}")
           TARGET="$VPS_USER@$VPS_HOST"
           REMOTE_DIR="/opt/ats-auditor/$DEPLOY_ENV"
-          ssh "${SSH_OPTS[@]}" "$TARGET" "mkdir -p '$REMOTE_DIR'"
+          "${SSH_CMD[@]}" "$TARGET" "mkdir -p '$REMOTE_DIR'"
           # Only tracked source files; no secrets, venvs or dot-env files.
-          git ls-files -z | tar --null -czf - --files-from=- |             ssh "${SSH_OPTS[@]}" "$TARGET" "tar -xzf - -C '$REMOTE_DIR'"
+          git ls-files -z | tar --null -czf - --files-from=- |             "${SSH_CMD[@]}" "$TARGET" "tar -xzf - -C '$REMOTE_DIR'"
           # Deployment environment is server-managed, not in Git.
-          ssh "${SSH_OPTS[@]}" "$TARGET"             "cd '$REMOTE_DIR' && export COMPOSE_PROJECT_NAME='ats-$DEPLOY_ENV' PUBLISH_PORT='$PUBLISH_PORT' && docker compose -f deploy/compose.yml up -d --build --remove-orphans && docker compose -f deploy/compose.yml ps"
+          "${SSH_CMD[@]}" "$TARGET"             "cd '$REMOTE_DIR' && export COMPOSE_PROJECT_NAME='ats-$DEPLOY_ENV' PUBLISH_PORT='$PUBLISH_PORT' && docker compose -f deploy/compose.yml up -d --build --remove-orphans && docker compose -f deploy/compose.yml ps"
           # Health endpoint runs on loopback; not publicly exposed by Docker.
-          ssh "${SSH_OPTS[@]}" "$TARGET"             "for i in 1 2 3 4 5 6 7 8 9 10; do curl --fail --silent --show-error http://127.0.0.1:$PUBLISH_PORT/health && exit 0; sleep 3; done; exit 1"
+          "${SSH_CMD[@]}" "$TARGET"             "for i in 1 2 3 4 5 6 7 8 9 10; do curl --fail --silent --show-error http://127.0.0.1:$PUBLISH_PORT/health && exit 0; sleep 3; done; exit 1"
