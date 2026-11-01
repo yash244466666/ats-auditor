@@ -52,6 +52,9 @@ COMPOSE_PROJECT_NAME="ats-$ENV_NAME" PUBLISH_PORT="$PORT" \
 for _ in $(seq 1 40); do
   if curl --fail --silent --max-time 3 "http://127.0.0.1:$PORT/health" >/dev/null; then
     log "healthy on 127.0.0.1:$PORT"
+    # Every rebuild leaves the previous image dangling; two of those per
+    # release fill this 45 GB volume quickly.
+    docker image prune -f --filter 'until=48h' >/dev/null 2>&1 || true
     exit 0
   fi
   sleep 3
