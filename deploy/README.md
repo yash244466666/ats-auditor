@@ -11,10 +11,10 @@
 
 ## VPS prerequisites
 
-1. Ubuntu/Debian VPS with SSH **public-key** login, Docker/Compose v2 and curl.
-2. Create a minimally privileged deployment account; membership in `docker` grants
+1. Ubuntu/Debian VPS with SSH password login enabled for the deployment user, Docker/Compose v2 and curl.
+2. Create a minimally privileged deployment account; password SSH is easier to configure but exposes greater brute-force and credential-leak risk. Membership in `docker` grants
    root-equivalent access, so use a dedicated account and review its permissions.
-3. Ensure SSH port is reachable from GitHub Actions, and allow inbound TCP 80/443
+3. Ensure your SSH service permits `PasswordAuthentication` for the chosen user, that the port is reachable from GitHub Actions, and allow inbound TCP 80/443
    for TLS. Do not expose Docker's loopback 8800/8801 on public interfaces.
 4. Point DNS A record `atsmcp.yashcodes.com` to your VPS public IP.
 5. Install Caddy, deploy `deploy/Caddyfile`, and provision HTTPS.
@@ -36,16 +36,31 @@ restrict direct pushes to main. Consider an explicit approval gate on the
 Set these *encrypted* repository / environment secrets:
 
 - `VPS_HOST`: hostname or IP of your VPS
-- `VPS_USER`: restricted SSH deployment username
-- `VPS_SSH_PORT`: port number (normally `22`)
-- `VPS_SSH_KEY`: contents of the dedicated ED25519 **private** deployment key
-- `VPS_SSH_KNOWN_HOSTS`: verified SSH server public host key entry
+- `VPS_USER`: SSH deployment username
+- `VPS_SSH_PORT`: optional; port number (default `22`)
+- `VPS_SSH_PASSWORD`: the SSH password, stored ONLY as an encrypted GitHub secret
+- `VPS_SSH_KNOWN_HOSTS`: SSH server's **verified public host key** entry (this is not your personal SSH key)
 
-Generate an **independent keypair**, install ONLY its `.pub` contents in
-`~/.ssh/authorized_keys` on the VPS, store private key in GitHub Actions secrets,
-then delete any extra workstation copies. Do not add passwords to repo, `.env`,
-GitHub logs, commit history or workflow YAML. Never take `ssh-keyscan` at face
-value; compare it to the fingerprint obtained from an authenticated VPS console.
+The workflow installs `sshpass` on the ephemeral GitHub runner and uses
+`sshpass -e` with the masked `SSHPASS` environment variable. The password
+must NEVER appear in source code, a `.env` file, process command arguments,
+workflow YAML, or build logs. Strict SSH host-key checking remains enabled.
+
+To obtain the host key, log in to the VPS from your hosting provider's console:
+```sh
+sudo ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub
+sudo cat /etc/ssh/ssh_host_ed25519_key.pub
+```
+Verify the fingerprint using a trusted channel. For the GitHub secret
+`VPS_SSH_KNOWN_HOSTS`, use one line in the format
+`<VPS_HOST> ssh-ed25519 <public-host-key-base64>`. For a custom port,
+the host field must be `[<VPS_HOST>]:<PORT>`.
+
+**Password authentication is a temporary convenience, not the preferred
+long-term production setup.** Rotate the VPS password previously disclosed in
+chat *before* saving the new password as a GitHub secret. Enable fail2ban or
+equivalent SSH rate limiting; migrate to a dedicated deploy key when possible.
+Never accept an unverified host key or disable `StrictHostKeyChecking`.
 
 ## Bootstrap
 
@@ -67,7 +82,7 @@ Main CI/build logs: GitHub Actions. Docker logs on VPS:
 - Add per-user identity, tenant isolation and rate/size controls.
 - Ensure no secrets or resume contents are logged.
 - Implement backups/monitoring/rollback and a deployable image digest strategy.
-- Change the disclosed VPS password as soon as safely possible; disable password SSH.
+- Rotate the disclosed VPS password before enabling deployment; migrate to SSH-key authentication after bootstrap.
 - Test ChatGPT MCP `list_tools` + scoring after server is accessible.
 
 **Current status:** Source and workflow prepared; VPS not yet accessed or configured.
