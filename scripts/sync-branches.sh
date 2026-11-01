@@ -19,11 +19,15 @@ if [ "$main_sha" = "$dev_sha" ]; then
   exit 0
 fi
 
-if ! git merge-base --is-ancestor "$main_sha" "$dev_sha" &&
-   ! git merge-base --is-ancestor "$dev_sha" "$main_sha"; then
-  echo "refused: main and dev have diverged ($main_sha vs $dev_sha)." >&2
-  echo "Merge one into the other through a pull request first." >&2
-  exit 1
+# Accept a fast-forward (dev is behind main), or a same-content rewrite, which
+# is what a "Rebase and merge" leaves behind: identical trees, new SHAs.
+if ! git merge-base --is-ancestor "$dev_sha" "$main_sha"; then
+  if [ "$(git rev-parse 'origin/main^{tree}')" != "$(git rev-parse 'origin/dev^{tree}')" ]; then
+    echo "refused: dev has content that is not on main ($dev_sha vs $main_sha)." >&2
+    echo "Merge that work into main through a pull request first." >&2
+    exit 1
+  fi
+  echo "trees are identical (post-rebase-merge); repointing dev at main"
 fi
 
 echo "updating dev: $dev_sha -> $main_sha"
