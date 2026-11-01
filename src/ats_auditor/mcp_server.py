@@ -3,8 +3,6 @@
 Install with `pip install -e '.[mcp]'` then run `ats-auditor-mcp`.
 The MCP endpoint is provided by the official Python MCP SDK (typically /mcp).
 """
-from __future__ import annotations
-
 import os
 import uuid
 from .service import SERVICE, ATSService
