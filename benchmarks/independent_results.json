@@ -1,0 +1,89 @@
+{
+  "method": "Actual Upplai tool results captured Nov 1, 2026; independent fictional resumes paired with reconstructed technical briefs from real job ads; no official hiring scores.",
+  "cases": [
+    {
+      "resume": "rails",
+      "job": "stora",
+      "source_score": 64,
+      "set": "train",
+      "source_job_id": "ac28404f-0a6e-45a6-894e-865a0e724ef4"
+    },
+    {
+      "resume": "frontend",
+      "job": "smartfrontend",
+      "source_score": 70,
+      "set": "train",
+      "source_job_id": "a28e9947-d15e-4894-8ac6-505f100f71d9"
+    },
+    {
+      "resume": "backend",
+      "job": "plentific",
+      "source_score": 94,
+      "set": "train",
+      "source_job_id": "8d30424c-6abc-4905-8344-49f38eaff7ce"
+    },
+    {
+      "resume": "security",
+      "job": "litellm",
+      "source_score": 84,
+      "set": "holdout",
+      "source_job_id": "59679fb3-f7b6-4a36-8821-2d1a4828d302"
+    },
+    {
+      "resume": "frontend",
+      "job": "stora",
+      "source_score": 9,
+      "set": "holdout",
+      "source_job_id": null
+    },
+    {
+      "resume": "rails",
+      "job": "smartfrontend",
+      "source_score": 9,
+      "set": "train",
+      "source_job_id": "074e407d-4d66-4a1d-91ba-02c5294f8233"
+    },
+    {
+      "resume": "backend",
+      "job": "taktile",
+      "source_score": 25,
+      "set": "holdout",
+      "source_job_id": "0b74c323-becc-41b7-8567-ccfe55ada93b"
+    },
+    {
+      "resume": "backend",
+      "job": "yadda",
+      "source_score": 55,
+      "set": "postfreeze",
+      "predeclared_prediction": 64
+    },
+    {
+      "resume": "security",
+      "job": "stora",
+      "source_score": 3,
+      "set": "postfreeze",
+      "predeclared_prediction": 3
+    },
+    {
+      "resume": "frontend",
+      "job": "taktile",
+      "source_score": 35,
+      "set": "postfreeze-then-adjusted",
+      "predeclared_prediction": 8
+    },
+    {
+      "resume": "frontend",
+      "job": "vynca",
+      "source_score": 24,
+      "set": "prospective-after-crossstack-adjustment",
+      "predeclared_prediction": 23
+    },
+    {
+      "resume": "security",
+      "job": "plentific",
+      "source_score": 30,
+      "set": "prospective-after-crossstack-adjustment",
+      "predeclared_prediction": 8
+    }
+  ]
+}

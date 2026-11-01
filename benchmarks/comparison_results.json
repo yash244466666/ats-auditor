@@ -1,0 +1,84 @@
+{
+  "mean_absolute_error_legacy": 50.29,
+  "mean_absolute_error_calibrated": 3.29,
+  "note": "Development-set fit; NOT a held-out generalization estimate. Job postings summarized faithfully, not copied verbatim.",
+  "cases": [
+    {
+      "job": "vynca",
+      "split": "train",
+      "source": "https://jobs.ashbyhq.com/vynca/d69dec9a-6119-4a16-8ebb-bb0ce43b524f",
+      "upplai": 28,
+      "legacy": 80,
+      "calibrated": 29,
+      "evidence": 39,
+      "abs_error_before": 52,
+      "abs_error_after": 1
+    },
+    {
+      "job": "plentific",
+      "split": "train",
+      "source": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "upplai": 29,
+      "legacy": 67,
+      "calibrated": 22,
+      "evidence": 42,
+      "abs_error_before": 38,
+      "abs_error_after": 7
+    },
+    {
+      "job": "stora",
+      "split": "train",
+      "source": "https://jobs.ashbyhq.com/stora/c6317801-b546-44ef-94e0-30b53bbc842d",
+      "upplai": 19,
+      "legacy": 77,
+      "calibrated": 17,
+      "evidence": 45,
+      "abs_error_before": 58,
+      "abs_error_after": 2
+    },
+    {
+      "job": "smartfrontend",
+      "split": "train",
+      "source": "https://jobs.lever.co/smart-working-solutions/e7a8642a-d598-4cdf-9695-68f7254f5aa5",
+      "upplai": 21,
+      "legacy": 75,
+      "calibrated": 22,
+      "evidence": 43,
+      "abs_error_before": 54,
+      "abs_error_after": 1
+    },
+    {
+      "job": "litellm",
+      "split": "train",
+      "source": "https://www.ycombinator.com/companies/litellm/jobs/LBkjpsF-senior-security-engineer",
+      "upplai": 10,
+      "legacy": 65,
+      "calibrated": 3,
+      "evidence": 43,
+      "abs_error_before": 55,
+      "abs_error_after": 7
+    },
+    {
+      "job": "taktile",
+      "split": "holdout",
+      "source": "https://jobs.ashbyhq.com/taktile/c9d47dd2-3252-4266-a581-b9d1b46e9297",
+      "upplai": 37,
+      "legacy": 79,
+      "calibrated": 38,
+      "evidence": 49,
+      "abs_error_before": 42,
+      "abs_error_after": 1
+    },
+    {
+      "job": "yadda",
+      "split": "holdout",
+      "source": "https://jobs.ashbyhq.com/yadda/5dbc7aec-45bd-457b-9547-3327029ad43f",
+      "upplai": 13,
+      "legacy": 66,
+      "calibrated": 17,
+      "evidence": 37,
+      "abs_error_before": 53,
+      "abs_error_after": 4
+    }
+  ]
+}

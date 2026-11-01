@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "base_hit": 0.38582669586271345,
+    "extra_hit": 0.05999266975896292,
+    "frequency_weight": 2.3184579021053504,
+    "jd_demand": 0.44315307632658263,
+    "offset": -1.204156082932057,
+    "max_terms": 55
+  },
+  "train_MAE": 2.2,
+  "holdout_MAE": 10.5,
+  "cases": [
+    {
+      "id": "vynca",
+      "split": "train",
+      "upplai": 28,
+      "prediction": 25,
+      "source": "https://jobs.ashbyhq.com/vynca/d69dec9a-6119-4a16-8ebb-bb0ce43b524f"
+    },
+    {
+      "id": "plentific",
+      "split": "train",
+      "upplai": 29,
+      "prediction": 25,
+      "source": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6"
+    },
+    {
+      "id": "stora",
+      "split": "train",
+      "upplai": 19,
+      "prediction": 23,
+      "source": "https://jobs.ashbyhq.com/stora/c6317801-b546-44ef-94e0-30b53bbc842d"
+    },
+    {
+      "id": "smartfrontend",
+      "split": "train",
+      "upplai": 21,
+      "prediction": 21,
+      "source": "https://jobs.lever.co/smart-working-solutions/e7a8642a-d598-4cdf-9695-68f7254f5aa5"
+    },
+    {
+      "id": "litellm",
+      "split": "train",
+      "upplai": 10,
+      "prediction": 10,
+      "source": "https://www.ycombinator.com/companies/litellm/jobs/LBkjpsF-senior-security-engineer"
+    },
+    {
+      "id": "taktile",
+      "split": "holdout",
+      "upplai": 37,
+      "prediction": 26,
+      "source": "https://jobs.ashbyhq.com/taktile/c9d47dd2-3252-4266-a581-b9d1b46e9297"
+    },
+    {
+      "id": "yadda",
+      "split": "holdout",
+      "upplai": 13,
+      "prediction": 23,
+      "source": "https://jobs.ashbyhq.com/yadda/5dbc7aec-45bd-457b-9547-3327029ad43f"
+    }
+  ]
+}

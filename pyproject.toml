@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ats-auditor"
+version = "0.4.0"
+description = "Open, inspectable resume-to-job matching and ATS scoring tool with an Upplai-compatible workflow"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["fastapi>=0.110,<1", "uvicorn>=0.27,<1", "pydantic>=2,<3"]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.28,<2"]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1"]
+
+[project.scripts]
+ats-auditor = "ats_auditor.cli:main"
+ats-auditor-mcp = "ats_auditor.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+ats_auditor = ["static/*.html"]

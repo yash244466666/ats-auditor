@@ -1,0 +1,20 @@
+# This public configuration provides HTTPS but intentionally refuses public
+# MCP requests until OAuth or client-certificate validation is deployed.
+# Do not remove the 403 until the authentication layer is implemented and tested.
+atsmcp.yashcodes.com {
+    encode gzip zstd
+
+    @status path /health
+    handle @status {
+        reverse_proxy 127.0.0.1:8800
+    }
+
+    @mcp path /mcp /mcp/*
+    handle @mcp {
+        respond "MCP authentication not yet configured" 403
+    }
+
+    handle {
+        respond "ATS Auditor — private MCP service" 200
+    }
+}

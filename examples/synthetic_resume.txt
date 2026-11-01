@@ -1,0 +1,35 @@
+Taylor Example
+Full-Stack Software Engineer
+example@example.com | example.com | github.com/example
+
+SUMMARY
+Software engineer focused on production web application development, testing, and performance.
+Experience across React, TypeScript, Python APIs, relational databases and security reviews.
+
+SKILLS
+React, Next.js, TypeScript, JavaScript, Python, FastAPI, PostgreSQL, SQLAlchemy,
+Redis caching, Playwright, pytest, Testing Library, Docker, GitHub Actions.
+
+EXPERIENCE
+Software Engineer — ExampleCo (2023–2026)
+Built React interfaces in TypeScript for operational dashboards; reduced interaction delays by 24%.
+Designed Python FastAPI REST endpoints using PostgreSQL and SQLAlchemy data models.
+Added Redis caching to high-traffic reports, cutting database reads by 40%.
+Implemented authentication and authorization controls around internal APIs.
+Wrote automated pytest and Playwright regression tests to protect critical functionality.
+Reviewed code, investigated production defects, and verified AI-generated pull requests.
+
+Software Engineer — Sample Ltd (2020–2023)
+Delivered JavaScript user interfaces and Python services used by a remote engineering team.
+Collaborated across design, support, and operations to prioritize production bug fixes.
+Built reusable components and documented API contracts for cross-functional integrations.
+Refactored slow database queries, improving response time by 30% based on observed metrics.
+Maintained continuous integration pipelines and contributed to integration test coverage.
+
+PROJECTS
+Task Management Demo
+Implemented a small task management application to explore API interfaces, React state management,
+background operations and basic automated testing. Reviewed dependencies and documented design tradeoffs.
+
+EDUCATION
+Bachelor of Science in Computer Science

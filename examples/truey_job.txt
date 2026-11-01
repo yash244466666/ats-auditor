@@ -1,0 +1,13 @@
+Mid-level Full-Stack Engineer — Truey
+
+Truey helps users turn goals into action with tasks, scheduling, reusable methods, and an AI assistant.
+We're looking for a full-stack engineer with production shipping experience, strong React and
+TypeScript skills, practical Python backend development, PostgreSQL databases, authentication,
+state management, caching, code reviews, and debugging. Work with product and design, write
+tests, own releases, and take responsibility for AI-generated code.
+
+Frontend: React, Next.js, TypeScript, Tailwind CSS, Radix/shadcn UI, Zustand,
+GraphQL, Relay, Vitest, Testing Library, and Playwright.
+Backend: Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, Strawberry GraphQL,
+Redis caching, ARQ, and pytest. AI: OpenAI, LangChain, LangGraph, MCP.
+Use AI for debugging, writing tests and implementing code; independently verify changes.

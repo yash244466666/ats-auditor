@@ -1,0 +1,78 @@
+name: Deploy to VPS
+# Only a successful CI *push* to the protected main/dev branches can deploy.
+# Never deploy from pull requests or untrusted forks.
+on:
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: deploy-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      contains(fromJSON('["main", "dev"]'), github.event.workflow_run.head_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    # GitHub Environments named 'production' and 'staging'.
+    environment:
+      name: ${{ github.event.workflow_run.head_branch == 'main' && 'production' || 'staging' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Check out exact commit that passed CI, not a moving branch ref.
+          ref: ${{ github.event.workflow_run.head_sha }}
+          persist-credentials: false
+      - name: Check out expected commit
+        env:
+          EXPECTED: ${{ github.event.workflow_run.head_sha }}
+        run: test "$(git rev-parse HEAD)" = "$EXPECTED"
+      - name: Set deployment target
+        env:
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+        run: |
+          if [ "$BRANCH" = main ]; then
+            echo 'DEPLOY_ENV=production' >> "$GITHUB_ENV"
+            echo 'PUBLISH_PORT=8800' >> "$GITHUB_ENV"
+          else
+            echo 'DEPLOY_ENV=staging' >> "$GITHUB_ENV"
+            echo 'PUBLISH_PORT=8801' >> "$GITHUB_ENV"
+          fi
+      - name: Configure pinned SSH host key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.VPS_SSH_KNOWN_HOSTS }}
+        run: |
+          set -eu
+          umask 077
+          mkdir -p ~/.ssh
+          printf '%s
+' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          printf '%s
+' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          test -s ~/.ssh/id_ed25519 && test -s ~/.ssh/known_hosts
+      - name: Upload and deploy tested revision
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_SSH_PORT: ${{ secrets.VPS_SSH_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$VPS_HOST" && test -n "$VPS_USER"
+          SSH_PORT="${VPS_SSH_PORT:-22}"
+          SSH_OPTS=(-i "$HOME/.ssh/id_ed25519" -p "$SSH_PORT" -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=15)
+          TARGET="$VPS_USER@$VPS_HOST"
+          REMOTE_DIR="/opt/ats-auditor/$DEPLOY_ENV"
+          ssh "${SSH_OPTS[@]}" "$TARGET" "mkdir -p '$REMOTE_DIR'"
+          # Only tracked source files; no secrets, venvs or dot-env files.
+          git ls-files -z | tar --null -czf - --files-from=- |             ssh "${SSH_OPTS[@]}" "$TARGET" "tar -xzf - -C '$REMOTE_DIR'"
+          # Deployment environment is server-managed, not in Git.
+          ssh "${SSH_OPTS[@]}" "$TARGET"             "cd '$REMOTE_DIR' && COMPOSE_PROJECT_NAME='ats-$DEPLOY_ENV' PUBLISH_PORT='$PUBLISH_PORT' docker compose -f deploy/compose.yml up -d --build --remove-orphans && docker compose -f deploy/compose.yml ps"
+          # Health endpoint runs on loopback; not publicly exposed by Docker.
+          ssh "${SSH_OPTS[@]}" "$TARGET"             "for i in 1 2 3 4 5 6 7 8 9 10; do curl --fail --silent --show-error http://127.0.0.1:$PUBLISH_PORT/health && exit 0; sleep 3; done; exit 1"

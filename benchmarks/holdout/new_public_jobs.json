@@ -1,0 +1,32 @@
+{
+  "garirhat_frontend": {
+    "title": "GarirHat Senior Frontend Engineer",
+    "family": "frontend",
+    "url": "https://www.garirhat.com/careers/senior-frontend-engineer",
+    "jd": "Senior Frontend Engineer \u2014 GarirHat, Dhaka, Bangladesh, hybrid, full time. Own the buyer-facing marketplace experience: vehicle listings, search and filtering, vehicle comparisons, dealer showroom and detail views. Build and maintain customer-facing features in React and TypeScript, including search, sorting, filtering and listing pages. Maintain Core Web Vitals and page-performance budgets for bundle size, image delivery, lazy loading and performance profiling. Partner with design to implement accessible responsive components from Figma specifications. Own engineering quality across the frontend with pull request reviews, automated tests and strict typing. Collaborate with backend API engineers on REST API contracts. Requirements: five or more years production React and TypeScript experience, strong CSS layout and responsive design, accessibility according to WCAG 2.1 AA, Next.js App Router and server components with caching semantics. Experience measuring and fixing real performance problems and working knowledge of PostgreSQL and REST API design. Bonus: SEO, state management, CI/CD automation and architecture for large frontend applications."
+  },
+  "virtualfusion_backend": {
+    "title": "VirtualFusion Backend Developer",
+    "family": "backend",
+    "url": "https://virtualfusion.ai/careers/backend-developer",
+    "jd": "Backend Developer \u2014 VirtualFusion, full-time remote, AI enterprise products. Develop scalable high-performance Python backend infrastructure and reliable APIs used by enterprise clients. Build REST APIs with Python, Django and FastAPI, implement distributed systems, use async task processing with Celery, message queues with RabbitMQ, and Redis caching and real-time features. Design service integrations, data-processing workflows and robust cloud-facing backend applications. Skills: hands-on Django, FastAPI, Python, Celery, RabbitMQ, Redis, PostgreSQL, distributed systems, microservices, database performance and query optimization. Bonus: AWS, GCP or Azure cloud platforms, Docker containerization, monitoring and observability, application security, integration testing and production debugging. Collaborate with product teams on architecture, release quality and incident resolution."
+  },
+  "invadel_appsec": {
+    "title": "Invadel Application Security Engineer",
+    "family": "security",
+    "url": "https://invadel.com/careers/application-security-engineer/",
+    "jd": "Application Security Engineer (Source Code Review) \u2014 Invadel, remote United States only. Conduct source code security reviews that combine static analysis and manual penetration testing. Find authentication vulnerabilities, authorization flaws, injection paths, business logic defects, cryptographic misuse, insecure third-party dependencies, and secrets-management failures in production web, mobile and backend software. Triage false-positive SAST results, trace data flows across services, and demonstrate practical exploitability in safely scoped proof-of-concepts. Write security findings with file and line references, technical impact, step-by-step reproduction and remediation code; retest fixes and update reports for engineers and auditors. Required: four or more years software engineering plus application security, strong source-code reading fluency in three languages among JavaScript, TypeScript, Python, Java, Kotlin, C#, Go, PHP, Ruby or Swift; web and API security, security testing, secure code review, pentesting and OWASP fundamentals. Nice to have reviewing AI-generated code, security tooling at scale, mobile code reviews or infrastructure-as-code risk analysis. Requires US location and legal work authorization."
+  },
+  "pavago_rails": {
+    "title": "Pavago Ruby on Rails Developer",
+    "family": "rails",
+    "url": "https://jobs.workable.com/view/dmN2ocrwTcnrNgPPis9AmP/remote-ruby-on-rails-developer-in-pakistan-at-pavago",
+    "jd": "Ruby on Rails Developer \u2014 Pavago, fully remote Pakistan, U.S. client business hours. Build, maintain, optimize and scale production Rails web applications, APIs and background workers. Implement Rails MVC business logic with Ruby, ActiveRecord models, controllers, views and REST API integrations. Design PostgreSQL or MySQL schemas, write production-safe migrations, tune SQL queries and improve performance. Develop background processing using Sidekiq or Resque and Redis caching, focusing on reliable retries and asynchronous workflows. Write automated unit tests, integration tests and system tests with RSpec, Minitest and Capybara. Use Git, CI/CD and Heroku, AWS or GCP deployments. Secure the application through Devise/OmniAuth authentication, OWASP practices, CSRF protection and input validation; use monitoring systems such as Datadog and Rollbar. Collaborate with product managers, designers, and frontend engineers using React, Vue or Stimulus. Requires more than 3 years professional Rails experience, strong problem solving, debugging and code review, reliable remote collaboration and clear communication."
+  },
+  "gain_data": {
+    "title": "Gain America Data Engineer",
+    "family": "data",
+    "url": "https://gainam.com/data-engineer-remote-us",
+    "jd": "Data Engineer \u2014 Gain America, remote United States, contract/contract-to-hire. Design and operate batch and streaming data pipelines, data warehouses and ELT/ETL platforms for analytics. Build reliable Python and SQL pipelines using Apache Spark / PySpark, Snowflake, dbt and Apache Airflow. Create data warehouse layers, dimensional models and quality tests; orchestrate Airflow DAGs, monitor reliability, late arrivals, and lineage. Use AWS or Azure cloud data platforms with secure data access and robust orchestration. Build integrations from APIs, databases and event streams and work with business intelligence and machine learning teams to deliver trusted data. Requirements: four or more years data engineering, strong Python and SQL, hands-on Spark, Snowflake, dbt, Airflow, AWS or Azure, workflow orchestration, cloud data architecture, data modeling, performance optimization and communication with analysts. Nice to have Kafka, ETL/ELT optimization, CI/CD, Docker and production monitoring. US based applicants only."
+  }
+}
