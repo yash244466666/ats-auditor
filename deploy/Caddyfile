@@ -1,20 +1,47 @@
-# This public configuration provides HTTPS but intentionally refuses public
-# MCP requests until OAuth or client-certificate validation is deployed.
-# Do not remove the 403 until the authentication layer is implemented and tested.
+# Public HTTPS endpoint for the ATS Auditor MCP server.
+#
+# The server itself is bound to 127.0.0.1:8800 by deploy/compose.yml; Caddy is
+# the only public door. Staging (127.0.0.1:8801) is intentionally never exposed
+# here — reach it over SSH, e.g. `ssh -L 8801:127.0.0.1:8801`.
+#
+# This block is mirrored by /opt/stacks/caddy/Caddyfile on the VPS.
 atsmcp.yashcodes.com {
-    encode gzip zstd
+	encode gzip zstd
 
-    @status path /health
-    handle @status {
-        reverse_proxy 127.0.0.1:8800
-    }
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		-Server
+	}
 
-    @mcp path /mcp /mcp/*
-    handle @mcp {
-        respond "MCP authentication not yet configured" 403
-    }
+	@health path /health
+	handle @health {
+		reverse_proxy 127.0.0.1:8800
+	}
 
-    handle {
-        respond "ATS Auditor — private MCP service" 200
-    }
+	@mcp path /mcp /mcp/*
+	handle @mcp {
+		request_body {
+			max_size 2MB
+		}
+		# MCP streamable-http may answer with a long-lived SSE stream; do not
+		# let Caddy buffer it.
+		reverse_proxy 127.0.0.1:8800 {
+			flush_interval -1
+		}
+	}
+
+	handle {
+		respond "ATS Auditor MCP endpoint: https://atsmcp.yashcodes.com/mcp" 200
+	}
+
+	log {
+		output file /data/caddy/logs/atsmcp-access.log {
+			roll_size 20mb
+			roll_keep 3
+			roll_keep_for 720h
+		}
+		format json
+	}
 }
