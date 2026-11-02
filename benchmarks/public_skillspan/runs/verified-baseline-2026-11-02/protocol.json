@@ -1,0 +1,31 @@
+{
+  "dataset_commit": "2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b",
+  "dataset_license_card": "https://huggingface.co/datasets/jjzha/skillspan/blob/main/README.md",
+  "dataset_sha256": {
+    "dev": "3732937c6869fe191c749b4efe7ffd597ce84eea1192f09b7fe3bd1eb459e2b4",
+    "test": "8438eda34939a5877b984ea5daf9e6ff39b2d5c7e3d73cca0499d3de3784d24a",
+    "train": "5e884c3426087d14fc437d328eb72132082edbfe1e776292ae0e6e9b36c1e1f6"
+  },
+  "dataset_urls": {
+    "dev": "https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/dev.json",
+    "test": "https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/test.json",
+    "train": "https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/train.json"
+  },
+  "diagnostic": "First unique normalized test sentence absent from both train and dev",
+  "git_commit": "21b62d44674769b7fc89485812ba37d7fbded99f",
+  "method": "Uncapped existing vocabularies; exact token-aligned spans against skill/knowledge union; untyped predictions",
+  "official_splits_preserved": true,
+  "orphan_i_policy": "Treat I after O as B and count; preserve raw files",
+  "primary_split": "test",
+  "python": "3.12.14",
+  "resume_fit_or_hiring_accuracy": false,
+  "schema_version": 1,
+  "source_sha256": {
+    "benchmarks/evaluate_skillspan.py": "3ee2c5ac33fc889ff7c667d227462430b93242efdc521bca74d9d682af47dc85",
+    "src/ats_auditor/engine.py": "eac03f5ab9aa7a8979027a1fd05764e36490490a8f97014b6f6b872effcdd066",
+    "src/ats_auditor/requirement_fit.py": "22123159cfb84146d0cd0580e7a7c07556dcee6921057642d34023ec22f96a3a",
+    "src/ats_auditor/source_approx.py": "453f54603df1c28fcb6b2aab28ba35f79fc92cf2003034c457a5c6b38c59c187"
+  },
+  "started_at_utc": "2026-11-02T21:56:10.017527+00:00",
+  "training_or_coefficient_tuning": false
+}

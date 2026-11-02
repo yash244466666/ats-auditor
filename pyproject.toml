@@ -28,4 +28,4 @@ pythonpath = ["src"]
 testpaths = ["tests"]
 
 [tool.setuptools.package-data]
-ats_auditor = ["static/*.html"]
+ats_auditor = ["static/*.html", "data/*.json", "data/*.md"]

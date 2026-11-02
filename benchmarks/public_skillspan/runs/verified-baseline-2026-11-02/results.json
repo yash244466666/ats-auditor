@@ -1,0 +1,490 @@
+{
+  "audit": {
+    "normalized_unique_sentence_intersections": {
+      "dev_test": 169,
+      "train_dev": 159,
+      "train_test": 177
+    },
+    "splits": {
+      "dev": {
+        "document_keys_within_split": 58,
+        "duplicate_normalized_sentence_rows": 577,
+        "orphan_i_starts": 0,
+        "sentences": 3174,
+        "sources": {
+          "house": 1018,
+          "tech": 2156
+        }
+      },
+      "test": {
+        "document_keys_within_split": 65,
+        "duplicate_normalized_sentence_rows": 909,
+        "orphan_i_starts": 1,
+        "sentences": 3569,
+        "sources": {
+          "house": 1283,
+          "tech": 2286
+        }
+      },
+      "train": {
+        "document_keys_within_split": 140,
+        "duplicate_normalized_sentence_rows": 857,
+        "orphan_i_starts": 0,
+        "sentences": 4800,
+        "sources": {
+          "house": 1667,
+          "tech": 3133
+        }
+      }
+    }
+  },
+  "evaluations": {
+    "compatibility_catalog": {
+      "dev": {
+        "document_keys_within_split": 58,
+        "knowledge_span_recall": {
+          "gold": 1093,
+          "matched": 180,
+          "recall": 0.164684
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 3174,
+        "skill_span_recall": {
+          "gold": 1070,
+          "matched": 7,
+          "recall": 0.006542
+        },
+        "unaligned_character_matches_excluded": 58,
+        "union_exact_span": {
+          "f1": 0.135951,
+          "false_negative": 1976,
+          "false_positive": 401,
+          "precision": 0.318027,
+          "recall": 0.086454,
+          "true_positive": 187
+        }
+      },
+      "test": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 1174,
+          "matched": 220,
+          "recall": 0.187394
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 3569,
+        "skill_span_recall": {
+          "gold": 1091,
+          "matched": 5,
+          "recall": 0.004583
+        },
+        "unaligned_character_matches_excluded": 52,
+        "union_exact_span": {
+          "f1": 0.158954,
+          "false_negative": 2040,
+          "false_positive": 341,
+          "precision": 0.397527,
+          "recall": 0.099338,
+          "true_positive": 225
+        }
+      },
+      "test_unique_absent_train_dev": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 994,
+          "matched": 174,
+          "recall": 0.17505
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2404,
+        "skill_span_recall": {
+          "gold": 1041,
+          "matched": 5,
+          "recall": 0.004803
+        },
+        "unaligned_character_matches_excluded": 43,
+        "union_exact_span": {
+          "f1": 0.141895,
+          "false_negative": 1856,
+          "false_positive": 309,
+          "precision": 0.366803,
+          "recall": 0.087961,
+          "true_positive": 179
+        }
+      },
+      "train": {
+        "document_keys_within_split": 140,
+        "knowledge_span_recall": {
+          "gold": 2969,
+          "matched": 492,
+          "recall": 0.165712
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 4800,
+        "skill_span_recall": {
+          "gold": 2221,
+          "matched": 4,
+          "recall": 0.001801
+        },
+        "unaligned_character_matches_excluded": 92,
+        "union_exact_span": {
+          "f1": 0.148882,
+          "false_negative": 4694,
+          "false_positive": 977,
+          "precision": 0.336728,
+          "recall": 0.095568,
+          "true_positive": 496
+        }
+      }
+    },
+    "evidence_catalog": {
+      "dev": {
+        "document_keys_within_split": 58,
+        "knowledge_span_recall": {
+          "gold": 1093,
+          "matched": 108,
+          "recall": 0.098811
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 3174,
+        "skill_span_recall": {
+          "gold": 1070,
+          "matched": 4,
+          "recall": 0.003738
+        },
+        "unaligned_character_matches_excluded": 38,
+        "union_exact_span": {
+          "f1": 0.091916,
+          "false_negative": 2051,
+          "false_positive": 162,
+          "precision": 0.408759,
+          "recall": 0.05178,
+          "true_positive": 112
+        }
+      },
+      "test": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 1174,
+          "matched": 141,
+          "recall": 0.120102
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 3569,
+        "skill_span_recall": {
+          "gold": 1091,
+          "matched": 3,
+          "recall": 0.00275
+        },
+        "unaligned_character_matches_excluded": 21,
+        "union_exact_span": {
+          "f1": 0.113699,
+          "false_negative": 2121,
+          "false_positive": 124,
+          "precision": 0.537313,
+          "recall": 0.063576,
+          "true_positive": 144
+        }
+      },
+      "test_unique_absent_train_dev": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 994,
+          "matched": 110,
+          "recall": 0.110664
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2404,
+        "skill_span_recall": {
+          "gold": 1041,
+          "matched": 3,
+          "recall": 0.002882
+        },
+        "unaligned_character_matches_excluded": 20,
+        "union_exact_span": {
+          "f1": 0.099867,
+          "false_negative": 1922,
+          "false_positive": 115,
+          "precision": 0.495614,
+          "recall": 0.055528,
+          "true_positive": 113
+        }
+      },
+      "train": {
+        "document_keys_within_split": 140,
+        "knowledge_span_recall": {
+          "gold": 2969,
+          "matched": 300,
+          "recall": 0.101044
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 4800,
+        "skill_span_recall": {
+          "gold": 2221,
+          "matched": 3,
+          "recall": 0.001351
+        },
+        "unaligned_character_matches_excluded": 39,
+        "union_exact_span": {
+          "f1": 0.102296,
+          "false_negative": 4887,
+          "false_positive": 431,
+          "precision": 0.412807,
+          "recall": 0.058382,
+          "true_positive": 303
+        }
+      }
+    },
+    "requirement_fit_catalog": {
+      "dev": {
+        "document_keys_within_split": 58,
+        "knowledge_span_recall": {
+          "gold": 1093,
+          "matched": 204,
+          "recall": 0.186642
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 3174,
+        "skill_span_recall": {
+          "gold": 1070,
+          "matched": 2,
+          "recall": 0.001869
+        },
+        "unaligned_character_matches_excluded": 52,
+        "union_exact_span": {
+          "f1": 0.159073,
+          "false_negative": 1957,
+          "false_positive": 221,
+          "precision": 0.482436,
+          "recall": 0.095238,
+          "true_positive": 206
+        }
+      },
+      "test": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 1174,
+          "matched": 248,
+          "recall": 0.211244
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 3569,
+        "skill_span_recall": {
+          "gold": 1091,
+          "matched": 3,
+          "recall": 0.00275
+        },
+        "unaligned_character_matches_excluded": 58,
+        "union_exact_span": {
+          "f1": 0.186617,
+          "false_negative": 2014,
+          "false_positive": 174,
+          "precision": 0.590588,
+          "recall": 0.110817,
+          "true_positive": 251
+        }
+      },
+      "test_unique_absent_train_dev": {
+        "document_keys_within_split": 65,
+        "knowledge_span_recall": {
+          "gold": 994,
+          "matched": 191,
+          "recall": 0.192153
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2404,
+        "skill_span_recall": {
+          "gold": 1041,
+          "matched": 3,
+          "recall": 0.002882
+        },
+        "unaligned_character_matches_excluded": 47,
+        "union_exact_span": {
+          "f1": 0.162072,
+          "false_negative": 1841,
+          "false_positive": 165,
+          "precision": 0.54039,
+          "recall": 0.095332,
+          "true_positive": 194
+        }
+      },
+      "train": {
+        "document_keys_within_split": 140,
+        "knowledge_span_recall": {
+          "gold": 2969,
+          "matched": 513,
+          "recall": 0.172785
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 4800,
+        "skill_span_recall": {
+          "gold": 2221,
+          "matched": 4,
+          "recall": 0.001801
+        },
+        "unaligned_character_matches_excluded": 86,
+        "union_exact_span": {
+          "f1": 0.166936,
+          "false_negative": 4673,
+          "false_positive": 487,
+          "precision": 0.51494,
+          "recall": 0.099615,
+          "true_positive": 517
+        }
+      }
+    }
+  },
+  "schema_version": 1,
+  "test_by_source": {
+    "compatibility_catalog": {
+      "house": {
+        "document_keys_within_split": 34,
+        "knowledge_span_recall": {
+          "gold": 368,
+          "matched": 42,
+          "recall": 0.11413
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 1283,
+        "skill_span_recall": {
+          "gold": 651,
+          "matched": 1,
+          "recall": 0.001536
+        },
+        "unaligned_character_matches_excluded": 11,
+        "union_exact_span": {
+          "f1": 0.075505,
+          "false_negative": 976,
+          "false_positive": 77,
+          "precision": 0.358333,
+          "recall": 0.042198,
+          "true_positive": 43
+        }
+      },
+      "tech": {
+        "document_keys_within_split": 31,
+        "knowledge_span_recall": {
+          "gold": 806,
+          "matched": 178,
+          "recall": 0.220844
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2286,
+        "skill_span_recall": {
+          "gold": 440,
+          "matched": 4,
+          "recall": 0.009091
+        },
+        "unaligned_character_matches_excluded": 41,
+        "union_exact_span": {
+          "f1": 0.21513,
+          "false_negative": 1064,
+          "false_positive": 264,
+          "precision": 0.408072,
+          "recall": 0.146067,
+          "true_positive": 182
+        }
+      }
+    },
+    "evidence_catalog": {
+      "house": {
+        "document_keys_within_split": 34,
+        "knowledge_span_recall": {
+          "gold": 368,
+          "matched": 15,
+          "recall": 0.040761
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 1283,
+        "skill_span_recall": {
+          "gold": 651,
+          "matched": 1,
+          "recall": 0.001536
+        },
+        "unaligned_character_matches_excluded": 4,
+        "union_exact_span": {
+          "f1": 0.030217,
+          "false_negative": 1003,
+          "false_positive": 24,
+          "precision": 0.4,
+          "recall": 0.015702,
+          "true_positive": 16
+        }
+      },
+      "tech": {
+        "document_keys_within_split": 31,
+        "knowledge_span_recall": {
+          "gold": 806,
+          "matched": 126,
+          "recall": 0.156328
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2286,
+        "skill_span_recall": {
+          "gold": 440,
+          "matched": 2,
+          "recall": 0.004545
+        },
+        "unaligned_character_matches_excluded": 17,
+        "union_exact_span": {
+          "f1": 0.173677,
+          "false_negative": 1118,
+          "false_positive": 100,
+          "precision": 0.561404,
+          "recall": 0.102729,
+          "true_positive": 128
+        }
+      }
+    },
+    "requirement_fit_catalog": {
+      "house": {
+        "document_keys_within_split": 34,
+        "knowledge_span_recall": {
+          "gold": 368,
+          "matched": 41,
+          "recall": 0.111413
+        },
+        "orphan_i_starts_treated_as_b": 0,
+        "sentences": 1283,
+        "skill_span_recall": {
+          "gold": 651,
+          "matched": 0,
+          "recall": 0.0
+        },
+        "unaligned_character_matches_excluded": 8,
+        "union_exact_span": {
+          "f1": 0.075576,
+          "false_negative": 978,
+          "false_positive": 25,
+          "precision": 0.621212,
+          "recall": 0.040236,
+          "true_positive": 41
+        }
+      },
+      "tech": {
+        "document_keys_within_split": 31,
+        "knowledge_span_recall": {
+          "gold": 806,
+          "matched": 207,
+          "recall": 0.256824
+        },
+        "orphan_i_starts_treated_as_b": 1,
+        "sentences": 2286,
+        "skill_span_recall": {
+          "gold": 440,
+          "matched": 3,
+          "recall": 0.006818
+        },
+        "unaligned_character_matches_excluded": 50,
+        "union_exact_span": {
+          "f1": 0.261682,
+          "false_negative": 1036,
+          "false_positive": 149,
+          "precision": 0.584958,
+          "recall": 0.168539,
+          "true_positive": 210
+        }
+      }
+    }
+  }
+}

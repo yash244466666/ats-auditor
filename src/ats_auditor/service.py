@@ -37,10 +37,10 @@ class ATSService:
         if job_description and job_description_id:
             raise ValueError("Supply job_description OR job_description_id, not both")
         # Validate incoming strings before changing cached session state.
-        if resume_text is not None and len(resume_text.strip()) < 100:
-            raise ValueError("A complete resume (at least 100 characters) is required")
-        if job_description is not None and len(job_description.strip()) < 50:
-            raise ValueError("A complete job description (at least 50 characters) is required")
+        if resume_text is not None and len(''.join(resume_text.split())) < 100:
+            raise ValueError("A complete resume (at least 100 non-whitespace characters) is required")
+        if job_description is not None and len(''.join(job_description.split())) < 50:
+            raise ValueError("A complete job description (at least 50 non-whitespace characters) is required")
         if not job_description and not job_description_id:
             raise ValueError("Supply a full job description or an existing job_description_id")
 
@@ -89,6 +89,19 @@ def format_report(result: dict[str, Any]) -> str:
     for k in result["keywords"]:
         lines.append(f"- {k['keyword']}: {'present' if k['present'] else 'missing'}; "
                      f"importance={k['importance']}; score={k['score']}/100")
+    details = result.get("details", {})
+    assessments = details.get("keyword_evidence", details.get("requirement_weights", []))
+    notes = []
+    for item in assessments:
+        if item.get("status") == "learning_only":
+            notes.append(f"- {item['keyword']}: learning only; delivered work is not established.")
+        reasons = sorted({e['reason'] for e in item.get('excluded', [])})
+        if reasons:
+            labels = {'negated': 'explicit denial', 'job_text_overlap': 'overlap with supplied job text',
+                      'requirement_prose': 'requirement prose rather than applicant evidence'}
+            notes.append(f"- {item['keyword']}: excluded mentions ({'; '.join(labels[r] for r in reasons)}).")
+    if notes:
+        lines.extend(["", "### Evidence notes", *notes[:12]])
     if result.get("details", {}).get("keyword_stuffing_warnings"):
         lines.extend(["", "### Keyword-stuffing warnings", *
                       ("- " + s for s in result["details"]["keyword_stuffing_warnings"])])

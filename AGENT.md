@@ -50,6 +50,8 @@ Some benchmark write-ups are historical and may still mention an older, untested
 | src/ats_auditor/engine.py | Canonical score_resume dispatcher, keyword catalog, legacy-frequency and evidence heuristics, formatting and stuffing checks. |
 | src/ats_auditor/source_approx.py | Broad vocabulary, empirical calibration and compatibility score. |
 | src/ats_auditor/requirement_fit.py | Independent weighted requirements coverage with contextual evidence credit. |
+| src/ats_auditor/evidence.py | Shared English denial/learning/job-overlap guards for evidence and requirement-fit modes; not compatibility calibration. |
+| src/ats_auditor/phrases.py, data/skillspan_phrases.json | Local phrase matching and training-only CC BY 4.0 lexicon; preserve its separate attribution notice. |
 | src/ats_auditor/service.py | ATSService.analyze validation, result IDs, local session state and format_report output. |
 | src/ats_auditor/api.py | FastAPI local/dev UI and JSON endpoints with optional ATS_API_KEY protection. |
 | src/ats_auditor/static/index.html | Static browser UI served by the FastAPI app. |
@@ -130,6 +132,10 @@ Always run targeted tests for modified code and the full suite before a release.
 - Do not run arbitrary destructive commands or expose staging/container ports on public interfaces. Never disable StrictHostKeyChecking or print private keys.
 
 ## 7. Data ethics, benchmarking and evaluation rules
+
+- Current evidence/requirement-fit implementation: read [docs/EXTRACTION_EVIDENCE.md](docs/EXTRACTION_EVIDENCE.md). `phrases.py` merges catalog aliases and a training-only CC BY 4.0 phrase artifact; `evidence.py` applies English denial/learning/job-overlap guards. Compatibility and legacy numerical behavior stay separate. Do not claim these heuristics verify employment or semantic/hiring accuracy; preserve the artifact's distinct license and immutable original baseline.
+
+- The [public SkillSpan adapter](benchmarks/public_skillspan/README.md) evaluates uncapped existing vocabulary spans against external expert annotations, not complete scoring modes or hiring accuracy. Cache downloaded job annotations outside tracked source; pin and verify hashes, preserve official/diagnostic split results, and record protocols before evaluation. Unit tests remain fictional and offline. Do not tune against observed test results and continue calling them untouched.
 
 - Use **fictional data** in repository tests and demos. Do not copy real resumes or applicant identities into tracked files, prompts, public logs or PRs.
 - Do not call scores 'ATS pass rates', guaranteed interview chances, employer eligibility determinations or a faithful replication of Upplai's private algorithms.

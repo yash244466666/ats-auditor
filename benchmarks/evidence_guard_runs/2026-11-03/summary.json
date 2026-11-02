@@ -1,0 +1,238 @@
+{
+  "calls_per_worker": 720,
+  "compatibility_legacy_baseline_scores_preserved": {
+    "matched": 72,
+    "total": 72
+  },
+  "errors": 0,
+  "summary": {
+    "after": {
+      "compatibility/copied_job": {
+        "cases": 36,
+        "increased": 33,
+        "max_increase": 34,
+        "min_delta": 0,
+        "unchanged": 3
+      },
+      "compatibility/duplicate": {
+        "cases": 36,
+        "increased": 21,
+        "max_increase": 37,
+        "min_delta": 0,
+        "unchanged": 15
+      },
+      "compatibility/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "compatibility/negated_missing": {
+        "cases": 36,
+        "increased": 24,
+        "max_increase": 22,
+        "min_delta": 0,
+        "unchanged": 12
+      },
+      "evidence/copied_job": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "evidence/duplicate": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "evidence/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "evidence/negated_missing": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "legacy_frequency/copied_job": {
+        "cases": 36,
+        "increased": 36,
+        "max_increase": 82,
+        "min_delta": 5,
+        "unchanged": 0
+      },
+      "legacy_frequency/duplicate": {
+        "cases": 36,
+        "increased": 26,
+        "max_increase": 31,
+        "min_delta": 0,
+        "unchanged": 10
+      },
+      "legacy_frequency/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "legacy_frequency/negated_missing": {
+        "cases": 36,
+        "increased": 20,
+        "max_increase": 34,
+        "min_delta": 0,
+        "unchanged": 16
+      },
+      "requirement_fit/copied_job": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "requirement_fit/duplicate": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "requirement_fit/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "requirement_fit/negated_missing": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      }
+    },
+    "before": {
+      "compatibility/copied_job": {
+        "cases": 36,
+        "increased": 33,
+        "max_increase": 34,
+        "min_delta": 0,
+        "unchanged": 3
+      },
+      "compatibility/duplicate": {
+        "cases": 36,
+        "increased": 21,
+        "max_increase": 37,
+        "min_delta": 0,
+        "unchanged": 15
+      },
+      "compatibility/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "compatibility/negated_missing": {
+        "cases": 36,
+        "increased": 24,
+        "max_increase": 22,
+        "min_delta": 0,
+        "unchanged": 12
+      },
+      "evidence/copied_job": {
+        "cases": 36,
+        "increased": 30,
+        "max_increase": 36,
+        "min_delta": -8,
+        "unchanged": 5
+      },
+      "evidence/duplicate": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": -8,
+        "unchanged": 34
+      },
+      "evidence/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": -3,
+        "unchanged": 23
+      },
+      "evidence/negated_missing": {
+        "cases": 36,
+        "increased": 18,
+        "max_increase": 25,
+        "min_delta": 0,
+        "unchanged": 18
+      },
+      "legacy_frequency/copied_job": {
+        "cases": 36,
+        "increased": 36,
+        "max_increase": 82,
+        "min_delta": 5,
+        "unchanged": 0
+      },
+      "legacy_frequency/duplicate": {
+        "cases": 36,
+        "increased": 26,
+        "max_increase": 31,
+        "min_delta": 0,
+        "unchanged": 10
+      },
+      "legacy_frequency/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "legacy_frequency/negated_missing": {
+        "cases": 36,
+        "increased": 20,
+        "max_increase": 34,
+        "min_delta": 0,
+        "unchanged": 16
+      },
+      "requirement_fit/copied_job": {
+        "cases": 36,
+        "increased": 34,
+        "max_increase": 72,
+        "min_delta": 0,
+        "unchanged": 2
+      },
+      "requirement_fit/duplicate": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": 0,
+        "unchanged": 36
+      },
+      "requirement_fit/equivalent_headings": {
+        "cases": 36,
+        "increased": 0,
+        "max_increase": 0,
+        "min_delta": -15,
+        "unchanged": 21
+      },
+      "requirement_fit/negated_missing": {
+        "cases": 36,
+        "increased": 27,
+        "max_increase": 61,
+        "min_delta": 0,
+        "unchanged": 9
+      }
+    }
+  }
+}
