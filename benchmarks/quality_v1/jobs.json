@@ -1,0 +1,832 @@
+[
+  {
+    "id": "j01",
+    "family": "backend",
+    "title": "Senior Ruby Backend Engineer",
+    "fictional": true,
+    "text": "Senior Ruby Backend Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nMaintain subscription and billing services for a fictional developer-tools product. Work with a product owner and support team to make changes understandable and recoverable. The position focuses on correctness and predictable operational behavior in a shared application rather than on accumulating technology keywords.\n\nREQUIRED EXPERIENCE\n- Build transactional Ruby on Rails backend services.\n- Design PostgreSQL schemas and investigate SQL query behavior.\n- Write automated regression tests for backend failure paths.\n- Diagnose and verify application performance improvements.\n- Review code for correctness and maintainability.\n- Collaborate through clear asynchronous technical communication.\n\nPREFERRED EXPERIENCE\n- Use Redis caching or background job processing in an implemented project.\n- Implement a Go service beyond introductory coursework.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_backend"
+    ],
+    "requirements": [
+      {
+        "id": "j01-q01",
+        "text": "Build transactional Ruby on Rails backend services.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q02",
+        "text": "Design PostgreSQL schemas and investigate SQL query behavior.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q03",
+        "text": "Write automated regression tests for backend failure paths.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q04",
+        "text": "Diagnose and verify application performance improvements.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q05",
+        "text": "Review code for correctness and maintainability.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q06",
+        "text": "Collaborate through clear asynchronous technical communication.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q07",
+        "text": "Use Redis caching or background job processing in an implemented project.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j01-q08",
+        "text": "Implement a Go service beyond introductory coursework.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j02",
+    "family": "backend",
+    "title": "Python API Engineer",
+    "fictional": true,
+    "text": "Python API Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nDeliver a small scheduling service used by fictional operations teams. Translate user needs into secure, tested software and help operate what you build. Work with interface developers on stable contracts, observable failure behavior and support documentation. Seek specialist review when a change affects access boundaries or persistent records.\n\nREQUIRED EXPERIENCE\n- Implement Python web API endpoints with validated requests.\n- Use SQL transactions and relational schemas to maintain data correctness.\n- Write automated tests for API failures and repeated operations.\n- Implement authentication and resource authorization checks.\n- Package and release a service with runtime health checks.\n- Document API behavior and operational procedures.\n\nPREFERRED EXPERIENCE\n- Implement a Django application beyond self-study.\n- Operate production event streaming with Kafka.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gov_software"
+    ],
+    "requirements": [
+      {
+        "id": "j02-q01",
+        "text": "Implement Python web API endpoints with validated requests.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q02",
+        "text": "Use SQL transactions and relational schemas to maintain data correctness.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q03",
+        "text": "Write automated tests for API failures and repeated operations.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q04",
+        "text": "Implement authentication and resource authorization checks.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q05",
+        "text": "Package and release a service with runtime health checks.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q06",
+        "text": "Document API behavior and operational procedures.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q07",
+        "text": "Implement a Django application beyond self-study.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j02-q08",
+        "text": "Operate production event streaming with Kafka.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "OGL-UK-3.0",
+    "attribution": "Role context informed by UK Government Digital and Data Profession; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j03",
+    "family": "frontend",
+    "title": "React Frontend Engineer",
+    "fictional": true,
+    "text": "React Frontend Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nBuild an accessible browser application for a fictional service team. Work with designers and support colleagues to improve real interaction problems, including failed requests and keyboard journeys. Deliver changes iteratively and explain which users and devices were considered. Keep frontend responsibilities distinct from service and database ownership.\n\nREQUIRED EXPERIENCE\n- Build stateful React interfaces with recoverable error behavior.\n- Implement semantic HTML and responsive CSS.\n- Fix keyboard and screen-reader accessibility problems.\n- Write automated browser-component interaction tests.\n- Diagnose and improve web performance using measurements.\n- Translate user feedback into changes with designers and support.\n\nPREFERRED EXPERIENCE\n- Implement a TypeScript interface or component project.\n- Deliver server-side rendering beyond introductory learning.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gov_frontend"
+    ],
+    "requirements": [
+      {
+        "id": "j03-q01",
+        "text": "Build stateful React interfaces with recoverable error behavior.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q02",
+        "text": "Implement semantic HTML and responsive CSS.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q03",
+        "text": "Fix keyboard and screen-reader accessibility problems.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q04",
+        "text": "Write automated browser-component interaction tests.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q05",
+        "text": "Diagnose and improve web performance using measurements.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q06",
+        "text": "Translate user feedback into changes with designers and support.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q07",
+        "text": "Implement a TypeScript interface or component project.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j03-q08",
+        "text": "Deliver server-side rendering beyond introductory learning.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "OGL-UK-3.0",
+    "attribution": "Role context informed by UK Government Digital and Data Profession; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j04",
+    "family": "frontend",
+    "title": "Vue Frontend Engineer",
+    "fictional": true,
+    "text": "Vue Frontend Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nMaintain product interfaces for a fictional inventory application. Work within a collaborative engineering team and keep screens understandable when data is missing or slow. Prefer small, reviewed changes with clear behavior over large rewrites. Collaborate with backend developers while retaining ownership of browser interactions and component quality.\n\nREQUIRED EXPERIENCE\n- Implement Vue.js components with explicit state behavior.\n- Build interfaces using JavaScript, semantic HTML and CSS.\n- Write automated component tests for user actions.\n- Investigate browser rendering and web performance.\n- Use Git and reviewed merge requests in delivery.\n- Communicate technical decisions asynchronously.\n\nPREFERRED EXPERIENCE\n- Implement a GraphQL client beyond reading documentation.\n- Build and document reusable design-system components.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_frontend"
+    ],
+    "requirements": [
+      {
+        "id": "j04-q01",
+        "text": "Implement Vue.js components with explicit state behavior.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q02",
+        "text": "Build interfaces using JavaScript, semantic HTML and CSS.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q03",
+        "text": "Write automated component tests for user actions.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q04",
+        "text": "Investigate browser rendering and web performance.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q05",
+        "text": "Use Git and reviewed merge requests in delivery.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q06",
+        "text": "Communicate technical decisions asynchronously.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q07",
+        "text": "Implement a GraphQL client beyond reading documentation.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j04-q08",
+        "text": "Build and document reusable design-system components.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j05",
+    "family": "fullstack",
+    "title": "Rails and Vue Fullstack Engineer",
+    "fictional": true,
+    "text": "Rails and Vue Fullstack Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nOwn a user-facing workflow across browser, service and persistence layers in a fictional equipment product. Work with product stakeholders to agree failure behavior and ship understandable increments. The role requires evidence on both sides of the application boundary; experience in only one layer remains useful but does not establish complete coverage.\n\nREQUIRED EXPERIENCE\n- Implement Ruby on Rails service logic.\n- Build browser behavior with JavaScript, HTML and CSS.\n- Integrate user interfaces with backend API contracts.\n- Test both backend behavior and browser journeys.\n- Diagnose performance across client and server layers.\n- Own a feature from proposal through release and handover.\n\nPREFERRED EXPERIENCE\n- Implement Vue.js user interfaces.\n- Implement a CI/CD pipeline for application tests.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_fullstack"
+    ],
+    "requirements": [
+      {
+        "id": "j05-q01",
+        "text": "Implement Ruby on Rails service logic.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q02",
+        "text": "Build browser behavior with JavaScript, HTML and CSS.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q03",
+        "text": "Integrate user interfaces with backend API contracts.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q04",
+        "text": "Test both backend behavior and browser journeys.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q05",
+        "text": "Diagnose performance across client and server layers.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q06",
+        "text": "Own a feature from proposal through release and handover.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q07",
+        "text": "Implement Vue.js user interfaces.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j05-q08",
+        "text": "Implement a CI/CD pipeline for application tests.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j06",
+    "family": "fullstack",
+    "title": "Python and React Fullstack Developer",
+    "fictional": true,
+    "text": "Python and React Fullstack Developer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nDeliver features for a fictional case-management product across its interface and API. Resolve uncertainty in user stories before implementation and verify the resulting journey from both layers. Keep data access rules explicit and help support colleagues reproduce failures. The team expects safe releases and clear ownership, not unsupported claims of operating at internet scale.\n\nREQUIRED EXPERIENCE\n- Implement Python web APIs with validation.\n- Build React interfaces that handle failed requests.\n- Design relational data models and SQL queries.\n- Write both API and end-to-end browser tests.\n- Implement authentication and per-resource authorization.\n- Release a containerized application with smoke checks and rollback instructions.\n\nPREFERRED EXPERIENCE\n- Conduct direct user research interviews.\n- Implement Redis caching beyond self-study.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gov_software"
+    ],
+    "requirements": [
+      {
+        "id": "j06-q01",
+        "text": "Implement Python web APIs with validation.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q02",
+        "text": "Build React interfaces that handle failed requests.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q03",
+        "text": "Design relational data models and SQL queries.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q04",
+        "text": "Write both API and end-to-end browser tests.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q05",
+        "text": "Implement authentication and per-resource authorization.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q06",
+        "text": "Release a containerized application with smoke checks and rollback instructions.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q07",
+        "text": "Conduct direct user research interviews.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j06-q08",
+        "text": "Implement Redis caching beyond self-study.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "OGL-UK-3.0",
+    "attribution": "Role context informed by UK Government Digital and Data Profession; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j07",
+    "family": "security",
+    "title": "Application Security Engineer",
+    "fictional": true,
+    "text": "Application Security Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nHelp a fictional product team understand and fix application vulnerabilities. Work within an agreed assessment scope and distinguish a reproducible defect from a hypothesis. Explain risk and remediation to maintainers, support secure design discussions and verify fixes. Evidence of finding and resolving security issues matters more than a list of tool names.\n\nREQUIRED EXPERIENCE\n- Perform manual security-focused source code reviews.\n- Facilitate threat modeling and identify trust boundaries.\n- Reproduce, triage and verify remediation of vulnerability reports.\n- Explain OWASP weaknesses and concrete mitigations.\n- Investigate web vulnerabilities using HTTP protocol knowledge.\n- Collaborate with developers on security regression tests.\n\nPREFERRED EXPERIENCE\n- Implement automated static security analysis in CI.\n- Develop Ruby applications beyond reading code.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_appsec"
+    ],
+    "requirements": [
+      {
+        "id": "j07-q01",
+        "text": "Perform manual security-focused source code reviews.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q02",
+        "text": "Facilitate threat modeling and identify trust boundaries.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q03",
+        "text": "Reproduce, triage and verify remediation of vulnerability reports.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q04",
+        "text": "Explain OWASP weaknesses and concrete mitigations.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q05",
+        "text": "Investigate web vulnerabilities using HTTP protocol knowledge.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q06",
+        "text": "Collaborate with developers on security regression tests.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q07",
+        "text": "Implement automated static security analysis in CI.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j07-q08",
+        "text": "Develop Ruby applications beyond reading code.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j08",
+    "family": "security",
+    "title": "Security Incident Response Engineer",
+    "fictional": true,
+    "text": "Security Incident Response Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nInvestigate and coordinate recovery from security incidents in a fictional cloud service. Preserve a clear record of observations and actions while helping service owners choose proportionate containment. Use operational evidence rather than assuming every alert proves compromise. Share progress and uncertainty with technical and non-technical stakeholders throughout the response.\n\nREQUIRED EXPERIENCE\n- Coordinate security incident containment and recovery.\n- Use log analysis to reconstruct an investigation timeline.\n- Investigate cloud audit records and access configuration.\n- Maintain incident response runbooks.\n- Participate in an incident on-call rotation and handover.\n- Communicate incident status and uncertainty to stakeholders.\n\nPREFERRED EXPERIENCE\n- Perform a documented forensic investigation in work or a lab.\n- Implement Python incident-response automation beyond coursework.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_sirt"
+    ],
+    "requirements": [
+      {
+        "id": "j08-q01",
+        "text": "Coordinate security incident containment and recovery.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q02",
+        "text": "Use log analysis to reconstruct an investigation timeline.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q03",
+        "text": "Investigate cloud audit records and access configuration.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q04",
+        "text": "Maintain incident response runbooks.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q05",
+        "text": "Participate in an incident on-call rotation and handover.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q06",
+        "text": "Communicate incident status and uncertainty to stakeholders.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q07",
+        "text": "Perform a documented forensic investigation in work or a lab.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j08-q08",
+        "text": "Implement Python incident-response automation beyond coursework.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j09",
+    "family": "infrastructure",
+    "title": "Site Reliability Engineer",
+    "fictional": true,
+    "text": "Site Reliability Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nKeep a fictional hosted service dependable through reviewed operational changes and measured automation. Work with application owners on service objectives, diagnostic evidence and recovery exercises. Use incident experience to improve procedures without treating every infrastructure signal as a user-impacting failure. The position includes a stated on-call responsibility and written operational handovers.\n\nREQUIRED EXPERIENCE\n- Diagnose Linux service and resource failures.\n- Manage reviewed Terraform infrastructure changes.\n- Operate Kubernetes application workloads safely.\n- Build monitoring around symptoms and service objectives.\n- Participate in production on-call and incident follow-up.\n- Maintain runbooks and practice recovery procedures.\n\nPREFERRED EXPERIENCE\n- Implement Go automation beyond reading documentation.\n- Implement operational Shell automation.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_sre"
+    ],
+    "requirements": [
+      {
+        "id": "j09-q01",
+        "text": "Diagnose Linux service and resource failures.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q02",
+        "text": "Manage reviewed Terraform infrastructure changes.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q03",
+        "text": "Operate Kubernetes application workloads safely.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q04",
+        "text": "Build monitoring around symptoms and service objectives.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q05",
+        "text": "Participate in production on-call and incident follow-up.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q06",
+        "text": "Maintain runbooks and practice recovery procedures.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q07",
+        "text": "Implement Go automation beyond reading documentation.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j09-q08",
+        "text": "Implement operational Shell automation.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j10",
+    "family": "infrastructure",
+    "title": "Delivery Automation Engineer",
+    "fictional": true,
+    "text": "Delivery Automation Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nImprove the development and delivery toolchain for a fictional software team. Keep test environments reproducible and make failed releases explainable. Work with developers to remove manual steps while retaining review and deployment boundaries. Evaluate a pipeline by the running application and recovery procedure rather than by a successful build alone.\n\nREQUIRED EXPERIENCE\n- Build CI/CD pipelines that deploy a specific reviewed revision.\n- Manage separate, documented development and test environments.\n- Write automation for environment setup and verification.\n- Implement secure secrets handling and deployment permissions.\n- Troubleshoot build, configuration and runtime delivery failures.\n- Document and rehearse release and rollback procedures.\n\nPREFERRED EXPERIENCE\n- Build and verify Docker application images.\n- Implement Terraform provisioning beyond self-study.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gov_devops"
+    ],
+    "requirements": [
+      {
+        "id": "j10-q01",
+        "text": "Build CI/CD pipelines that deploy a specific reviewed revision.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q02",
+        "text": "Manage separate, documented development and test environments.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q03",
+        "text": "Write automation for environment setup and verification.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q04",
+        "text": "Implement secure secrets handling and deployment permissions.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q05",
+        "text": "Troubleshoot build, configuration and runtime delivery failures.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q06",
+        "text": "Document and rehearse release and rollback procedures.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q07",
+        "text": "Build and verify Docker application images.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j10-q08",
+        "text": "Implement Terraform provisioning beyond self-study.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "OGL-UK-3.0",
+    "attribution": "Role context informed by UK Government Digital and Data Profession; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j11",
+    "family": "data",
+    "title": "Data Pipeline Engineer",
+    "fictional": true,
+    "text": "Data Pipeline Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nBuild repeatable data flows from fictional operational systems to analytical tables. Work with consumers to document the meaning and limits of the output. Treat checkpoints, backfills and reconciliation as part of delivery. Diagnose whether a discrepancy begins in the source, transformation or downstream join instead of assuming a successful scheduled task proves data quality.\n\nREQUIRED EXPERIENCE\n- Implement Python data-processing code with recovery behavior.\n- Use SQL to reconcile records and investigate duplicates.\n- Build repeatable ETL flows with traceable source identifiers.\n- Orchestrate dependencies, retries and backfills using Airflow.\n- Implement data quality checks before publishing datasets.\n- Document source-to-target mappings and dataset grain.\n\nPREFERRED EXPERIENCE\n- Operate a Snowflake warehouse beyond coursework.\n- Implement distributed event streaming with Kafka.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gitlab_data",
+      "gov_data"
+    ],
+    "requirements": [
+      {
+        "id": "j11-q01",
+        "text": "Implement Python data-processing code with recovery behavior.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q02",
+        "text": "Use SQL to reconcile records and investigate duplicates.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q03",
+        "text": "Build repeatable ETL flows with traceable source identifiers.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q04",
+        "text": "Orchestrate dependencies, retries and backfills using Airflow.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q05",
+        "text": "Implement data quality checks before publishing datasets.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q06",
+        "text": "Document source-to-target mappings and dataset grain.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q07",
+        "text": "Operate a Snowflake warehouse beyond coursework.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j11-q08",
+        "text": "Implement distributed event streaming with Kafka.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Role context informed by GitLab; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  },
+  {
+    "id": "j12",
+    "family": "data",
+    "title": "Junior Analytics Engineer",
+    "fictional": true,
+    "text": "Junior Analytics Engineer\nFICTIONAL JOB DESCRIPTION — NOT AN OPEN VACANCY\n\nROLE PURPOSE\nDevelop reviewed analytical models for a fictional operations team. Start from a defined business question and explain which records belong in the answer. Keep models, tests and documentation consistent when a source changes. Seek senior review for unfamiliar designs or sensitive data. This is an individual contributor role with guidance rather than an independent platform architecture position.\n\nREQUIRED EXPERIENCE\n- Build SQL transformations at an explicit business grain.\n- Implement dimensional fact and dimension models.\n- Write data tests and investigate failed checks.\n- Maintain metadata, lineage and column documentation.\n- Clarify metric populations with non-technical stakeholders.\n- Apply secure handling rules to analytical data.\n\nPREFERRED EXPERIENCE\n- Implement a dbt project with tests and documentation.\n- Implement Python data processing beyond introductory learning.\n\nDELIVERY EXPECTATIONS\nExplain an implementation decision, show how a failure was investigated, and describe how another colleague could maintain the result. Work in small reviewed increments, document assumptions and raise uncertainty early. Evidence may come from employment or clearly identified projects; a skills list alone does not establish delivered work.\n\nWORKING CONDITIONS\nThis fictional role uses asynchronous collaboration. Location, work authorization, compensation and availability are unspecified and must not be inferred from a technical match score.\n",
+    "source_ids": [
+      "gov_analytics",
+      "gov_data"
+    ],
+    "requirements": [
+      {
+        "id": "j12-q01",
+        "text": "Build SQL transformations at an explicit business grain.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q02",
+        "text": "Implement dimensional fact and dimension models.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q03",
+        "text": "Write data tests and investigate failed checks.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q04",
+        "text": "Maintain metadata, lineage and column documentation.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q05",
+        "text": "Clarify metric populations with non-technical stakeholders.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q06",
+        "text": "Apply secure handling rules to analytical data.",
+        "priority": "required",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q07",
+        "text": "Implement a dbt project with tests and documentation.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      },
+      {
+        "id": "j12-q08",
+        "text": "Implement Python data processing beyond introductory learning.",
+        "priority": "preferred",
+        "provenance": "fixture_defined_requirement_informed_by_role_profile"
+      }
+    ],
+    "origin": "original_fictional_job_informed_by_public_role_profiles_not_source_vacancy",
+    "license": "OGL-UK-3.0",
+    "attribution": "Role context informed by UK Government Digital and Data Profession; rewritten and expanded with fictional requirements by ATS Auditor contributors. No endorsement implied.",
+    "review_status": "author_reviewed_pending_independent_review",
+    "eligibility": {
+      "location": "unspecified",
+      "work_authorization": "unspecified",
+      "compensation": "unspecified"
+    }
+  }
+]

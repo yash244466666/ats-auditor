@@ -7,6 +7,7 @@
 - Work against the current repository HEAD; treat docs/PROJECT_STATUS.md as a dated record, not a live monitor.
 - Make scoped, tested changes on dev/a review branch; open a PR and pass required Python 3.11/3.12/3.13 and Docker checks before **squash-merging** into protected main.
 - Distinguish experimental ATS matching scores from hiring decisions and proprietary ATS outputs. Never fabricate experience or benchmark accuracy.
+- Read `benchmarks/quality_v1/README.md` before evaluating the fresh corpus; validate data without scoring, preserve frozen inputs and never call author-only labels independent gold truth.
 - Use **fictional** resumes and job postings in tests, demos and live MCP smoke calls. The public production /mcp endpoint currently has **no authentication**; its future implementation is deferred, not optional for sensitive data.
 - Preserve production MCP's stateless full-resume/full-job requirement and both text and structured tool responses; don't regress the prior empty-response bug.
 - Never expose SSH private keys, passwords, GitHub secrets or applicant data in commits, logs or chat.

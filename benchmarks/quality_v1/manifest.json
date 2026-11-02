@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "corpus_id": "quality-v1",
+  "created_on": "2026-11-02",
+  "source_repository_commit": "f802ecf9f3dd11ee8848700e802acfcd8f6eeacd",
+  "split": "prospective_evaluation_candidate_not_calibration",
+  "scoring_status_at_freeze": "not_run_on_this_corpus",
+  "external_provider_scores_available": false,
+  "review_status": "single_author_review_pending_independent_adjudication",
+  "files": {
+    "sources.json": "42b4698755af0fb1a284454a0d2c0fd77d66ed03ad28f8fd5a18804cc5e8beb0",
+    "resumes.json": "29207edc55f72614639963709dad1de882273114887d90c168c01bf5eab27738",
+    "jobs.json": "79d8c1a94a70c98105f56b9a0623d141ab47c30056cd2855da0efe4286d49d67",
+    "labels.json": "2ba6b4870a018e7fb9eeafbccd4ec4c3ed26c44ab1ec421c1d685fe0ae5257a8"
+  },
+  "limitations": [
+    "Synthetic profiles are not a sample of real applicants.",
+    "Public role profiles are not active vacancies; fictional requirements are explicitly authored.",
+    "Labels are author judgments, not employer ATS ground truth or independently validated gold labels.",
+    "No independent holdout accuracy, provider parity or hiring prediction is established.",
+    "Only 36 anchor pairs have requirement labels; the other cross-pairs are unlabelled.",
+    "Once used for tuning, move this corpus to development and collect a fresh evaluation set."
+  ]
+}

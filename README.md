@@ -4,6 +4,8 @@
 
 **Open source:** MIT License; see [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md), and [SECURITY.md](SECURITY.md).
 
+**Test data:** See the [data-quality audit](docs/DATA_QUALITY_AUDIT.md) and [quality-v1 corpus](benchmarks/quality_v1/README.md): 12 fictional resumes, 12 source-informed fictional job descriptions and 36 requirement-annotated anchor pairs. Labels are author judgments pending independent review, not ATS ground truth. The adapted job fixtures carry separately documented CC BY-SA 4.0 / Open Government Licence notices; the scoring code remains MIT. Validate without scoring using `python benchmarks/validate_quality_corpus.py`.
+
 **Status:** v0.4.0 developer preview. This project is independently developed and is not affiliated with, endorsed by, or a copy of Upplai. Its estimated scores are heuristic and do not represent actual employer ATS decisions or predict hiring outcomes. The benchmark dataset is small and includes calibration cases; reported fit must not be mistaken for external validation.
 
 **Current security limitation:** The production MCP endpoint is currently public **without authentication**; authentication is deferred. Do **not** submit real resumes, private job descriptions or other sensitive personal data until authorization, rate limits and tenant isolation are implemented. Use fictional test data. See [SECURITY.md](SECURITY.md).

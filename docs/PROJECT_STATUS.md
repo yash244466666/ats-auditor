@@ -28,6 +28,8 @@
 
 ## Documentation pointers
 
+- **Test-data collection (2026-11-02):** [Audit](DATA_QUALITY_AUDIT.md) and [quality-v1](../benchmarks/quality_v1/README.md) add 12 fictional resumes, 12 fictional source-informed jobs, 36 anchor pairs and 288 requirement-evidence annotations. New inputs were frozen before scoring; independent label adjudication and stress execution remain pending. This collection is not an accuracy result or a deployment verification.
+
 - [Project README](../README.md): scoring modes and local or MCP usage.
 - [VPS deployment](../deploy/README.md): SSH gate, CI/CD, Caddy and ports.
 - [Security policy](../SECURITY.md): current unauthenticated-exposure warning.
