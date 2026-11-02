@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**Open source:** MIT License; see [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md), and [SECURITY.md](SECURITY.md).
+**Open source:** independently written code is MIT; see [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md), and [SECURITY.md](SECURITY.md). The bundled SkillSpan-derived phrase data has a separate [CC BY 4.0 notice](src/ats_auditor/data/SKILLSPAN_NOTICE.md).
 
 **Status:** v0.4.0 developer preview. This project is independently developed and is not affiliated with, endorsed by, or a copy of Upplai. Its estimated scores are heuristic and do not represent actual employer ATS decisions or predict hiring outcomes. The benchmark dataset is small and includes calibration cases; reported fit must not be mistaken for external validation.
 
@@ -93,7 +93,13 @@ ChatGPT cannot connect to `localhost` on the VPS. The published URL is `https://
 
 **Legacy frequency** (`legacy_frequency`): Prior v0.2 count-based heuristic, preserved for backwards-compatible experiments.
 
-**Evidence**: Rewards contextual project achievements, quantified results, and verified technical usage; repeated keywords alone receive limited additional credit and can incur a penalty. This mode is more suitable for resume optimization.
+**Evidence**: Rewards action-based examples and quantified results, with limited credit for self-attested mentions. English scope rules exclude explicit denials, discount learning-only mentions, and exclude detected long overlaps with the supplied job text. Repeated keywords alone receive limited additional credit and can incur a penalty. This does not verify employment or competence.
+
+**Requirement fit** (`requirement_fit`): Recognized requirements receive 0.85 credit for contextual examples, 0.68 for self-attestation, 0.15 for learning-only mentions and zero for excluded/absent mentions. It shares the evidence guards but uses independent requirement weights rather than compatibility calibration. The API, core and MCP accept this mode; check CLI options separately.
+
+Evidence and requirement fit combine the existing vocabulary with a small phrase lexicon derived **only from SkillSpan's training split**. Runtime scoring stays local and deterministic, without external models or network calls. Equivalent experience headings and horizontal spacing are normalized for these modes. Inputs require at least 100 non-whitespace resume characters and 50 job characters.
+
+See [extraction and evidence changes](docs/EXTRACTION_EVIDENCE.md) for methods, reproducibility and limits. Short/paraphrased copies and complicated denials can evade these heuristics; genuine text identical to a job passage can also be discounted. A change in score is not proof of improved hiring accuracy.
 
 Neither is an actual employer ATS decision. Both work on extracted text, not on actual PDF/DOCX layout. Production layout analysis would need a separate document-parsing stage.
 

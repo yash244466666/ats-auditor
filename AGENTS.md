@@ -4,6 +4,8 @@
 
 ## Non-negotiable defaults
 
+- For evidence or requirement-fit changes, read `docs/EXTRACTION_EVIDENCE.md`; preserve compatibility/legacy behavior, training-only lexicon provenance, separate data license, and explicit heuristic limitations.
+
 - Read `benchmarks/public_skillspan/README.md` before running the public extraction benchmark. Keep external data in the ignored cache and extraction metrics separate from resume-fit claims; tests use fictional text only.
 
 - Work against the current repository HEAD; treat docs/PROJECT_STATUS.md as a dated record, not a live monitor.

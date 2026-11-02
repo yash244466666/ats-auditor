@@ -217,7 +217,7 @@ def _formatting_checks(text: str) -> list[str]:
     warnings = []
     if not re.search(r"[\w.+-]+@[\w.-]+\.\w+", text):
         warnings.append("No email address detected in plain text.")
-    if not re.search(r"(?im)^\s*(?:experience|work experience|employment)\s*$", text):
+    if not re.search(r"(?im)^\s*(?:experience|work\s+experience|professional\s+experience|employment|work\s+history)\s*:?\s*$", text):
         warnings.append("No separate Experience heading detected.")
     if len(text.split()) < 150:
         warnings.append("Resume appears unusually short; provide the complete document.")
@@ -247,7 +247,7 @@ def score_resume(resume_text: str, job_description: str, mode: str = "compatibil
         raise ValueError("mode must be compatibility, evidence, legacy_frequency, or requirement_fit")
     if not resume_text.strip() or not job_description.strip():
         raise ValueError("Full resume_text and job_description are required")
-    if len(resume_text.strip()) < 100 or len(job_description.strip()) < 50:
+    if len("".join(resume_text.split())) < 100 or len("".join(job_description.split())) < 50:
         raise ValueError("The input appears incomplete; provide the full resume and job description")
     if mode == "requirement_fit":
         from .requirement_fit import role_fit_score
@@ -270,18 +270,16 @@ def score_resume(resume_text: str, job_description: str, mode: str = "compatibil
                                 for k in output["keywords"] if not k["present"]][:8],
         })
         return output
+    if mode == "evidence":
+        return _score_evidence(resume_text, job_description, max_keywords)
     discovered = extract_keywords(job_description, max_keywords=max_keywords)
     if not discovered:
         raise ValueError("No supported job keywords found; extend the catalog for this field")
     metrics = [keyword_scores(k["term"], k["importance"], resume_text) for k in discovered]
     weights = [_weight(x["importance"]) for x in metrics]
-    scoring_key = "evidence_score" if mode == "evidence" else "score"
+    scoring_key = "score"
     raw = sum(m[scoring_key] * w for m, w in zip(metrics, weights)) / sum(weights)
     stuffing = _stuffing_signals(resume_text, metrics)
-    # Preserve the experimental compatibility behavior, but apply a penalty
-    # to the evidence-oriented result to discourage ATS gaming.
-    if mode == "evidence" and stuffing:
-        raw -= min(25, 8 * len(stuffing))
     overall = _round(raw)
     return {
         "overall_score": overall,
@@ -289,7 +287,7 @@ def score_resume(resume_text: str, job_description: str, mode: str = "compatibil
         "keywords": [{"keyword": m["keyword"], "present": m["present"],
                       "importance": m["importance"], "score": m[scoring_key]} for m in metrics],
         "details": {"mode": mode,
-                    "scoring_method": "original frequency-sensitive heuristic (legacy)" if mode == "legacy_frequency" else "independent contextual evidence heuristic",
+                    "scoring_method": "original frequency-sensitive heuristic (legacy)",
                     "keyword_evidence": [{"keyword": m["keyword"], "occurrences": m["occurrences"],
                                           "evidence": m["evidence"], "note": m["detail"]} for m in metrics],
                     "format_warnings": _formatting_checks(resume_text),
@@ -299,4 +297,45 @@ def score_resume(resume_text: str, job_description: str, mode: str = "compatibil
                     "limitations": ["Not an official ATS score or prediction of a hiring decision.",
                                     "Upplai's private internal implementation is not available.",
                                     "Plain text cannot verify document layout, file corruption or ATS-specific parsing."]},
+    }
+
+
+def _score_evidence(resume: str, job: str, max_keywords: int) -> dict[str, Any]:
+    from .evidence import assess_keyword, prepare_evidence
+    from .phrases import extract_requirements
+    from .requirement_fit import VOCAB, STOP_TERMS
+
+    discovered = extract_requirements(job, (t for t in VOCAB if t.name.casefold() not in STOP_TERMS), max_keywords)
+    if not discovered:
+        raise ValueError("No supported job requirements found; broader vocabulary is needed")
+    document = prepare_evidence(resume, job)
+    metrics = [{**assess_keyword(k["term"], document), "importance": k["importance"],
+                "origin": k["origin"]} for k in discovered]
+    weights = [_weight(m["importance"]) for m in metrics]
+    raw = sum(m["evidence_score"] * w for m, w in zip(metrics, weights)) / sum(weights)
+    stuffing = _stuffing_signals(resume, metrics)
+    if stuffing:
+        raw -= min(25, 8 * len(stuffing))
+    return {
+        "overall_score": _round(raw),
+        "keyword_coverage": {"matched": sum(m["present"] for m in metrics), "total": len(metrics)},
+        "keywords": [{"keyword": m["keyword"], "present": m["present"],
+                      "importance": m["importance"], "score": m["evidence_score"]} for m in metrics],
+        "details": {
+            "mode": "evidence", "scoring_method": "independent contextual evidence with negation and job-overlap guards",
+            "keyword_evidence": [{"keyword": m["keyword"], "occurrences": m["occurrences"],
+                                  "evidence": m["evidence"], "note": m["detail"],
+                                  "status": m["status"], "excluded": m["excluded"],
+                                  "origin": m["origin"]} for m in metrics],
+            "format_warnings": _formatting_checks(resume),
+            "keyword_stuffing_warnings": stuffing,
+            "job_text_overlap_ranges": len(document.copied),
+            "recommendations": [f"Show a genuine project example demonstrating {m['keyword']}."
+                                for m in metrics if m["evidence_score"] < 65][:8],
+            "limitations": ["Not an official ATS score or prediction of a hiring decision.",
+                            "Self-attested mentions still receive limited credit; employment is not verified.",
+                            "English scope and copied-text guards are heuristics; short copies and paraphrases may pass.",
+                            "Training-derived phrases do not cover all requirements or semantic equivalents.",
+                            "Plain text cannot verify actual document layout."],
+        },
     }

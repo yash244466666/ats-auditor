@@ -22,6 +22,8 @@ See [the dated project status](docs/PROJECT_STATUS.md) and [VPS deployment notes
 
 ## Local public-data evaluation
 
+Evidence/requirement-fit scoring now loads a small bundled training-derived phrase file locally; its [separate data notice](src/ats_auditor/data/SKILLSPAN_NOTICE.md) applies. Denial and job-overlap filters are scoring heuristics, **not security boundaries or authentication**. No runtime model download, remote processing or new authorization is introduced. Real/private applicant data must still not be submitted to the public MCP endpoint.
+
 The [SkillSpan benchmark](benchmarks/public_skillspan/README.md) downloads pinned public job-posting annotations only when explicitly requested with `--download`. Cached data is git-ignored and checksum-verified; tracked results contain aggregate counts and provenance. It makes no requests to our public scoring endpoint and imports no real applicant resumes. This does not change the deferred production authentication decision or permit confidential data on the public MCP service.
 
 ## Disclosure

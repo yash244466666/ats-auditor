@@ -28,6 +28,8 @@
 
 ## Documentation pointers
 
+- **Extraction/evidence follow-up (2026-11-03, review branch):** [Implementation](EXTRACTION_EVIDENCE.md) adds training-only phrase data, infrastructure vocabulary and shared English negation/learning/job-overlap guards for evidence and requirement fit. Equivalent headings/spacing and non-whitespace validation are covered. Compatibility/legacy formulas remain separate; runtime deployment and deferred authentication have not changed. Post-change evaluation records are separate from the original baseline.
+
 - **Public extraction benchmark (review branch, 2026-11-02 UTC):** [SkillSpan protocol](../benchmarks/public_skillspan/README.md) adds pinned external expert skill/knowledge labels, source/data hash checks, exact-span metrics and overlap diagnostics. The [recorded baseline](../benchmarks/public_skillspan/RESULTS.md) reports requirement-fit catalog precision 59.06%, recall 11.08%, F1 18.66% across 3,569 official test sentence records and 2,265 gold spans. These uncapped vocabulary scans are not full scoring modes or real-world resume-fit accuracy. Runtime scoring, production deployment and deferred authentication are unchanged.
 
 - [Project README](../README.md): scoring modes and local or MCP usage.

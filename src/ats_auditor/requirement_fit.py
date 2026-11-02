@@ -5,8 +5,7 @@ Count each canonical requirement once: repetitions do not inflate fit.
 """
 from __future__ import annotations
 
-from collections import defaultdict
-from .engine import CATALOG, Keyword, _occurrences, _round, _sectioned_lines
+from .engine import CATALOG, Keyword, _round
 from .source_approx import EXTENDED
 
 EXTRA = '''
@@ -79,6 +78,12 @@ API contracts
 Testing Library
 Stripe
 API design
+Linux
+Prometheus
+Grafana
+Bash
+Service level objectives|SLO|SLOs
+Site reliability engineering|SRE
 
 '''
 STOP_TERMS={'software','production','performance','frontend','backend','api','APIs',
@@ -101,39 +106,32 @@ def vocab():
 VOCAB=vocab()
 
 def role_fit_score(resume_text:str, job_description:str, top_n:int=80) -> dict:
-    if len(resume_text.strip()) <100 or len(job_description.strip()) <50:
+    if len(''.join(resume_text.split())) <100 or len(''.join(job_description.split())) <50:
         raise ValueError('Full resume and job description required')
-    lines=_sectioned_lines(resume_text)
-    # Prefer longer distinctive terms when overlaps would double-count adjacent synonyms.
-    recognized=[]
-    for term in VOCAB:
-        count=len(_occurrences(term,job_description))
-        if count==0 or term.name.casefold() in STOP_TERMS:continue
-        recognized.append((term,count))
-    recognized.sort(key=lambda z:(-z[1],-len(z[0].name)))
-    recognized=recognized[:top_n]
+    from .evidence import assess_keyword, prepare_evidence
+    from .phrases import extract_requirements
+
+    document = prepare_evidence(resume_text, job_description)
+    recognized = extract_requirements(job_description,
+                                     (t for t in VOCAB if t.name.casefold() not in STOP_TERMS), top_n)
     if not recognized:
         raise ValueError('No supported requirements found; need broader domain vocabulary')
     rows=[]; total=0.; found=0.
-    for term,j_n in recognized:
-        r_n=len(_occurrences(term,resume_text))
-        title_hits=len(_occurrences(term,job_description[:140]))
+    for requirement in recognized:
+        term, j_n = requirement['term'], requirement['job_mentions']
+        assessment = assess_keyword(term, document)
+        title_hits = any(start < 140 for start, _ in requirement['spans'])
         weight=1.0 + (0.75 if j_n >=3 else 0.45 if j_n==2 else 0.0) + (0.7 if title_hits else 0.0)
-        # Skills list is a self-attestation, experience evidence provides context.
-        contexts=[]
-        for sec,line in lines:
-            if _occurrences(term,line):
-                if ('experience' in sec or 'project' in sec) or line[:1] in ('*','-','•'):
-                    contexts.append(line[:220])
-                elif any(word in line.casefold() for word in ('built ','designed ','implemented ','developed ','tested ','reviewed ','deployed ','optimized ')):
-                    contexts.append(line[:220])
+        contexts = [e['text'] for e in assessment['evidence']]
         # Partial credibility for self-attested skills, full credit for contextual examples.
-        credit = 0.0 if not r_n else (0.85 if contexts else 0.68)
+        credit = (0.85 if contexts else 0.68) if assessment['accepted_mentions'] else (
+            0.15 if assessment['learning_mentions'] else 0.0)
         total+=weight
         found+=weight*credit
-        rows.append({'keyword':term.name,'present':bool(r_n),'job_mentions':j_n,
+        rows.append({'keyword':term.name,'present':assessment['present'],'job_mentions':j_n,
                     'weight':round(weight,2),'credit':round(credit,2),
-                    'evidence':contexts[:2]})
+                    'evidence':contexts[:2], 'status': assessment['status'],
+                    'excluded': assessment['excluded'], 'origin': requirement['origin']})
     score=_round(100*found/total)
     rows.sort(key=lambda r:(-r['weight'], -r['job_mentions'],r['keyword']))
     return {'overall_score':score,'keyword_coverage':{'matched':sum(r['present'] for r in rows),'total':len(rows)},
@@ -141,8 +139,11 @@ def role_fit_score(resume_text:str, job_description:str, top_n:int=80) -> dict:
                          'high' if r['weight']>=2 else 'medium' if r['weight']>=1.45 else 'low',
                          'score':_round(r['credit']*100)} for r in rows],
             'details':{'mode':'requirement_fit',
-                       'scoring_method':'independent requirement coverage with contextual evidence discount; not calibrated to Upplai',
+                       'scoring_method':'independent requirement coverage with negation and job-overlap guards; not calibrated to Upplai',
                        'requirement_weights':rows,
+                       'job_text_overlap_ranges':len(document.copied),
                        'limitations':['Skills written in a resume are claims, not verification.',
+                                      'Learning-only mentions receive limited credit, not delivered-work credit.',
+                                      'Negation and copied-text guards are English heuristics; paraphrases and short copies may pass.',
                                       'Text-only assessment; eligibility and document layout assessed separately.',
                                       'Industry-specific vocabulary is incomplete.']}}

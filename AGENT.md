@@ -131,6 +131,8 @@ Always run targeted tests for modified code and the full suite before a release.
 
 ## 7. Data ethics, benchmarking and evaluation rules
 
+- Current evidence/requirement-fit implementation: read [docs/EXTRACTION_EVIDENCE.md](docs/EXTRACTION_EVIDENCE.md). `phrases.py` merges catalog aliases and a training-only CC BY 4.0 phrase artifact; `evidence.py` applies English denial/learning/job-overlap guards. Compatibility and legacy numerical behavior stay separate. Do not claim these heuristics verify employment or semantic/hiring accuracy; preserve the artifact's distinct license and immutable original baseline.
+
 - The [public SkillSpan adapter](benchmarks/public_skillspan/README.md) evaluates uncapped existing vocabulary spans against external expert annotations, not complete scoring modes or hiring accuracy. Cache downloaded job annotations outside tracked source; pin and verify hashes, preserve official/diagnostic split results, and record protocols before evaluation. Unit tests remain fictional and offline. Do not tune against observed test results and continue calling them untouched.
 
 - Use **fictional data** in repository tests and demos. Do not copy real resumes or applicant identities into tracked files, prompts, public logs or PRs.

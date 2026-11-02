@@ -83,6 +83,8 @@ The Docker image starts **ats-auditor-mcp**, not the FastAPI demo. A passing /he
 
 ### Scoring review criteria
 
+Read `docs/EXTRACTION_EVIDENCE.md` for the shared evidence guards and training-only phrase extractor. Keep `evidence.py`/`phrases.py` separate from historical compatibility and legacy scoring; preserve bundled data attribution, actual non-whitespace minimums, excluded-mention explanations and MCP wire tests. Do not call observed-test or fictional behavioral results real-world hiring accuracy.
+
 For external extraction evaluation, read `benchmarks/public_skillspan/README.md`. The offline runner checks pinned data hashes and reports exact-span metrics for uncapped catalog scans, not resume-fit accuracy. External data stays in an ignored cache; CI unit tests use fictional sentences with no network download. Keep observed test baselines distinct from future untouched holdouts.
 
 When changing a scorer:

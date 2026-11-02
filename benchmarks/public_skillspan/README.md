@@ -1,5 +1,7 @@
 # Public SkillSpan extraction benchmark
 
+This page describes the **initial baseline** at evaluator commit `21b62d44674769b7fc89485812ba37d7fbded99f`; check out that commit to reproduce its exact catalogs. Later [phrase/evidence changes](../../docs/EXTRACTION_EVIDENCE.md) have a separate comparison runner and records. The historical baseline results remain immutable.
+
 This benchmark evaluates existing ATS Auditor vocabularies against externally authored expert skill/knowledge annotations. It does **not** measure resume fit, employer ATS scores, evidence verification, or hiring outcomes. No new model, runtime dependency, or scoring change is introduced.
 
 [First recorded baseline and limitations](RESULTS.md).

@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
-from typing import Any, Iterable
+from typing import Any, Callable, Iterable
 from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,11 +142,12 @@ def metrics(tp: int, fp: int, fn: int) -> dict[str, Any]:
     }
 
 
-def evaluate(rows: list[dict], terms: Iterable[Keyword]) -> dict:
+def evaluate(rows: list[dict], terms: Iterable[Keyword],
+             predictor: Callable | None = None) -> dict:
     totals: Counter = Counter()
     terms = tuple(terms)
     for row in rows:
-        predicted, unaligned = catalog_spans(row["tokens"], terms)
+        predicted, unaligned = (predictor or catalog_spans)(row["tokens"], terms)
         skill, skill_orphans = bio_spans(row["tags_skill"])
         knowledge, knowledge_orphans = bio_spans(row["tags_knowledge"])
         gold = skill | knowledge

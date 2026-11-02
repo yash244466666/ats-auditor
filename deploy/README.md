@@ -114,6 +114,8 @@ docker exec caddy caddy reload   --config /etc/caddy/Caddyfile --adapter caddyfi
 
 ## Dependency note
 
+The evidence/requirement-fit improvements package a small local JSON phrase lexicon and attribution notice via setuptools package data. No new runtime dependency, model fetch or VPS background task is needed. See [implementation and validation](../docs/EXTRACTION_EVIDENCE.md). These review-branch changes have not been deployed; authentication remains intentionally deferred.
+
 The [public SkillSpan benchmark](../benchmarks/public_skillspan/README.md) is a local/offline evaluation tool, not a production service. It introduces no runtime dependency or VPS task. Do not download corpora onto the VPS or send applicant data to the unauthenticated MCP endpoint for benchmark work. CI tests the adapter using fictional inputs without network downloads.
 
 `pyproject.toml` pins `mcp>=1.28,<2`. The server uses `FastMCP`; mcp 2.x renamed

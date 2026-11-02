@@ -19,3 +19,5 @@ __pycache__/
 analysis_truey_*.json
 # External datasets remain local; recorded runs contain aggregate metrics only.
 benchmarks/.cache/
+build/
+dist/
