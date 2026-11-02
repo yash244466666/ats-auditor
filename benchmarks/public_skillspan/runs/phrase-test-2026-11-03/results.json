@@ -1,0 +1,125 @@
+{
+  "by_source": {
+    "house": {
+      "document_keys_within_split": 34,
+      "knowledge_span_recall": {
+        "gold": 368,
+        "matched": 43,
+        "recall": 0.116848
+      },
+      "orphan_i_starts_treated_as_b": 0,
+      "sentences": 1283,
+      "skill_span_recall": {
+        "gold": 651,
+        "matched": 9,
+        "recall": 0.013825
+      },
+      "unaligned_character_matches_excluded": 8,
+      "union_exact_span": {
+        "f1": 0.094631,
+        "false_negative": 967,
+        "false_positive": 28,
+        "precision": 0.65,
+        "recall": 0.05103,
+        "true_positive": 52
+      }
+    },
+    "tech": {
+      "document_keys_within_split": 31,
+      "knowledge_span_recall": {
+        "gold": 806,
+        "matched": 248,
+        "recall": 0.307692
+      },
+      "orphan_i_starts_treated_as_b": 1,
+      "sentences": 2286,
+      "skill_span_recall": {
+        "gold": 440,
+        "matched": 32,
+        "recall": 0.072727
+      },
+      "unaligned_character_matches_excluded": 53,
+      "union_exact_span": {
+        "f1": 0.332147,
+        "false_negative": 966,
+        "false_positive": 160,
+        "precision": 0.636364,
+        "recall": 0.224719,
+        "true_positive": 280
+      }
+    }
+  },
+  "new_phrase_extractor": {
+    "document_keys_within_split": 65,
+    "knowledge_span_recall": {
+      "gold": 1174,
+      "matched": 291,
+      "recall": 0.247871
+    },
+    "orphan_i_starts_treated_as_b": 1,
+    "sentences": 3569,
+    "skill_span_recall": {
+      "gold": 1091,
+      "matched": 41,
+      "recall": 0.03758
+    },
+    "unaligned_character_matches_excluded": 61,
+    "union_exact_span": {
+      "f1": 0.23842,
+      "false_negative": 1933,
+      "false_positive": 188,
+      "precision": 0.638462,
+      "recall": 0.146578,
+      "true_positive": 332
+    }
+  },
+  "recorded_catalog_baseline": {
+    "document_keys_within_split": 65,
+    "knowledge_span_recall": {
+      "gold": 1174,
+      "matched": 248,
+      "recall": 0.211244
+    },
+    "orphan_i_starts_treated_as_b": 1,
+    "sentences": 3569,
+    "skill_span_recall": {
+      "gold": 1091,
+      "matched": 3,
+      "recall": 0.00275
+    },
+    "unaligned_character_matches_excluded": 58,
+    "union_exact_span": {
+      "f1": 0.186617,
+      "false_negative": 2014,
+      "false_positive": 174,
+      "precision": 0.590588,
+      "recall": 0.110817,
+      "true_positive": 251
+    }
+  },
+  "split": "test",
+  "unique_absent_earlier_splits": {
+    "document_keys_within_split": 65,
+    "knowledge_span_recall": {
+      "gold": 994,
+      "matched": 221,
+      "recall": 0.222334
+    },
+    "orphan_i_starts_treated_as_b": 1,
+    "sentences": 2404,
+    "skill_span_recall": {
+      "gold": 1041,
+      "matched": 21,
+      "recall": 0.020173
+    },
+    "unaligned_character_matches_excluded": 50,
+    "union_exact_span": {
+      "f1": 0.197309,
+      "false_negative": 1793,
+      "false_positive": 176,
+      "precision": 0.578947,
+      "recall": 0.118919,
+      "true_positive": 242
+    }
+  }
+}

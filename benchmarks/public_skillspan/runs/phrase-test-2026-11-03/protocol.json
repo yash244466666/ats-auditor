@@ -1,0 +1,51 @@
+{
+  "baseline_result_sha256": "ce3493d50fe25e3e82497fd33432e277c9c7a8ad83694091c250b741b479e667",
+  "coefficient_fitting": false,
+  "dataset_commit": "2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b",
+  "dataset_sha256": {
+    "dev": "3732937c6869fe191c749b4efe7ffd597ce84eea1192f09b7fe3bd1eb459e2b4",
+    "test": "8438eda34939a5877b984ea5daf9e6ff39b2d5c7e3d73cca0499d3de3784d24a",
+    "train": "5e884c3426087d14fc437d328eb72132082edbfe1e776292ae0e6e9b36c1e1f6"
+  },
+  "git_commit": "f3731c066271052f74f5ac1a4a4dd79acc65b45d",
+  "lexicon_training": {
+    "dataset_commit": "2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b",
+    "license": "CC-BY-4.0",
+    "license_card": "https://huggingface.co/datasets/jjzha/skillspan/blob/main/README.md",
+    "rules": {
+      "max_normalized_tokens": 12,
+      "min_distinct_training_documents": 2,
+      "min_training_exact_span_precision": 0.8
+    },
+    "schema_version": 1,
+    "source": "SkillSpan: Zhang, Jensen, Sonniks and Plank (NAACL 2022)",
+    "source_url": "https://github.com/kris927b/SkillSpan",
+    "split_used": "train",
+    "training_sha256": "5e884c3426087d14fc437d328eb72132082edbfe1e776292ae0e6e9b36c1e1f6"
+  },
+  "method": "Uncapped runtime phrase extractor with explicit-negative job filtering; exact untyped spans",
+  "python": "3.12.14",
+  "resume_fit_or_hiring_accuracy": false,
+  "schema_version": 1,
+  "source_sha256": {
+    "benchmarks/build_skillspan_lexicon.py": "de179740b45738cb88b11747289db0d3c99fd0c1ef20072d3f22177277a9cf62",
+    "benchmarks/compare_phrase_extraction.py": "97be17cca74ca1014a25133fddab8d9abc17be29bb49ac1366ff69f704d1fb03",
+    "benchmarks/evaluate_skillspan.py": "be37fbd030e4a1958d097a586faa1e45e82e97cd4e79a6748298ee10619b4547",
+    "src/ats_auditor/__init__.py": "5936e7afaf635f5d8c57b7cbf0e1e56be8078eb2f9f4668a9ab6587b9b1b5c78",
+    "src/ats_auditor/api.py": "aa23414a54734b213a3e0ac7c96b985dcfbfa0b6b31991e518c9a30e568c6467",
+    "src/ats_auditor/cli.py": "f01b25dff27a9dd396832207a8b449a3a3bc13ec18133f0fc4a1a1814f35cb90",
+    "src/ats_auditor/data/skillspan_phrases.json": "99035853e961a065871021cc98d9cef4b5cf998542ecb1e80afc9867b25bdf41",
+    "src/ats_auditor/engine.py": "c18c6da2919a7466891b13a6e0d42f820d2721490f3db8b8c18490b74307e7ef",
+    "src/ats_auditor/evidence.py": "ba69420259ed7eb4a4aefb1d5fcfc1d88b4424ba12f389929cdc59c81b00f059",
+    "src/ats_auditor/mcp_server.py": "dcf99add268fb33671bf0eeb7c4c12c4b2514e274fbdac84fd5f78d0ae98fe9f",
+    "src/ats_auditor/phrases.py": "4c75e05f1b9db9e46739f3f5c880a2f990e7ef70d6770acbdb97a3b672f0e939",
+    "src/ats_auditor/requirement_fit.py": "9915be81eb932294b91f2d85fa4682bb303b149421629de9ece9f7f285455008",
+    "src/ats_auditor/service.py": "a3a34394e85603576836fc120886446f8c643f3ea861fdfb4c7566bc7a514e74",
+    "src/ats_auditor/source_approx.py": "453f54603df1c28fcb6b2aab28ba35f79fc92cf2003034c457a5c6b38c59c187"
+  },
+  "split": "test",
+  "started_at_utc": "2026-11-02T22:36:44.935405+00:00",
+  "test_status": "Observed benchmark; not a new untouched holdout",
+  "test_used_to_build_lexicon": false,
+  "tracked_working_tree_dirty": false
+}

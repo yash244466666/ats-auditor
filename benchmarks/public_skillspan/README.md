@@ -6,6 +6,8 @@ This benchmark evaluates existing ATS Auditor vocabularies against externally au
 
 [First recorded baseline and limitations](RESULTS.md).
 
+[Post-change results](IMPROVEMENTS_2026-11-03.md) record the subsequent phrase/evidence implementation against frozen source, without overwriting the initial baseline.
+
 ## Data and attribution
 
 SkillSpan, by Mike Zhang, Kristian Jensen, Sif Sonniks and Barbara Plank, NAACL 2022: [paper](https://aclanthology.org/2022.naacl-main.366/), [repository](https://github.com/kris927b/SkillSpan), [author dataset card](https://huggingface.co/datasets/jjzha/skillspan/blob/main/README.md).

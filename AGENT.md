@@ -50,6 +50,8 @@ Some benchmark write-ups are historical and may still mention an older, untested
 | src/ats_auditor/engine.py | Canonical score_resume dispatcher, keyword catalog, legacy-frequency and evidence heuristics, formatting and stuffing checks. |
 | src/ats_auditor/source_approx.py | Broad vocabulary, empirical calibration and compatibility score. |
 | src/ats_auditor/requirement_fit.py | Independent weighted requirements coverage with contextual evidence credit. |
+| src/ats_auditor/evidence.py | Shared English denial/learning/job-overlap guards for evidence and requirement-fit modes; not compatibility calibration. |
+| src/ats_auditor/phrases.py, data/skillspan_phrases.json | Local phrase matching and training-only CC BY 4.0 lexicon; preserve its separate attribution notice. |
 | src/ats_auditor/service.py | ATSService.analyze validation, result IDs, local session state and format_report output. |
 | src/ats_auditor/api.py | FastAPI local/dev UI and JSON endpoints with optional ATS_API_KEY protection. |
 | src/ats_auditor/static/index.html | Static browser UI served by the FastAPI app. |

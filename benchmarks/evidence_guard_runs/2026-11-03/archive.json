@@ -1,0 +1,9 @@
+{
+  "archive_bytes": 7193,
+  "archive_file": "results.json.gz",
+  "archive_sha256": "75530b97453905bb0cc738585949116cfad5a38e6ccbd6eba940b30ada74c5fb",
+  "format": "gzip of full original results.json; all 1440 observations retained",
+  "original_bytes": 192819,
+  "original_file": "results.json",
+  "original_sha256": "ba7daa4703b9a3b327974cf764f0878eb0f2fe41eb144f9052c0d15e9d2a3bf0"
+}

@@ -2,6 +2,8 @@
 
 Review-branch change, 2026-11-03 (Asia/Dhaka). Production has not been updated by this work. The endpoint remains public and unauthenticated; use fictional data for public tests.
 
+[Recorded post-change results and limitations](../benchmarks/public_skillspan/IMPROVEMENTS_2026-11-03.md): exact-span F1 18.66% → 23.84%; no gains from the tested copies/denials in 36 known fictional pairs per conservative mode. Recall remains only 14.66%; no overall ATS accuracy is established.
+
 ## What changes
 
 Evidence and requirement-fit scoring now share requirement extraction and evidence classification. Compatibility keeps its existing empirical formula, vocabulary and frequency behavior; legacy frequency keeps its historical matching/scoring path. They are not aliases of the more conservative modes.
