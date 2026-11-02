@@ -20,6 +20,9 @@ Health probe: `https://atsmcp.yashcodes.com/health`.
 - Synchronize release changes back into `dev` after merging to protected `main`. Use
   `scripts/sync-branches.sh`; it synchronizes using GitHub's merge API rather
   than force-pushing or assuming the branches share identical commit SHAs.
+- Merge a release with **Squash and merge**. Once `dev` carries a sync merge
+  commit, GitHub refuses a rebase merge ("This branch can't be rebased"), and a
+  merge commit is refused by `main`'s linear-history rule.
 
 ## How a deploy runs
 
