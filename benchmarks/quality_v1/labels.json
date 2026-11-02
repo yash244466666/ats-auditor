@@ -1,0 +1,2734 @@
+[
+  {
+    "id": "j01-r01",
+    "job_id": "j01",
+    "resume_id": "r01",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j01-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote RSpec request and model tests for failed payments, duplicate submissions and concurrent account updates."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Diagnosed application performance regressions using request traces and database measurements, then verified fixes against representative production-like data."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Reviewed pull requests for correctness and maintainability, explaining alternatives to colleagues before accepting changes."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Coordinated releases through asynchronous design notes and written handovers with colleagues in three time zones."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Go appears only in the skills inventory after an introductory course; no Go project or professional use is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j01-r02",
+    "job_id": "j01",
+    "resume_id": "r02",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j01-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Created PostgreSQL tables and SQL queries for appointment conflicts, using transactions to prevent duplicate reservations."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j01-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added pytest integration tests covering invalid requests, database failures and repeated delivery of the same operation."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j01-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j01-r08",
+    "job_id": "j01",
+    "resume_id": "r08",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j01-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j01-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j02-r02",
+    "job_id": "j02",
+    "resume_id": "r02",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j02-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented Python FastAPI endpoints for a scheduling service, including request validation, pagination and consistent error responses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Created PostgreSQL tables and SQL queries for appointment conflicts, using transactions to prevent duplicate reservations."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added pytest integration tests covering invalid requests, database failures and repeated delivery of the same operation."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Integrated OAuth2 authentication and checked resource ownership before returning account-specific API records."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Packaged services in Docker and maintained deployment checks that exercised the running health endpoint after release."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote API documentation and operational handover notes that allowed support engineers to reproduce common failures."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q07",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Django is self-study only. No Kafka, streaming platform or production event-processing experience is stated."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j02-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j02-r01",
+    "job_id": "j02",
+    "resume_id": "r01",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j02-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          },
+          {
+            "section": "EXPERIENCE",
+            "quote": "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote RSpec request and model tests for failed payments, duplicate submissions and concurrent account updates."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j02-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j02-r04",
+    "job_id": "j02",
+    "resume_id": "r04",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j02-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j02-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j03-r03",
+    "job_id": "j03",
+    "resume_id": "r03",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j03-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built React search and editing screens with predictable component state and explicit handling of delayed API responses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented semantic HTML forms and responsive CSS layouts that remained usable on narrow screens and older supported browsers."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Fixed keyboard focus and screen-reader announcement defects after accessibility reviews, then documented the expected interaction behavior."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote Jest and Testing Library tests for form validation, failed submissions and restored application state."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Investigated web performance using browser traces, splitting a costly bundle and checking the impact on loading and interaction."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Worked with designers and support colleagues to translate user feedback into testable acceptance criteria and iterative interface changes."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Created a TypeScript component library for a fictional community booking service. Published examples for loading, empty and error states and kept a small visual checklist alongside automated interaction tests. The library has no real users or customer data."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Next.js server rendering is learning only. No delivered server-side rendering project is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j03-r04",
+    "job_id": "j03",
+    "resume_id": "r04",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j03-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built browser interfaces using JavaScript, semantic HTML and CSS with documented behavior for unavailable network responses."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j03-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote automated component tests in Vitest for keyboard actions, validation messages and asynchronous loading transitions."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Used browser profiling to diagnose performance problems in a large table and verified the revised rendering behavior."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j03-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j03-r11",
+    "job_id": "j03",
+    "resume_id": "r11",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j03-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j03-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j04-r04",
+    "job_id": "j04",
+    "resume_id": "r04",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j04-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented Vue.js components for inventory browsing, preserving selection and validation state across related screens."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built browser interfaces using JavaScript, semantic HTML and CSS with documented behavior for unavailable network responses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote automated component tests in Vitest for keyboard actions, validation messages and asynchronous loading transitions."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Used browser profiling to diagnose performance problems in a large table and verified the revised rendering behavior."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Managed Git branches and reviewed merge requests so interface releases could be traced to an approved change."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Recorded technical decisions and progress asynchronously for product and engineering colleagues working different schedules."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q07",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "GraphQL is reading only, without an implementation. No professional React experience is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j04-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built a local component catalogue with reusable form, navigation and notification patterns. Documented intended component usage and checked that examples handled long labels and missing values. The catalogue is a personal demonstration rather than a commercial design system."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j04-r03",
+    "job_id": "j04",
+    "resume_id": "r03",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j04-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented semantic HTML forms and responsive CSS layouts that remained usable on narrow screens and older supported browsers."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j04-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote Jest and Testing Library tests for form validation, failed submissions and restored application state."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Investigated web performance using browser traces, splitting a costly bundle and checking the impact on loading and interaction."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j04-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Created a TypeScript component library for a fictional community booking service. Published examples for loading, empty and error states and kept a small visual checklist alongside automated interaction tests. The library has no real users or customer data."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j04-r09",
+    "job_id": "j04",
+    "resume_id": "r09",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j04-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j04-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j05-r05",
+    "job_id": "j05",
+    "resume_id": "r05",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j05-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented Rails service logic for an equipment reservation product, including safe state transitions and rollback of failed operations."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built JavaScript interfaces with semantic HTML and CSS to display availability, conflicts and actionable validation errors."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Connected browser screens to backend API contracts and coordinated error handling across the interface and service boundary."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added RSpec service tests and Cypress browser tests for the same reservation journey, including cancellation and repeated submission."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Investigated performance across browser requests and database calls, separating slow rendering from repeated server queries."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Owned a feature from written proposal through implementation, review, release notes and support handover."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built Vue.js screens for a fictional lending catalogue, using a Rails API and synthetic records. Set up GitLab CI to run service and browser tests against a disposable database. Documented how to inspect a failed pipeline locally."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j05-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built Vue.js screens for a fictional lending catalogue, using a Rails API and synthetic records. Set up GitLab CI to run service and browser tests against a disposable database. Documented how to inspect a failed pipeline locally."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j05-r03",
+    "job_id": "j05",
+    "resume_id": "r03",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j05-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented semantic HTML forms and responsive CSS layouts that remained usable on narrow screens and older supported browsers."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j05-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j05-r08",
+    "job_id": "j05",
+    "resume_id": "r08",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j05-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j05-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j06-r06",
+    "job_id": "j06",
+    "resume_id": "r06",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j06-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built Python FastAPI endpoints for case-management workflows with explicit validation and documented failure responses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented React forms that preserved user input during failed requests and displayed server-side validation clearly."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Designed PostgreSQL tables and SQL joins to keep case history consistent during concurrent updates."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote pytest API tests and Playwright browser tests for the same case creation and amendment workflows."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented OAuth2 login and resource authorization checks so users could only access assigned case records."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built Docker images and maintained deployment smoke checks with documented rollback instructions for application releases."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Redis is self-study only. No direct user research interviews or professional Ruby on Rails work are claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j06-r02",
+    "job_id": "j06",
+    "resume_id": "r02",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j06-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented Python FastAPI endpoints for a scheduling service, including request validation, pagination and consistent error responses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Created PostgreSQL tables and SQL queries for appointment conflicts, using transactions to prevent duplicate reservations."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Integrated OAuth2 authentication and checked resource ownership before returning account-specific API records."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j06-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j06-r09",
+    "job_id": "j06",
+    "resume_id": "r09",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j06-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j06-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j07-r07",
+    "job_id": "j07",
+    "resume_id": "r07",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j07-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Performed manual security code reviews of account-management services and traced authorization decisions across controller and persistence boundaries."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Led threat modeling discussions for new integrations, documenting trust boundaries, abuse cases and practical mitigation options."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Reproduced and triaged vulnerability reports, agreed severity with maintainers and verified remediation before closing the finding."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Mapped OWASP application weaknesses to concrete fixes and explained why input validation alone did not replace authorization."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Investigated HTTP request behavior with an intercepting proxy and explained how protocol handling affected an identified vulnerability."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Worked with developers to create focused security regression tests and wrote remediation notes that a maintainer could apply independently."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built a Semgrep-based security check for a fictional training application and added CI checks for intentionally vulnerable examples. Maintained false-positive notes and negative fixtures so a clean result was not interpreted as proof of security."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j07-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Ruby is reading only; no professional Ruby development is claimed. No security incident on-call history is supplied."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j07-r08",
+    "job_id": "j07",
+    "resume_id": "r08",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j07-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j07-r03",
+    "job_id": "j07",
+    "resume_id": "r03",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j07-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j07-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j08-r08",
+    "job_id": "j08",
+    "resume_id": "r08",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j08-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Handled incident response for suspicious account activity, coordinating containment, recovery and follow-up verification with service owners."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Used Splunk log analysis to correlate authentication events and construct a timestamped investigation timeline."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Investigated AWS audit records and cloud access configuration to identify the scope of an unauthorized credential use."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained response runbooks with evidence-preservation steps, escalation contacts and explicit checks before closing an incident."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Participated in an incident on-call rotation, handing over open investigations and documenting actions taken during each shift."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Communicated incident status and remaining uncertainty to technical responders and non-technical service stakeholders."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Conducted a lab forensic investigation of a deliberately compromised Linux virtual machine, preserving an image and reconstructing process and network activity. This was a training exercise, not a claim of commercial digital-forensics casework."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j08-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Python is coursework only. No manual application code review, Ruby development or threat-model facilitation is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j08-r07",
+    "job_id": "j08",
+    "resume_id": "r07",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j08-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j08-r03",
+    "job_id": "j08",
+    "resume_id": "r03",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j08-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j08-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j09-r09",
+    "job_id": "j09",
+    "resume_id": "r09",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j09-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Troubleshot Linux service failures by inspecting processes, resource usage and network behavior before applying a documented mitigation."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Managed Terraform changes with reviewed plans and isolated state, documenting the recovery path for failed infrastructure updates."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Operated Kubernetes workloads with readiness probes, resource requests and controlled rollouts for application services."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built Prometheus monitoring and Grafana dashboards around user-visible symptoms and service-level objectives."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Participated in production on-call, coordinated incident mitigation and led follow-up reviews that identified preventable failure modes."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained operational runbooks and practiced recovery procedures with application owners in scheduled exercises."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j09-q07",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Go is reading only. No professional Vue, React or Rails feature implementation is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j09-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built Shell automation that provisions a disposable test environment, runs a health probe and tears it down safely. Added a dry-run mode and documented prerequisites so a lab script could not be mistaken for a production deployment tool."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j09-r10",
+    "job_id": "j09",
+    "resume_id": "r10",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j09-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q02",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Terraform is self-study only. No Kubernetes operations or production incident on-call rotation is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j09-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j09-r03",
+    "job_id": "j09",
+    "resume_id": "r03",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j09-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j09-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j10-r10",
+    "job_id": "j10",
+    "resume_id": "r10",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j10-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built GitLab CI/CD pipelines that tested changes, produced versioned artifacts and deployed the exact reviewed application revision."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Managed separate development and test environments with documented configuration differences and disposable fixture records."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote Python automation for environment setup and smoke checks, with actionable exit messages for failed prerequisites."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented secrets handling through protected environment variables and restricted deployment permissions instead of embedding credentials in scripts."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Diagnosed delivery failures by separating build errors, missing configuration and unsuccessful runtime health checks."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Documented release and rollback procedures and walked a second engineer through a recovery using the written instructions."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Packaged a fictional API in Docker and added local smoke checks for its configuration and health endpoint. Kept a clean build context and verified that the container could run as a non-root user. No orchestration cluster was used."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Terraform is self-study only. No Kubernetes operations or production incident on-call rotation is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j10-r09",
+    "job_id": "j10",
+    "resume_id": "r09",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j10-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built Shell automation that provisions a disposable test environment, runs a health probe and tears it down safely. Added a dry-run mode and documented prerequisites so a lab script could not be mistaken for a production deployment tool."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j10-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Managed Terraform changes with reviewed plans and isolated state, documenting the recovery path for failed infrastructure updates."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j10-r03",
+    "job_id": "j10",
+    "resume_id": "r03",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j10-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j10-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j11-r11",
+    "job_id": "j11",
+    "resume_id": "r11",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j11-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote Python data-processing code for incremental imports with explicit checkpoints and repeatable recovery after a failed extraction."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Used SQL to reconcile source and target record counts and investigate unexpected duplicate business keys."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built ETL pipelines that preserved source identifiers and documented the transformation from operational records to analytical tables."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Orchestrated dependencies and safe retries in Airflow, including backfill procedures for late-arriving source data."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added data quality checks for missing keys, duplicate records and broken joins before publishing tables to analysts."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained source-to-target documentation and explained dataset grain and known limitations to data consumers."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q07",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Snowflake is coursework only. No Kafka, streaming platform operation or production web API development is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j11-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j11-r12",
+    "job_id": "j11",
+    "resume_id": "r12",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j11-q01",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Python is learning only. No production Airflow orchestration or independently operated ETL platform is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      },
+      {
+        "requirement_id": "j11-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built SQL transformation models that joined operational records at an explicitly documented business grain."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j11-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added data tests for key uniqueness, missing values and relationships, investigating failures before releasing revised models."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j11-q06",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained metadata and column documentation so analysts could identify lineage, definitions and known source limitations."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j11-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j11-r03",
+    "job_id": "j11",
+    "resume_id": "r03",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j11-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j11-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j12-r12",
+    "job_id": "j12",
+    "resume_id": "r12",
+    "relationship": "aligned",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j12-q01",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built SQL transformation models that joined operational records at an explicitly documented business grain."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q02",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Implemented dimensional models with separate fact and dimension tables and described how changing dimensions affected reporting."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added data tests for key uniqueness, missing values and relationships, investigating failures before releasing revised models."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q04",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained metadata and column documentation so analysts could identify lineage, definitions and known source limitations."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q05",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Worked with finance and operations stakeholders to clarify a business question and agree which records belonged in its metric."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q06",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Applied secure data-handling rules by restricting sensitive columns and documenting approved analytical uses."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q07",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Created a dbt demonstration for a fictional bookshop with source declarations, model documentation and relationship tests. Supplied a small invented dataset and expected reconciliation totals. The project runs locally and has not been operated as a production warehouse service."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q08",
+        "status": "learning_only",
+        "evidence": [
+          {
+            "section": "SCOPE NOTES",
+            "quote": "Python is learning only. No production Airflow orchestration or independently operated ETL platform is claimed."
+          }
+        ],
+        "rationale": "Explicitly limited to learning; delivered implementation is not evidenced."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j12-r11",
+    "job_id": "j12",
+    "resume_id": "r11",
+    "relationship": "related",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j12-q01",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Built ETL pipelines that preserved source identifiers and documented the transformation from operational records to analytical tables."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j12-q02",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "PROJECTS",
+            "quote": "Built an analytical warehouse demonstration with incremental tables and dimensional data modeling for a fictional library. Included deliberate duplicate and late-event fixtures, documented expected results and checked that rerunning a load did not duplicate records."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j12-q03",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Added data quality checks for missing keys, duplicate records and broken joins before publishing tables to analysts."
+          },
+          {
+            "section": "EXPERIENCE",
+            "quote": "Used SQL to reconcile source and target record counts and investigate unexpected duplicate business keys."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      },
+      {
+        "requirement_id": "j12-q04",
+        "status": "partial",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Maintained source-to-target documentation and explained dataset grain and known limitations to data consumers."
+          }
+        ],
+        "rationale": "Some facets are supported, but the quote does not establish the entire compound requirement."
+      },
+      {
+        "requirement_id": "j12-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q08",
+        "status": "contextual",
+        "evidence": [
+          {
+            "section": "EXPERIENCE",
+            "quote": "Wrote Python data-processing code for incremental imports with explicit checkpoints and repeatable recovery after a failed extraction."
+          }
+        ],
+        "rationale": "Explicit work or project example supports this requirement."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  },
+  {
+    "id": "j12-r08",
+    "job_id": "j12",
+    "resume_id": "r08",
+    "relationship": "cross_role",
+    "review_status": "author_reviewed_pending_independent_review",
+    "labels": [
+      {
+        "requirement_id": "j12-q01",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q02",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q03",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q04",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q05",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q06",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q07",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      },
+      {
+        "requirement_id": "j12-q08",
+        "status": "not_evidenced",
+        "evidence": [],
+        "rationale": "No sufficient supporting example appears in the supplied resume; this does not prove the person lacks the capability."
+      }
+    ],
+    "label_basis": "manual_requirement_evidence_annotation_before_scoring",
+    "expected_score": null
+  }
+]

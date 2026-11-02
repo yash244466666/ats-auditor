@@ -1,0 +1,206 @@
+{
+  "expected_rejections": [
+    {
+      "probe": "empty_resume",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "empty_job",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_resume",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_job",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "resume_99_chars",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "job_49_chars",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "unsupported_job",
+      "mode": "compatibility",
+      "rejected_as_expected": true,
+      "message": "No matching skill/requirement phrases found"
+    },
+    {
+      "probe": "empty_resume",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "empty_job",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_resume",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_job",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "resume_99_chars",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "job_49_chars",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "unsupported_job",
+      "mode": "evidence",
+      "rejected_as_expected": true,
+      "message": "No supported job keywords found; extend the catalog for this field"
+    },
+    {
+      "probe": "empty_resume",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "empty_job",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_resume",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_job",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "resume_99_chars",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "job_49_chars",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "unsupported_job",
+      "mode": "requirement_fit",
+      "rejected_as_expected": true,
+      "message": "No supported requirements found; need broader domain vocabulary"
+    },
+    {
+      "probe": "empty_resume",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "empty_job",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_resume",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "blank_job",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "Full resume_text and job_description are required"
+    },
+    {
+      "probe": "resume_99_chars",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "job_49_chars",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "The input appears incomplete; provide the full resume and job description"
+    },
+    {
+      "probe": "unsupported_job",
+      "mode": "legacy_frequency",
+      "rejected_as_expected": true,
+      "message": "No supported job keywords found; extend the catalog for this field"
+    },
+    {
+      "probe": "unknown_mode",
+      "rejected_as_expected": true
+    }
+  ],
+  "padding_diagnostic": [
+    {
+      "mode": "compatibility",
+      "accepted": true,
+      "score": 26,
+      "resume_nonwhitespace": 15,
+      "job_nonwhitespace": 15
+    },
+    {
+      "mode": "evidence",
+      "accepted": true,
+      "score": 25,
+      "resume_nonwhitespace": 15,
+      "job_nonwhitespace": 15
+    },
+    {
+      "mode": "requirement_fit",
+      "accepted": true,
+      "score": 68,
+      "resume_nonwhitespace": 15,
+      "job_nonwhitespace": 15
+    },
+    {
+      "mode": "legacy_frequency",
+      "accepted": true,
+      "score": 34,
+      "resume_nonwhitespace": 15,
+      "job_nonwhitespace": 15
+    }
+  ]
+}

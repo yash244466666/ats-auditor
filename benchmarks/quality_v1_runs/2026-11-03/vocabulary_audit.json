@@ -1,0 +1,540 @@
+{
+  "purpose": "Post-run extraction inspection; no additional scoring or tuning. Presence is lexical, not semantic requirement coverage.",
+  "jobs": {
+    "j01": [
+      {
+        "keyword": "Redis",
+        "matches": [
+          ".\n\nPREFERRED EXPERIENCE\n- Use Redis caching or background job pro"
+        ]
+      },
+      {
+        "keyword": "PostgreSQL",
+        "matches": [
+          "ls backend services.\n- Design PostgreSQL schemas and investigate SQL q"
+        ]
+      },
+      {
+        "keyword": "caching",
+        "matches": [
+          "FERRED EXPERIENCE\n- Use Redis caching or background job processing "
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "performance",
+        "matches": [
+          "agnose and verify application performance improvements.\n- Review code f"
+        ]
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "matches": [
+          "ERIENCE\n- Build transactional Ruby on Rails backend services.\n- Design Po"
+        ]
+      }
+    ],
+    "j02": [
+      {
+        "keyword": "Python",
+        "matches": [
+          "Python API Engineer\nFICTIONAL JOB DE",
+          "QUIRED EXPERIENCE\n- Implement Python web API endpoints with valida"
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "eated operations.\n- Implement authentication and resource authorization ch",
+          "t authentication and resource authorization checks.\n- Package and release",
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "Django",
+        "matches": [
+          "RRED EXPERIENCE\n- Implement a Django application beyond self-study"
+        ]
+      }
+    ],
+    "j03": [
+      {
+        "keyword": "React",
+        "matches": [
+          "React Frontend Engineer\nFICTIONAL J",
+          "D EXPERIENCE\n- Build stateful React interfaces with recoverable e"
+        ]
+      },
+      {
+        "keyword": "TypeScript",
+        "matches": [
+          "RRED EXPERIENCE\n- Implement a TypeScript interface or component projec"
+        ]
+      },
+      {
+        "keyword": "databases",
+        "matches": [
+          "ies distinct from service and database ownership.\n\nREQUIRED EXPERIEN"
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "performance",
+        "matches": [
+          "s.\n- Diagnose and improve web performance using measurements.\n- Transla"
+        ]
+      }
+    ],
+    "j04": [
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "GraphQL",
+        "matches": [
+          "RRED EXPERIENCE\n- Implement a GraphQL client beyond reading documen"
+        ]
+      },
+      {
+        "keyword": "performance",
+        "matches": [
+          "ate browser rendering and web performance.\n- Use Git and reviewed merge"
+        ]
+      },
+      {
+        "keyword": "JavaScript",
+        "matches": [
+          "ior.\n- Build interfaces using JavaScript, semantic HTML and CSS.\n- Wri"
+        ]
+      },
+      {
+        "keyword": "Vue.js",
+        "matches": [
+          "Vue Frontend Engineer\nFICTIONAL J",
+          "QUIRED EXPERIENCE\n- Implement Vue.js components with explicit stat"
+        ]
+      }
+    ],
+    "j05": [
+      {
+        "keyword": "full-stack",
+        "matches": [
+          "Rails and Vue Fullstack Engineer\nFICTIONAL JOB DESCRI"
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "CI/CD",
+        "matches": [
+          "ser interfaces.\n- Implement a CI/CD pipeline for application test"
+        ]
+      },
+      {
+        "keyword": "performance",
+        "matches": [
+          " browser journeys.\n- Diagnose performance across client and server laye"
+        ]
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "matches": [
+          "Rails and Vue Fullstack Engineer\nFI",
+          "QUIRED EXPERIENCE\n- Implement Ruby on Rails service logic.\n- Build browse"
+        ]
+      },
+      {
+        "keyword": "JavaScript",
+        "matches": [
+          "- Build browser behavior with JavaScript, HTML and CSS.\n- Integrate us"
+        ]
+      },
+      {
+        "keyword": "Vue.js",
+        "matches": [
+          "Rails and Vue Fullstack Engineer\nFICTIONAL ",
+          "FERRED EXPERIENCE\n- Implement Vue.js user interfaces.\n- Implement "
+        ]
+      }
+    ],
+    "j06": [
+      {
+        "keyword": "full-stack",
+        "matches": [
+          "Python and React Fullstack Developer\nFICTIONAL JOB DESCR"
+        ]
+      },
+      {
+        "keyword": "React",
+        "matches": [
+          "Python and React Fullstack Developer\nFICTIONAL",
+          "APIs with validation.\n- Build React interfaces that handle failed"
+        ]
+      },
+      {
+        "keyword": "Python",
+        "matches": [
+          "Python and React Fullstack Developer",
+          "QUIRED EXPERIENCE\n- Implement Python web APIs with validation.\n- B"
+        ]
+      },
+      {
+        "keyword": "Redis",
+        "matches": [
+          "earch interviews.\n- Implement Redis caching beyond self-study.\n\nD"
+        ]
+      },
+      {
+        "keyword": "caching",
+        "matches": [
+          "interviews.\n- Implement Redis caching beyond self-study.\n\nDELIVERY "
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "nd browser tests.\n- Implement authentication and per-resource authorizatio",
+          "thentication and per-resource authorization.\n- Release a containerized ap",
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      }
+    ],
+    "j07": [
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "security",
+        "matches": [
+          "Application Security Engineer\nFICTIONAL JOB DESCRI",
+          "ence of finding and resolving security issues matters more than a li",
+          "D EXPERIENCE\n- Perform manual security-focused source code reviews.\n",
+          "ollaborate with developers on security regression tests.\n\nPREFERRED ",
+          "\n- Implement automated static security analysis in CI.\n- Develop Rub"
+        ]
+      },
+      {
+        "keyword": "code review",
+        "matches": [
+          "anual security-focused source code reviews.\n- Facilitate threat modeling"
+        ]
+      }
+    ],
+    "j08": [
+      {
+        "keyword": "Python",
+        "matches": [
+          "in work or a lab.\n- Implement Python incident-response automation "
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "security",
+        "matches": [
+          "Security Incident Response Engineer\nFI",
+          " and coordinate recovery from security incidents in a fictional clou",
+          "UIRED EXPERIENCE\n- Coordinate security incident containment and reco"
+        ]
+      }
+    ],
+    "j09": [
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      }
+    ],
+    "j10": [
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      },
+      {
+        "keyword": "Docker",
+        "matches": [
+          "EXPERIENCE\n- Build and verify Docker application images.\n- Impleme"
+        ]
+      },
+      {
+        "keyword": "CI/CD",
+        "matches": [
+          "\n\nREQUIRED EXPERIENCE\n- Build CI/CD pipelines that deploy a speci"
+        ]
+      }
+    ],
+    "j11": [
+      {
+        "keyword": "Python",
+        "matches": [
+          "QUIRED EXPERIENCE\n- Implement Python data-processing code with rec"
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      }
+    ],
+    "j12": [
+      {
+        "keyword": "Python",
+        "matches": [
+          "nd documentation.\n- Implement Python data processing beyond introd"
+        ]
+      },
+      {
+        "keyword": "authentication",
+        "matches": [
+          "collaboration. Location, work authorization, compensation and availabilit"
+        ]
+      }
+    ]
+  },
+  "anchor_attack_term_counts": [
+    {
+      "pair_id": "j01-r01",
+      "all_terms": 12,
+      "existing_terms": 11,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j01-r02",
+      "all_terms": 12,
+      "existing_terms": 4,
+      "missing_terms": 8
+    },
+    {
+      "pair_id": "j01-r08",
+      "all_terms": 12,
+      "existing_terms": 2,
+      "missing_terms": 10
+    },
+    {
+      "pair_id": "j02-r02",
+      "all_terms": 9,
+      "existing_terms": 8,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j02-r01",
+      "all_terms": 9,
+      "existing_terms": 2,
+      "missing_terms": 7
+    },
+    {
+      "pair_id": "j02-r04",
+      "all_terms": 9,
+      "existing_terms": 2,
+      "missing_terms": 7
+    },
+    {
+      "pair_id": "j03-r03",
+      "all_terms": 8,
+      "existing_terms": 7,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j03-r04",
+      "all_terms": 8,
+      "existing_terms": 3,
+      "missing_terms": 5
+    },
+    {
+      "pair_id": "j03-r11",
+      "all_terms": 8,
+      "existing_terms": 0,
+      "missing_terms": 8
+    },
+    {
+      "pair_id": "j04-r04",
+      "all_terms": 8,
+      "existing_terms": 7,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j04-r03",
+      "all_terms": 8,
+      "existing_terms": 4,
+      "missing_terms": 4
+    },
+    {
+      "pair_id": "j04-r09",
+      "all_terms": 8,
+      "existing_terms": 1,
+      "missing_terms": 7
+    },
+    {
+      "pair_id": "j05-r05",
+      "all_terms": 12,
+      "existing_terms": 10,
+      "missing_terms": 2
+    },
+    {
+      "pair_id": "j05-r03",
+      "all_terms": 12,
+      "existing_terms": 4,
+      "missing_terms": 8
+    },
+    {
+      "pair_id": "j05-r08",
+      "all_terms": 12,
+      "existing_terms": 2,
+      "missing_terms": 10
+    },
+    {
+      "pair_id": "j06-r06",
+      "all_terms": 10,
+      "existing_terms": 8,
+      "missing_terms": 2
+    },
+    {
+      "pair_id": "j06-r02",
+      "all_terms": 10,
+      "existing_terms": 4,
+      "missing_terms": 6
+    },
+    {
+      "pair_id": "j06-r09",
+      "all_terms": 10,
+      "existing_terms": 1,
+      "missing_terms": 9
+    },
+    {
+      "pair_id": "j07-r07",
+      "all_terms": 10,
+      "existing_terms": 10,
+      "missing_terms": 0
+    },
+    {
+      "pair_id": "j07-r08",
+      "all_terms": 10,
+      "existing_terms": 4,
+      "missing_terms": 6
+    },
+    {
+      "pair_id": "j07-r03",
+      "all_terms": 10,
+      "existing_terms": 0,
+      "missing_terms": 10
+    },
+    {
+      "pair_id": "j08-r08",
+      "all_terms": 5,
+      "existing_terms": 4,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j08-r07",
+      "all_terms": 5,
+      "existing_terms": 3,
+      "missing_terms": 2
+    },
+    {
+      "pair_id": "j08-r03",
+      "all_terms": 5,
+      "existing_terms": 0,
+      "missing_terms": 5
+    },
+    {
+      "pair_id": "j09-r09",
+      "all_terms": 6,
+      "existing_terms": 5,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j09-r10",
+      "all_terms": 6,
+      "existing_terms": 3,
+      "missing_terms": 3
+    },
+    {
+      "pair_id": "j09-r03",
+      "all_terms": 6,
+      "existing_terms": 1,
+      "missing_terms": 5
+    },
+    {
+      "pair_id": "j10-r10",
+      "all_terms": 6,
+      "existing_terms": 4,
+      "missing_terms": 2
+    },
+    {
+      "pair_id": "j10-r09",
+      "all_terms": 6,
+      "existing_terms": 2,
+      "missing_terms": 4
+    },
+    {
+      "pair_id": "j10-r03",
+      "all_terms": 6,
+      "existing_terms": 0,
+      "missing_terms": 6
+    },
+    {
+      "pair_id": "j11-r11",
+      "all_terms": 9,
+      "existing_terms": 8,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j11-r12",
+      "all_terms": 9,
+      "existing_terms": 4,
+      "missing_terms": 5
+    },
+    {
+      "pair_id": "j11-r03",
+      "all_terms": 9,
+      "existing_terms": 0,
+      "missing_terms": 9
+    },
+    {
+      "pair_id": "j12-r12",
+      "all_terms": 4,
+      "existing_terms": 3,
+      "missing_terms": 1
+    },
+    {
+      "pair_id": "j12-r11",
+      "all_terms": 4,
+      "existing_terms": 2,
+      "missing_terms": 2
+    },
+    {
+      "pair_id": "j12-r08",
+      "all_terms": 4,
+      "existing_terms": 2,
+      "missing_terms": 2
+    }
+  ]
+}

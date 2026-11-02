@@ -1,0 +1,8 @@
+{
+  "format": "gzip-compressed UTF-8 JSON Lines",
+  "records": 3744,
+  "uncompressed_sha256": "9fa511db942b12a765e06129688bb60400a0573d7bcc0211b88d60a1618c0f7c",
+  "uncompressed_bytes": 1559203,
+  "compressed_sha256": "a3d19d8016170594463caf0c6dcdd4d177fbbeb8f1c8f85ac9d52cc009578ca4",
+  "compression_mtime": 0
+}

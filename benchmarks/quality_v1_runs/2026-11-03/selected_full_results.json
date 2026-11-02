@@ -1,0 +1,4481 @@
+{
+  "j03-r11-compatibility-all_job_terms_50": {
+    "overall_score": 96,
+    "keyword_coverage": {
+      "matched": 6,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      },
+      {
+        "keyword": "TypeScript",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "databases",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "frontend",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 96,
+        "keyword_coverage_ratio": 1.0,
+        "professional_experience_coverage_ratio": 0.0,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 26,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "React",
+          "job_mentions": 2,
+          "resume_mentions": 50
+        },
+        {
+          "keyword": "TypeScript",
+          "job_mentions": 1,
+          "resume_mentions": 50
+        },
+        {
+          "keyword": "databases",
+          "job_mentions": 1,
+          "resume_mentions": 50
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 50
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 50
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 2,
+          "resume_mentions": 50
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: React appears 50 times.",
+        "Potential keyword saturation: TypeScript appears 50 times.",
+        "Potential keyword saturation: databases appears 50 times.",
+        "Potential keyword saturation: authentication appears 50 times.",
+        "Potential keyword saturation: performance appears 50 times.",
+        "Potential keyword saturation: frontend appears 50 times.",
+        "Identical long lines are repeated at least three times."
+      ],
+      "recommendations": []
+    }
+  },
+  "j03-r11-compatibility-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": false,
+        "importance": "medium",
+        "score": 0
+      },
+      {
+        "keyword": "TypeScript",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "databases",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "frontend",
+        "present": false,
+        "importance": "medium",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 0,
+        "keyword_coverage_ratio": 0.0,
+        "professional_experience_coverage_ratio": 0.0,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 0,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "HIGH UNCERTAINTY: fewer than 40% of extracted job requirements were recognized in the resume; cross-domain skills can be scored differently by Upplai."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "React",
+          "job_mentions": 2,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "TypeScript",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "databases",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 2,
+          "resume_mentions": 0
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for React.",
+        "Provide verifiable project evidence for TypeScript.",
+        "Provide verifiable project evidence for databases.",
+        "Provide verifiable project evidence for authentication.",
+        "Provide verifiable project evidence for performance.",
+        "Provide verifiable project evidence for frontend."
+      ]
+    }
+  },
+  "j03-r04-compatibility-existing_terms_50": {
+    "overall_score": 88,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      },
+      {
+        "keyword": "TypeScript",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "databases",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "frontend",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 88,
+        "keyword_coverage_ratio": 0.5,
+        "professional_experience_coverage_ratio": 0.1667,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 13,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "React",
+          "job_mentions": 2,
+          "resume_mentions": 51
+        },
+        {
+          "keyword": "TypeScript",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "databases",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 51
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 2,
+          "resume_mentions": 51
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: React appears 51 times.",
+        "Potential keyword saturation: performance appears 51 times.",
+        "Potential keyword saturation: frontend appears 51 times."
+      ],
+      "recommendations": [
+        "Provide verifiable project evidence for TypeScript.",
+        "Provide verifiable project evidence for databases.",
+        "Provide verifiable project evidence for authentication."
+      ]
+    }
+  },
+  "j03-r04-compatibility-baseline": {
+    "overall_score": 13,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "medium",
+        "score": 10
+      },
+      {
+        "keyword": "TypeScript",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "databases",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "frontend",
+        "present": true,
+        "importance": "medium",
+        "score": 10
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 5,
+        "keyword_coverage_ratio": 0.5,
+        "professional_experience_coverage_ratio": 0.1667,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 13,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "React",
+          "job_mentions": 2,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "TypeScript",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "databases",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 2,
+          "resume_mentions": 1
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for TypeScript.",
+        "Provide verifiable project evidence for databases.",
+        "Provide verifiable project evidence for authentication."
+      ]
+    }
+  },
+  "j04-r09-compatibility-copied_job": {
+    "overall_score": 38,
+    "keyword_coverage": {
+      "matched": 7,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "GraphQL",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "JavaScript",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Vue.js",
+        "present": true,
+        "importance": "medium",
+        "score": 45
+      },
+      {
+        "keyword": "frontend",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "backend",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 38,
+        "keyword_coverage_ratio": 1.0,
+        "professional_experience_coverage_ratio": 0.0,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 26,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "GraphQL",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "JavaScript",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Vue.js",
+          "job_mentions": 2,
+          "resume_mentions": 3
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "backend",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": []
+    }
+  },
+  "j04-r09-compatibility-baseline": {
+    "overall_score": 4,
+    "keyword_coverage": {
+      "matched": 1,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "GraphQL",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "JavaScript",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "Vue.js",
+        "present": true,
+        "importance": "medium",
+        "score": 10
+      },
+      {
+        "keyword": "frontend",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "backend",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 4,
+        "keyword_coverage_ratio": 0.1429,
+        "professional_experience_coverage_ratio": 0.0,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 4,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "HIGH UNCERTAINTY: fewer than 40% of extracted job requirements were recognized in the resume; cross-domain skills can be scored differently by Upplai."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "GraphQL",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "JavaScript",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "Vue.js",
+          "job_mentions": 2,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "backend",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for authentication.",
+        "Provide verifiable project evidence for GraphQL.",
+        "Provide verifiable project evidence for performance.",
+        "Provide verifiable project evidence for JavaScript.",
+        "Provide verifiable project evidence for frontend.",
+        "Provide verifiable project evidence for backend."
+      ]
+    }
+  },
+  "j03-r11-compatibility-negated_missing_terms": {
+    "overall_score": 26,
+    "keyword_coverage": {
+      "matched": 6,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "medium",
+        "score": 10
+      },
+      {
+        "keyword": "TypeScript",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "databases",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "frontend",
+        "present": true,
+        "importance": "medium",
+        "score": 10
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 7,
+        "keyword_coverage_ratio": 1.0,
+        "professional_experience_coverage_ratio": 0.0,
+        "experience_boost_points": 0,
+        "coverage_floor_points": 26,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.0,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "React",
+          "job_mentions": 2,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "TypeScript",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "databases",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "frontend",
+          "job_mentions": 2,
+          "resume_mentions": 1
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": []
+    }
+  },
+  "j01-r01-compatibility-horizontal_spaces": {
+    "overall_score": 62,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 84
+      },
+      {
+        "keyword": "backend",
+        "present": true,
+        "importance": "high",
+        "score": 16
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 26,
+        "keyword_coverage_ratio": 0.9,
+        "professional_experience_coverage_ratio": 0.6,
+        "experience_boost_points": 36,
+        "coverage_floor_points": 23,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.6667,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "Redis",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "PostgreSQL",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "caching",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "Billing",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "SQL",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Golang",
+          "job_mentions": 1,
+          "resume_mentions": 3
+        },
+        {
+          "keyword": "backend",
+          "job_mentions": 3,
+          "resume_mentions": 2
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for authentication."
+      ]
+    }
+  },
+  "j01-r01-compatibility-baseline": {
+    "overall_score": 62,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 84
+      },
+      {
+        "keyword": "backend",
+        "present": true,
+        "importance": "high",
+        "score": 16
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 26,
+        "keyword_coverage_ratio": 0.9,
+        "professional_experience_coverage_ratio": 0.6,
+        "experience_boost_points": 36,
+        "coverage_floor_points": 23,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.6667,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "Redis",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "PostgreSQL",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "caching",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "Billing",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "SQL",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Golang",
+          "job_mentions": 1,
+          "resume_mentions": 3
+        },
+        {
+          "keyword": "backend",
+          "job_mentions": 3,
+          "resume_mentions": 2
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for authentication."
+      ]
+    }
+  },
+  "j01-r01-compatibility-equivalent_experience_heading": {
+    "overall_score": 62,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 28
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 84
+      },
+      {
+        "keyword": "backend",
+        "present": true,
+        "importance": "high",
+        "score": 16
+      }
+    ],
+    "details": {
+      "mode": "compatibility",
+      "scoring_method": "experimental Upplai-like calibration over public-job benchmarks",
+      "calibration_context": {
+        "raw_lexical_score": 26,
+        "keyword_coverage_ratio": 0.9,
+        "professional_experience_coverage_ratio": 0.6,
+        "experience_boost_points": 36,
+        "coverage_floor_points": 23,
+        "partial_cross_stack_role_floor": 0,
+        "frontend_experience_fraction": 0.0,
+        "backend_experience_fraction": 0.6667,
+        "generalization_warning": "LIMITED VALIDATION: calibrated on a small software-engineering sample, not a blind ATS replica."
+      },
+      "parameters": {
+        "a": 1.4,
+        "exp": 2.25,
+        "mul": 2.0,
+        "jw": 1.0,
+        "tw": 10.0,
+        "gw": 0.2,
+        "offset": -4.0,
+        "max_terms": 75,
+        "experience_threshold": 0.36,
+        "experience_slope": 150.0,
+        "experience_min_coverage": 0.4,
+        "coverage_floor": 26.0
+      },
+      "keyword_counts": [
+        {
+          "keyword": "Redis",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "PostgreSQL",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "caching",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "authentication",
+          "job_mentions": 1,
+          "resume_mentions": 0
+        },
+        {
+          "keyword": "performance",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "job_mentions": 1,
+          "resume_mentions": 2
+        },
+        {
+          "keyword": "Billing",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "SQL",
+          "job_mentions": 1,
+          "resume_mentions": 1
+        },
+        {
+          "keyword": "Golang",
+          "job_mentions": 1,
+          "resume_mentions": 3
+        },
+        {
+          "keyword": "backend",
+          "job_mentions": 3,
+          "resume_mentions": 2
+        }
+      ],
+      "limitations": [
+        "Not Upplai source code; estimates calibrated on a small software-jobs sample, and uncertain on unseen job families.",
+        "This score is NOT a prediction of hiring or official ATS behavior."
+      ],
+      "format_warnings": [
+        "No separate Experience heading detected.",
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Provide verifiable project evidence for authentication."
+      ]
+    }
+  },
+  "j02-r02-evidence-all_job_terms_50": {
+    "overall_score": 14,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 45
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 40
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 54,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Implemented Python FastAPI endpoints for a scheduling service, including request validation, pagination and consistent error responses.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 51,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Integrated OAuth2 authentication and checked resource ownership before returning account-specific API records.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 52,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: Python appears 54 times.",
+        "Potential keyword saturation: authentication appears 51 times.",
+        "Potential keyword saturation: Django appears 52 times.",
+        "Identical long lines are repeated at least three times."
+      ],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r02-evidence-baseline": {
+    "overall_score": 39,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 45
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 40
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 4,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Implemented Python FastAPI endpoints for a scheduling service, including request validation, pagination and consistent error responses.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Integrated OAuth2 authentication and checked resource ownership before returning account-specific API records.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j01-r01-evidence-existing_terms_50": {
+    "overall_score": 8,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Redis",
+          "occurrences": 52,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "PostgreSQL",
+          "occurrences": 52,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "caching",
+          "occurrences": 51,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 51,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 102,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: Redis appears 52 times.",
+        "Potential keyword saturation: PostgreSQL appears 52 times.",
+        "Potential keyword saturation: caching appears 51 times.",
+        "Potential keyword saturation: performance appears 51 times.",
+        "Potential keyword saturation: Ruby on Rails appears 102 times.",
+        "Identical long lines are repeated at least three times."
+      ],
+      "recommendations": [
+        "Show a genuine project example demonstrating Redis.",
+        "Show a genuine project example demonstrating PostgreSQL.",
+        "Show a genuine project example demonstrating caching.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating Ruby on Rails."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j01-r01-evidence-baseline": {
+    "overall_score": 33,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Redis",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "PostgreSQL",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "caching",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Redis.",
+        "Show a genuine project example demonstrating PostgreSQL.",
+        "Show a genuine project example demonstrating caching.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating Ruby on Rails."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j07-r03-evidence-copied_job": {
+    "overall_score": 36,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      },
+      {
+        "keyword": "security",
+        "present": true,
+        "importance": "very high",
+        "score": 40
+      },
+      {
+        "keyword": "code review",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "security",
+          "occurrences": 5,
+          "evidence": [
+            {
+              "section": "education",
+              "text": "Implement automated static security analysis in CI.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "code review",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating security.",
+        "Show a genuine project example demonstrating code review."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j07-r03-evidence-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "security",
+        "present": false,
+        "importance": "very high",
+        "score": 0
+      },
+      {
+        "keyword": "code review",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "security",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "code review",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating security.",
+        "Show a genuine project example demonstrating code review."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r01-evidence-negated_missing_terms": {
+    "overall_score": 25,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 25
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 25
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r01-evidence-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": false,
+        "importance": "medium",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "high",
+        "score": 0
+      },
+      {
+        "keyword": "Django",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j05-r05-evidence-horizontal_spaces": {
+    "overall_score": 33,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "full-stack",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "CI/CD",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "medium",
+        "score": 60
+      },
+      {
+        "keyword": "JavaScript",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "Vue.js",
+        "present": true,
+        "importance": "medium",
+        "score": 40
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "full-stack",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "CI/CD",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Investigated  performance  across  browser  requests  and  database  calls,  separating  slow  rendering  from  repeated  server  queries.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 5,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Implemented  Rails  service  logic  for  an  equipment  reservation  product,  including  safe  state  transitions  and  rollback  of  failed  operations.",
+              "quantified": false
+            },
+            {
+              "section": "projects",
+              "text": "Built  Vue.js  screens  for  a  fictional  lending  catalogue,  using  a  Rails  API  and  synthetic  records.  Set  up  GitLab  CI  to  run  service  and  browser  tests  against  a  disposable  database.  Documented  how  to  inspect  a  ",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "JavaScript",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built  JavaScript  interfaces  with  semantic  HTML  and  CSS  to  display  availability,  conflicts  and  actionable  validation  errors.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Vue.js",
+          "occurrences": 4,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Built  Vue.js  screens  for  a  fictional  lending  catalogue,  using  a  Rails  API  and  synthetic  records.  Set  up  GitLab  CI  to  run  service  and  browser  tests  against  a  disposable  database.  Documented  how  to  inspect  a  ",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating full-stack.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating CI/CD.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating Ruby on Rails.",
+        "Show a genuine project example demonstrating JavaScript.",
+        "Show a genuine project example demonstrating Vue.js."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j05-r05-evidence-baseline": {
+    "overall_score": 36,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "full-stack",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "CI/CD",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "medium",
+        "score": 65
+      },
+      {
+        "keyword": "JavaScript",
+        "present": true,
+        "importance": "low",
+        "score": 45
+      },
+      {
+        "keyword": "Vue.js",
+        "present": true,
+        "importance": "medium",
+        "score": 45
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "full-stack",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "CI/CD",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Investigated performance across browser requests and database calls, separating slow rendering from repeated server queries.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 5,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Implemented Rails service logic for an equipment reservation product, including safe state transitions and rollback of failed operations.",
+              "quantified": false
+            },
+            {
+              "section": "projects",
+              "text": "Built Vue.js screens for a fictional lending catalogue, using a Rails API and synthetic records. Set up GitLab CI to run service and browser tests against a disposable database. Documented how to inspect a failed pipeline locally.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "JavaScript",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built JavaScript interfaces with semantic HTML and CSS to display availability, conflicts and actionable validation errors.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Vue.js",
+          "occurrences": 4,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Built Vue.js screens for a fictional lending catalogue, using a Rails API and synthetic records. Set up GitLab CI to run service and browser tests against a disposable database. Documented how to inspect a failed pipeline locally.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating full-stack.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating CI/CD.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating JavaScript.",
+        "Show a genuine project example demonstrating Vue.js."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r02-evidence-equivalent_experience_heading": {
+    "overall_score": 25,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 25
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 25
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 25
+      }
+    ],
+    "details": {
+      "mode": "evidence",
+      "scoring_method": "independent contextual evidence heuristic",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 4,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "No separate Experience heading detected.",
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j03-r11-requirement_fit-all_job_terms_50": {
+    "overall_score": 68,
+    "keyword_coverage": {
+      "matched": 6,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "high",
+        "score": 68
+      },
+      {
+        "keyword": "Accessibility",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Server-side rendering",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "TypeScript",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "databases",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "React",
+          "present": true,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Accessibility",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Server-side rendering",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "TypeScript",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "authentication",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "databases",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j03-r11-requirement_fit-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": false,
+        "importance": "high",
+        "score": 0
+      },
+      {
+        "keyword": "Accessibility",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "Server-side rendering",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "TypeScript",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "databases",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "React",
+          "present": false,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "Accessibility",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "Server-side rendering",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "TypeScript",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "authentication",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "databases",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j01-r01-requirement_fit-existing_terms_50": {
+    "overall_score": 76,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Ruby",
+        "present": true,
+        "importance": "high",
+        "score": 85
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "medium",
+        "score": 85
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "Ruby",
+          "present": true,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.85,
+          "evidence": [
+            "Ruby Backend Engineer — Fictional R01 Product Team | 2023-01 to 2026-11",
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Billing",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.7,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Golang",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "PostgreSQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          ]
+        },
+        {
+          "keyword": "Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Redis",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional"
+          ]
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "SQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          ]
+        },
+        {
+          "keyword": "authentication",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "caching",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional"
+          ]
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j01-r01-requirement_fit-baseline": {
+    "overall_score": 76,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Ruby",
+        "present": true,
+        "importance": "high",
+        "score": 85
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "medium",
+        "score": 85
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "Ruby",
+          "present": true,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.85,
+          "evidence": [
+            "Ruby Backend Engineer — Fictional R01 Product Team | 2023-01 to 2026-11",
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Billing",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.7,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Golang",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "PostgreSQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          ]
+        },
+        {
+          "keyword": "Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "Redis",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional"
+          ]
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes."
+          ]
+        },
+        {
+          "keyword": "SQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow."
+          ]
+        },
+        {
+          "keyword": "authentication",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "caching",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional"
+          ]
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j09-r03-requirement_fit-copied_job": {
+    "overall_score": 72,
+    "keyword_coverage": {
+      "matched": 4,
+      "total": 4
+    },
+    "keywords": [
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Kubernetes",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Terraform",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "Golang",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Kubernetes",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Terraform",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Manage reviewed Terraform infrastructure changes."
+          ]
+        },
+        {
+          "keyword": "authentication",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j09-r03-requirement_fit-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 4
+    },
+    "keywords": [
+      {
+        "keyword": "Golang",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "Kubernetes",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "Terraform",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "Golang",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "Kubernetes",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "Terraform",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "authentication",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j03-r11-requirement_fit-negated_missing_terms": {
+    "overall_score": 68,
+    "keyword_coverage": {
+      "matched": 6,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "React",
+        "present": true,
+        "importance": "high",
+        "score": 68
+      },
+      {
+        "keyword": "Accessibility",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Server-side rendering",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "TypeScript",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "databases",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "React",
+          "present": true,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Accessibility",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Server-side rendering",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "TypeScript",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "authentication",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "databases",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j01-r01-requirement_fit-horizontal_spaces": {
+    "overall_score": 76,
+    "keyword_coverage": {
+      "matched": 9,
+      "total": 10
+    },
+    "keywords": [
+      {
+        "keyword": "Ruby",
+        "present": true,
+        "importance": "high",
+        "score": 85
+      },
+      {
+        "keyword": "Billing",
+        "present": true,
+        "importance": "medium",
+        "score": 85
+      },
+      {
+        "keyword": "Golang",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "SQL",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "Ruby",
+          "present": true,
+          "job_mentions": 2,
+          "weight": 2.15,
+          "credit": 0.85,
+          "evidence": [
+            "Ruby  Backend  Engineer  —  Fictional  R01  Product  Team  |  2023-01  to  2026-11",
+            "Built  Ruby  on  Rails  billing  endpoints  with  explicit  transaction  boundaries,  idempotency  keys  and  recovery  paths  for  interrupted  subscription  changes."
+          ]
+        },
+        {
+          "keyword": "Billing",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.7,
+          "credit": 0.85,
+          "evidence": [
+            "Built  Ruby  on  Rails  billing  endpoints  with  explicit  transaction  boundaries,  idempotency  keys  and  recovery  paths  for  interrupted  subscription  changes."
+          ]
+        },
+        {
+          "keyword": "Golang",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "PostgreSQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed  PostgreSQL  schemas  and  reviewed  SQL  query  plans  before  adding  indexes  to  a  slow  invoice  reconciliation  workflow."
+          ]
+        },
+        {
+          "keyword": "Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built  Ruby  on  Rails  billing  endpoints  with  explicit  transaction  boundaries,  idempotency  keys  and  recovery  paths  for  interrupted  subscription  changes."
+          ]
+        },
+        {
+          "keyword": "Redis",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented  a  personal  sandbox  for  Redis  caching  and  Sidekiq  background  jobs,  including  retry  behavior  and  duplicate-message  handling.  This  project  uses  synthetic  subscription  records  and  is  not "
+          ]
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Built  Ruby  on  Rails  billing  endpoints  with  explicit  transaction  boundaries,  idempotency  keys  and  recovery  paths  for  interrupted  subscription  changes."
+          ]
+        },
+        {
+          "keyword": "SQL",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Designed  PostgreSQL  schemas  and  reviewed  SQL  query  plans  before  adding  indexes  to  a  slow  invoice  reconciliation  workflow."
+          ]
+        },
+        {
+          "keyword": "authentication",
+          "present": false,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.0,
+          "evidence": []
+        },
+        {
+          "keyword": "caching",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Implemented  a  personal  sandbox  for  Redis  caching  and  Sidekiq  background  jobs,  including  retry  behavior  and  duplicate-message  handling.  This  project  uses  synthetic  subscription  records  and  is  not "
+          ]
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j07-r07-requirement_fit-equivalent_experience_heading": {
+    "overall_score": 68,
+    "keyword_coverage": {
+      "matched": 7,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "vulnerabilities",
+        "present": true,
+        "importance": "medium",
+        "score": 68
+      },
+      {
+        "keyword": "application security",
+        "present": true,
+        "importance": "medium",
+        "score": 68
+      },
+      {
+        "keyword": "OWASP",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Ruby",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Threat modeling",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "threat model",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "vulnerabilities",
+          "present": true,
+          "job_mentions": 3,
+          "weight": 1.75,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "application security",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.7,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "OWASP",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Ruby",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Threat modeling",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "authentication",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "threat model",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j07-r07-requirement_fit-baseline": {
+    "overall_score": 83,
+    "keyword_coverage": {
+      "matched": 7,
+      "total": 7
+    },
+    "keywords": [
+      {
+        "keyword": "vulnerabilities",
+        "present": true,
+        "importance": "medium",
+        "score": 85
+      },
+      {
+        "keyword": "application security",
+        "present": true,
+        "importance": "medium",
+        "score": 85
+      },
+      {
+        "keyword": "OWASP",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "Ruby",
+        "present": true,
+        "importance": "low",
+        "score": 68
+      },
+      {
+        "keyword": "Threat modeling",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      },
+      {
+        "keyword": "threat model",
+        "present": true,
+        "importance": "low",
+        "score": 85
+      }
+    ],
+    "details": {
+      "mode": "requirement_fit",
+      "scoring_method": "independent requirement coverage with contextual evidence discount; not calibrated to Upplai",
+      "requirement_weights": [
+        {
+          "keyword": "vulnerabilities",
+          "present": true,
+          "job_mentions": 3,
+          "weight": 1.75,
+          "credit": 0.85,
+          "evidence": [
+            "Reproduced and triaged vulnerability reports, agreed severity with maintainers and verified remediation before closing the finding.",
+            "Investigated HTTP request behavior with an intercepting proxy and explained how protocol handling affected an identified vulnerability."
+          ]
+        },
+        {
+          "keyword": "application security",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.7,
+          "credit": 0.85,
+          "evidence": [
+            "Application Security Engineer — Fictional R07 Product Team | 2023-01 to 2026-11"
+          ]
+        },
+        {
+          "keyword": "OWASP",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Mapped OWASP application weaknesses to concrete fixes and explained why input validation alone did not replace authorization."
+          ]
+        },
+        {
+          "keyword": "Ruby",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.68,
+          "evidence": []
+        },
+        {
+          "keyword": "Threat modeling",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Led threat modeling discussions for new integrations, documenting trust boundaries, abuse cases and practical mitigation options."
+          ]
+        },
+        {
+          "keyword": "authentication",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Performed manual security code reviews of account-management services and traced authorization decisions across controller and persistence boundaries.",
+            "Mapped OWASP application weaknesses to concrete fixes and explained why input validation alone did not replace authorization."
+          ]
+        },
+        {
+          "keyword": "threat model",
+          "present": true,
+          "job_mentions": 1,
+          "weight": 1.0,
+          "credit": 0.85,
+          "evidence": [
+            "Led threat modeling discussions for new integrations, documenting trust boundaries, abuse cases and practical mitigation options."
+          ]
+        }
+      ],
+      "limitations": [
+        "Skills written in a resume are claims, not verification.",
+        "Text-only assessment; eligibility and document layout assessed separately.",
+        "Industry-specific vocabulary is incomplete."
+      ]
+    }
+  },
+  "j02-r01-legacy_frequency-all_job_terms_50": {
+    "overall_score": 100,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 100
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 50,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 50,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 50,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: Python appears 50 times.",
+        "Potential keyword saturation: authentication appears 50 times.",
+        "Potential keyword saturation: Django appears 50 times.",
+        "Identical long lines are repeated at least three times."
+      ],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r01-legacy_frequency-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": false,
+        "importance": "medium",
+        "score": 0
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "high",
+        "score": 0
+      },
+      {
+        "keyword": "Django",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j12-r08-legacy_frequency-existing_terms_50": {
+    "overall_score": 100,
+    "keyword_coverage": {
+      "matched": 2,
+      "total": 2
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 100
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 52,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 51,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [
+        "Potential keyword saturation: Python appears 52 times.",
+        "Potential keyword saturation: authentication appears 51 times."
+      ],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j12-r08-legacy_frequency-baseline": {
+    "overall_score": 45,
+    "keyword_coverage": {
+      "matched": 2,
+      "total": 2
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "low",
+        "score": 55
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j07-r03-legacy_frequency-copied_job": {
+    "overall_score": 82,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      },
+      {
+        "keyword": "security",
+        "present": true,
+        "importance": "very high",
+        "score": 100
+      },
+      {
+        "keyword": "code review",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "security",
+          "occurrences": 5,
+          "evidence": [
+            {
+              "section": "education",
+              "text": "Implement automated static security analysis in CI.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "code review",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating security.",
+        "Show a genuine project example demonstrating code review."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j07-r03-legacy_frequency-baseline": {
+    "overall_score": 0,
+    "keyword_coverage": {
+      "matched": 0,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "security",
+        "present": false,
+        "importance": "very high",
+        "score": 0
+      },
+      {
+        "keyword": "code review",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "security",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "code review",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating security.",
+        "Show a genuine project example demonstrating code review."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j07-r03-legacy_frequency-negated_missing_terms": {
+    "overall_score": 52,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      },
+      {
+        "keyword": "security",
+        "present": true,
+        "importance": "very high",
+        "score": 55
+      },
+      {
+        "keyword": "code review",
+        "present": true,
+        "importance": "low",
+        "score": 55
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "security",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "code review",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating security.",
+        "Show a genuine project example demonstrating code review."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j01-r01-legacy_frequency-horizontal_spaces": {
+    "overall_score": 43,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Redis",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented  a  personal  sandbox  for  Redis  caching  and  Sidekiq  background  jobs,  including  retry  behavior  and  duplicate-message  handling.  This  project  uses  synthetic  subscription  records  and  is  not  described  as  prof",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "PostgreSQL",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Designed  PostgreSQL  schemas  and  reviewed  SQL  query  plans  before  adding  indexes  to  a  slow  invoice  reconciliation  workflow.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "caching",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented  a  personal  sandbox  for  Redis  caching  and  Sidekiq  background  jobs,  including  retry  behavior  and  duplicate-message  handling.  This  project  uses  synthetic  subscription  records  and  is  not  described  as  prof",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built  Ruby  on  Rails  billing  endpoints  with  explicit  transaction  boundaries,  idempotency  keys  and  recovery  paths  for  interrupted  subscription  changes.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Redis.",
+        "Show a genuine project example demonstrating PostgreSQL.",
+        "Show a genuine project example demonstrating caching.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating Ruby on Rails."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j01-r01-legacy_frequency-baseline": {
+    "overall_score": 43,
+    "keyword_coverage": {
+      "matched": 5,
+      "total": 6
+    },
+    "keywords": [
+      {
+        "keyword": "Redis",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "PostgreSQL",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      },
+      {
+        "keyword": "caching",
+        "present": true,
+        "importance": "low",
+        "score": 40
+      },
+      {
+        "keyword": "authentication",
+        "present": false,
+        "importance": "low",
+        "score": 0
+      },
+      {
+        "keyword": "performance",
+        "present": true,
+        "importance": "low",
+        "score": 34
+      },
+      {
+        "keyword": "Ruby on Rails",
+        "present": true,
+        "importance": "low",
+        "score": 61
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Redis",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "PostgreSQL",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Designed PostgreSQL schemas and reviewed SQL query plans before adding indexes to a slow invoice reconciliation workflow.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "caching",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "projects",
+              "text": "Implemented a personal sandbox for Redis caching and Sidekiq background jobs, including retry behavior and duplicate-message handling. This project uses synthetic subscription records and is not described as professional delivery.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 0,
+          "evidence": [],
+          "note": "Not found in supplied resume text."
+        },
+        {
+          "keyword": "performance",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Ruby on Rails",
+          "occurrences": 2,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Built Ruby on Rails billing endpoints with explicit transaction boundaries, idempotency keys and recovery paths for interrupted subscription changes.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Redis.",
+        "Show a genuine project example demonstrating PostgreSQL.",
+        "Show a genuine project example demonstrating caching.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating performance.",
+        "Show a genuine project example demonstrating Ruby on Rails."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r02-legacy_frequency-equivalent_experience_heading": {
+    "overall_score": 57,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 97
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 34
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 55
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 4,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "No separate Experience heading detected.",
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  },
+  "j02-r02-legacy_frequency-baseline": {
+    "overall_score": 61,
+    "keyword_coverage": {
+      "matched": 3,
+      "total": 3
+    },
+    "keywords": [
+      {
+        "keyword": "Python",
+        "present": true,
+        "importance": "medium",
+        "score": 100
+      },
+      {
+        "keyword": "authentication",
+        "present": true,
+        "importance": "high",
+        "score": 40
+      },
+      {
+        "keyword": "Django",
+        "present": true,
+        "importance": "low",
+        "score": 55
+      }
+    ],
+    "details": {
+      "mode": "legacy_frequency",
+      "scoring_method": "original frequency-sensitive heuristic (legacy)",
+      "keyword_evidence": [
+        {
+          "keyword": "Python",
+          "occurrences": 4,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Implemented Python FastAPI endpoints for a scheduling service, including request validation, pagination and consistent error responses.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "authentication",
+          "occurrences": 1,
+          "evidence": [
+            {
+              "section": "experience",
+              "text": "Integrated OAuth2 authentication and checked resource ownership before returning account-specific API records.",
+              "quantified": false
+            }
+          ],
+          "note": "Context evidence found"
+        },
+        {
+          "keyword": "Django",
+          "occurrences": 2,
+          "evidence": [],
+          "note": "Appears in text without an action-based example"
+        }
+      ],
+      "format_warnings": [
+        "Text-only analysis cannot verify embedded images, columns, headers, footers, or actual PDF parsing."
+      ],
+      "keyword_stuffing_warnings": [],
+      "recommendations": [
+        "Show a genuine project example demonstrating Python.",
+        "Show a genuine project example demonstrating authentication.",
+        "Show a genuine project example demonstrating Django."
+      ],
+      "limitations": [
+        "Not an official ATS score or prediction of a hiring decision.",
+        "Upplai's private internal implementation is not available.",
+        "Plain text cannot verify document layout, file corruption or ATS-specific parsing."
+      ]
+    }
+  }
+}

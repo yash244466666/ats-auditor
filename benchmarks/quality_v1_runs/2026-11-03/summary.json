@@ -1,0 +1,1517 @@
+{
+  "core_calls": 3744,
+  "elapsed_seconds": 51.127,
+  "core_by_mode": {
+    "compatibility": {
+      "successful_calls": 936,
+      "errors": 0,
+      "invalid_results": 0,
+      "nondeterministic_repeats": 0,
+      "anchor_scores": {
+        "aligned": {
+          "n": 12,
+          "mean": 67.42,
+          "minimum": 29,
+          "maximum": 100
+        },
+        "related": {
+          "n": 12,
+          "mean": 26.5,
+          "minimum": 7,
+          "maximum": 90
+        },
+        "cross_role": {
+          "n": 12,
+          "mean": 4.25,
+          "minimum": 0,
+          "maximum": 26
+        }
+      },
+      "ordering": {
+        "aligned_vs_related": {
+          "higher": 10,
+          "lower": 2
+        },
+        "aligned_vs_cross_role": {
+          "higher": 12
+        }
+      },
+      "ordering_exceptions": [
+        {
+          "job_id": "j08",
+          "other_resume": "r07",
+          "relationship": "related",
+          "aligned_score": 45,
+          "other_score": 82,
+          "outcome": "lower"
+        },
+        {
+          "job_id": "j12",
+          "other_resume": "r11",
+          "relationship": "related",
+          "aligned_score": 36,
+          "other_score": 90,
+          "outcome": "lower"
+        }
+      ],
+      "variants": {
+        "all_job_terms_1": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 19.08,
+          "max_delta": 28,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 26,
+            "score": 54,
+            "delta": 28
+          }
+        },
+        "all_job_terms_10": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 64.17,
+          "max_delta": 96,
+          "min_delta": 0,
+          "warning_cases": 34,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 96,
+            "delta": 96
+          }
+        },
+        "all_job_terms_25": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 64.72,
+          "max_delta": 96,
+          "min_delta": 0,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 96,
+            "delta": 96
+          }
+        },
+        "all_job_terms_5": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 57.39,
+          "max_delta": 96,
+          "min_delta": 0,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j11",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 96,
+            "delta": 96
+          }
+        },
+        "all_job_terms_50": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 64.72,
+          "max_delta": 96,
+          "min_delta": 0,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 96,
+            "delta": 96
+          }
+        },
+        "copied_job": {
+          "n": 36,
+          "increased": 33,
+          "decreased": 0,
+          "unchanged": 3,
+          "mean_delta": 22.36,
+          "max_delta": 34,
+          "min_delta": 0,
+          "warning_cases": 1,
+          "largest_increase": {
+            "job_id": "j04",
+            "resume_id": "r09",
+            "baseline_score": 4,
+            "score": 38,
+            "delta": 34
+          }
+        },
+        "duplicate_resume_2": {
+          "n": 36,
+          "increased": 21,
+          "decreased": 0,
+          "unchanged": 15,
+          "mean_delta": 10.81,
+          "max_delta": 37,
+          "min_delta": 0,
+          "warning_cases": 4,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r03",
+            "baseline_score": 49,
+            "score": 86,
+            "delta": 37
+          }
+        },
+        "duplicate_resume_5": {
+          "n": 36,
+          "increased": 22,
+          "decreased": 0,
+          "unchanged": 14,
+          "mean_delta": 18,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j08",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "equivalent_experience_heading": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 62,
+            "score": 62,
+            "delta": 0
+          }
+        },
+        "existing_terms_1": {
+          "n": 36,
+          "increased": 20,
+          "decreased": 0,
+          "unchanged": 16,
+          "mean_delta": 6.94,
+          "max_delta": 25,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 62,
+            "score": 87,
+            "delta": 25
+          }
+        },
+        "existing_terms_10": {
+          "n": 36,
+          "increased": 22,
+          "decreased": 0,
+          "unchanged": 14,
+          "mean_delta": 20.58,
+          "max_delta": 75,
+          "min_delta": 0,
+          "warning_cases": 23,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r04",
+            "baseline_score": 13,
+            "score": 88,
+            "delta": 75
+          }
+        },
+        "existing_terms_25": {
+          "n": 36,
+          "increased": 22,
+          "decreased": 0,
+          "unchanged": 14,
+          "mean_delta": 20.86,
+          "max_delta": 75,
+          "min_delta": 0,
+          "warning_cases": 31,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r04",
+            "baseline_score": 13,
+            "score": 88,
+            "delta": 75
+          }
+        },
+        "existing_terms_5": {
+          "n": 36,
+          "increased": 22,
+          "decreased": 0,
+          "unchanged": 14,
+          "mean_delta": 18.28,
+          "max_delta": 61,
+          "min_delta": 0,
+          "warning_cases": 5,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r04",
+            "baseline_score": 13,
+            "score": 74,
+            "delta": 61
+          }
+        },
+        "existing_terms_50": {
+          "n": 36,
+          "increased": 22,
+          "decreased": 0,
+          "unchanged": 14,
+          "mean_delta": 20.86,
+          "max_delta": 75,
+          "min_delta": 0,
+          "warning_cases": 31,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r04",
+            "baseline_score": 13,
+            "score": 88,
+            "delta": 75
+          }
+        },
+        "horizontal_spaces": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 62,
+            "score": 62,
+            "delta": 0
+          }
+        },
+        "instruction_text": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 62,
+            "score": 62,
+            "delta": 0
+          }
+        },
+        "lowercase": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 62,
+            "score": 62,
+            "delta": 0
+          }
+        },
+        "negated_missing_terms": {
+          "n": 36,
+          "increased": 32,
+          "decreased": 0,
+          "unchanged": 4,
+          "mean_delta": 13.25,
+          "max_delta": 26,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 26,
+            "delta": 26
+          }
+        }
+      }
+    },
+    "evidence": {
+      "successful_calls": 936,
+      "errors": 0,
+      "invalid_results": 0,
+      "nondeterministic_repeats": 0,
+      "anchor_scores": {
+        "aligned": {
+          "n": 12,
+          "mean": 30.75,
+          "minimum": 0,
+          "maximum": 51
+        },
+        "related": {
+          "n": 12,
+          "mean": 15.25,
+          "minimum": 0,
+          "maximum": 46
+        },
+        "cross_role": {
+          "n": 12,
+          "mean": 4.75,
+          "minimum": 0,
+          "maximum": 25
+        }
+      },
+      "ordering": {
+        "aligned_vs_related": {
+          "higher": 8,
+          "lower": 1,
+          "tie": 3
+        },
+        "aligned_vs_cross_role": {
+          "higher": 10,
+          "tie": 1,
+          "lower": 1
+        }
+      },
+      "ordering_exceptions": [
+        {
+          "job_id": "j08",
+          "other_resume": "r07",
+          "relationship": "related",
+          "aligned_score": 25,
+          "other_score": 46,
+          "outcome": "lower"
+        },
+        {
+          "job_id": "j09",
+          "other_resume": "r10",
+          "relationship": "related",
+          "aligned_score": 0,
+          "other_score": 0,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j09",
+          "other_resume": "r03",
+          "relationship": "cross_role",
+          "aligned_score": 0,
+          "other_score": 0,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j11",
+          "other_resume": "r12",
+          "relationship": "related",
+          "aligned_score": 23,
+          "other_score": 23,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j12",
+          "other_resume": "r11",
+          "relationship": "related",
+          "aligned_score": 23,
+          "other_score": 23,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j12",
+          "other_resume": "r08",
+          "relationship": "cross_role",
+          "aligned_score": 23,
+          "other_score": 25,
+          "outcome": "lower"
+        }
+      ],
+      "variants": {
+        "all_job_terms_1": {
+          "n": 36,
+          "increased": 29,
+          "decreased": 0,
+          "unchanged": 7,
+          "mean_delta": 13.94,
+          "max_delta": 25,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 25,
+            "delta": 25
+          }
+        },
+        "all_job_terms_10": {
+          "n": 36,
+          "increased": 20,
+          "decreased": 16,
+          "unchanged": 0,
+          "mean_delta": 0.47,
+          "max_delta": 25,
+          "min_delta": -25,
+          "warning_cases": 31,
+          "largest_increase": {
+            "job_id": "j09",
+            "resume_id": "r09",
+            "baseline_score": 0,
+            "score": 25,
+            "delta": 25
+          }
+        },
+        "all_job_terms_25": {
+          "n": 36,
+          "increased": 7,
+          "decreased": 26,
+          "unchanged": 3,
+          "mean_delta": -8.64,
+          "max_delta": 17,
+          "min_delta": -25,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j09",
+            "resume_id": "r09",
+            "baseline_score": 0,
+            "score": 17,
+            "delta": 17
+          }
+        },
+        "all_job_terms_5": {
+          "n": 36,
+          "increased": 25,
+          "decreased": 10,
+          "unchanged": 1,
+          "mean_delta": 7.06,
+          "max_delta": 25,
+          "min_delta": -24,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j08",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 25,
+            "delta": 25
+          }
+        },
+        "all_job_terms_50": {
+          "n": 36,
+          "increased": 7,
+          "decreased": 26,
+          "unchanged": 3,
+          "mean_delta": -8.64,
+          "max_delta": 17,
+          "min_delta": -25,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j09",
+            "resume_id": "r09",
+            "baseline_score": 0,
+            "score": 17,
+            "delta": 17
+          }
+        },
+        "copied_job": {
+          "n": 36,
+          "increased": 30,
+          "decreased": 1,
+          "unchanged": 5,
+          "mean_delta": 17.19,
+          "max_delta": 36,
+          "min_delta": -8,
+          "warning_cases": 1,
+          "largest_increase": {
+            "job_id": "j07",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 36,
+            "delta": 36
+          }
+        },
+        "duplicate_resume_2": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 2,
+          "unchanged": 34,
+          "mean_delta": -0.44,
+          "max_delta": 0,
+          "min_delta": -8,
+          "warning_cases": 2,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 33,
+            "score": 33,
+            "delta": 0
+          }
+        },
+        "duplicate_resume_5": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 26,
+          "unchanged": 10,
+          "mean_delta": -6.56,
+          "max_delta": 0,
+          "min_delta": -24,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 0,
+            "delta": 0
+          }
+        },
+        "equivalent_experience_heading": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 15,
+          "unchanged": 21,
+          "mean_delta": -3.42,
+          "max_delta": 0,
+          "min_delta": -14,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r08",
+            "baseline_score": 4,
+            "score": 4,
+            "delta": 0
+          }
+        },
+        "existing_terms_1": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 33,
+            "score": 33,
+            "delta": 0
+          }
+        },
+        "existing_terms_10": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 18,
+          "unchanged": 18,
+          "mean_delta": -7.67,
+          "max_delta": 0,
+          "min_delta": -25,
+          "warning_cases": 18,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r08",
+            "baseline_score": 4,
+            "score": 4,
+            "delta": 0
+          }
+        },
+        "existing_terms_25": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 26,
+          "unchanged": 10,
+          "mean_delta": -11.08,
+          "max_delta": 0,
+          "min_delta": -25,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 0,
+            "delta": 0
+          }
+        },
+        "existing_terms_5": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 5,
+          "unchanged": 31,
+          "mean_delta": -2,
+          "max_delta": 0,
+          "min_delta": -24,
+          "warning_cases": 5,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r02",
+            "baseline_score": 14,
+            "score": 14,
+            "delta": 0
+          }
+        },
+        "existing_terms_50": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 26,
+          "unchanged": 10,
+          "mean_delta": -11.08,
+          "max_delta": 0,
+          "min_delta": -25,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 0,
+            "delta": 0
+          }
+        },
+        "horizontal_spaces": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 13,
+          "unchanged": 23,
+          "mean_delta": -0.83,
+          "max_delta": 0,
+          "min_delta": -3,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r08",
+            "baseline_score": 4,
+            "score": 4,
+            "delta": 0
+          }
+        },
+        "instruction_text": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 33,
+            "score": 33,
+            "delta": 0
+          }
+        },
+        "lowercase": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 33,
+            "score": 33,
+            "delta": 0
+          }
+        },
+        "negated_missing_terms": {
+          "n": 36,
+          "increased": 29,
+          "decreased": 0,
+          "unchanged": 7,
+          "mean_delta": 13.94,
+          "max_delta": 25,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 25,
+            "delta": 25
+          }
+        }
+      }
+    },
+    "requirement_fit": {
+      "successful_calls": 936,
+      "errors": 0,
+      "invalid_results": 0,
+      "nondeterministic_repeats": 0,
+      "anchor_scores": {
+        "aligned": {
+          "n": 12,
+          "mean": 69.17,
+          "minimum": 60,
+          "maximum": 83
+        },
+        "related": {
+          "n": 12,
+          "mean": 25.33,
+          "minimum": 6,
+          "maximum": 43
+        },
+        "cross_role": {
+          "n": 12,
+          "mean": 11.25,
+          "minimum": 0,
+          "maximum": 38
+        }
+      },
+      "ordering": {
+        "aligned_vs_related": {
+          "higher": 12
+        },
+        "aligned_vs_cross_role": {
+          "higher": 12
+        }
+      },
+      "ordering_exceptions": [],
+      "variants": {
+        "all_job_terms_1": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        },
+        "all_job_terms_10": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        },
+        "all_job_terms_25": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        },
+        "all_job_terms_5": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        },
+        "all_job_terms_50": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        },
+        "copied_job": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 38.39,
+          "max_delta": 72,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j09",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 72,
+            "delta": 72
+          }
+        },
+        "duplicate_resume_2": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "duplicate_resume_5": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "equivalent_experience_heading": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 15,
+          "unchanged": 21,
+          "mean_delta": -2.22,
+          "max_delta": 0,
+          "min_delta": -15,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "existing_terms_1": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "existing_terms_10": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "existing_terms_25": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "existing_terms_5": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "existing_terms_50": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "horizontal_spaces": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "instruction_text": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "lowercase": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 76,
+            "score": 76,
+            "delta": 0
+          }
+        },
+        "negated_missing_terms": {
+          "n": 36,
+          "increased": 34,
+          "decreased": 0,
+          "unchanged": 2,
+          "mean_delta": 37.83,
+          "max_delta": 68,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j03",
+            "resume_id": "r11",
+            "baseline_score": 0,
+            "score": 68,
+            "delta": 68
+          }
+        }
+      }
+    },
+    "legacy_frequency": {
+      "successful_calls": 936,
+      "errors": 0,
+      "invalid_results": 0,
+      "nondeterministic_repeats": 0,
+      "anchor_scores": {
+        "aligned": {
+          "n": 12,
+          "mean": 49.83,
+          "minimum": 0,
+          "maximum": 91
+        },
+        "related": {
+          "n": 12,
+          "mean": 24.58,
+          "minimum": 0,
+          "maximum": 82
+        },
+        "cross_role": {
+          "n": 12,
+          "mean": 7,
+          "minimum": 0,
+          "maximum": 45
+        }
+      },
+      "ordering": {
+        "aligned_vs_related": {
+          "higher": 8,
+          "lower": 1,
+          "tie": 3
+        },
+        "aligned_vs_cross_role": {
+          "higher": 10,
+          "tie": 1,
+          "lower": 1
+        }
+      },
+      "ordering_exceptions": [
+        {
+          "job_id": "j08",
+          "other_resume": "r07",
+          "relationship": "related",
+          "aligned_score": 63,
+          "other_score": 82,
+          "outcome": "lower"
+        },
+        {
+          "job_id": "j09",
+          "other_resume": "r10",
+          "relationship": "related",
+          "aligned_score": 0,
+          "other_score": 0,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j09",
+          "other_resume": "r03",
+          "relationship": "cross_role",
+          "aligned_score": 0,
+          "other_score": 0,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j11",
+          "other_resume": "r12",
+          "relationship": "related",
+          "aligned_score": 31,
+          "other_score": 31,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j12",
+          "other_resume": "r11",
+          "relationship": "related",
+          "aligned_score": 31,
+          "other_score": 31,
+          "outcome": "tie"
+        },
+        {
+          "job_id": "j12",
+          "other_resume": "r08",
+          "relationship": "cross_role",
+          "aligned_score": 31,
+          "other_score": 45,
+          "outcome": "lower"
+        }
+      ],
+      "variants": {
+        "all_job_terms_1": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 27.94,
+          "max_delta": 52,
+          "min_delta": 8,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j07",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 52,
+            "delta": 52
+          }
+        },
+        "all_job_terms_10": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 72.86,
+          "max_delta": 100,
+          "min_delta": 9,
+          "warning_cases": 31,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 100,
+            "delta": 100
+          }
+        },
+        "all_job_terms_25": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 72.86,
+          "max_delta": 100,
+          "min_delta": 9,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 100,
+            "delta": 100
+          }
+        },
+        "all_job_terms_5": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 72.86,
+          "max_delta": 100,
+          "min_delta": 9,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 100,
+            "delta": 100
+          }
+        },
+        "all_job_terms_50": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 72.86,
+          "max_delta": 100,
+          "min_delta": 9,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j02",
+            "resume_id": "r01",
+            "baseline_score": 0,
+            "score": 100,
+            "delta": 100
+          }
+        },
+        "copied_job": {
+          "n": 36,
+          "increased": 36,
+          "decreased": 0,
+          "unchanged": 0,
+          "mean_delta": 34.14,
+          "max_delta": 82,
+          "min_delta": 5,
+          "warning_cases": 1,
+          "largest_increase": {
+            "job_id": "j07",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 82,
+            "delta": 82
+          }
+        },
+        "duplicate_resume_2": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 10.61,
+          "max_delta": 31,
+          "min_delta": 0,
+          "warning_cases": 2,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 76,
+            "delta": 31
+          }
+        },
+        "duplicate_resume_5": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 17.06,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 36,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "equivalent_experience_heading": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 13,
+          "unchanged": 23,
+          "mean_delta": -0.75,
+          "max_delta": 0,
+          "min_delta": -4,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r08",
+            "baseline_score": 6,
+            "score": 6,
+            "delta": 0
+          }
+        },
+        "existing_terms_1": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 7.44,
+          "max_delta": 21,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j07",
+            "resume_id": "r08",
+            "baseline_score": 65,
+            "score": 86,
+            "delta": 21
+          }
+        },
+        "existing_terms_10": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 17.06,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 18,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "existing_terms_25": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 17.06,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "existing_terms_5": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 17.06,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 5,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "existing_terms_50": {
+          "n": 36,
+          "increased": 26,
+          "decreased": 0,
+          "unchanged": 10,
+          "mean_delta": 17.06,
+          "max_delta": 55,
+          "min_delta": 0,
+          "warning_cases": 26,
+          "largest_increase": {
+            "job_id": "j12",
+            "resume_id": "r08",
+            "baseline_score": 45,
+            "score": 100,
+            "delta": 55
+          }
+        },
+        "horizontal_spaces": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 43,
+            "score": 43,
+            "delta": 0
+          }
+        },
+        "instruction_text": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 43,
+            "score": 43,
+            "delta": 0
+          }
+        },
+        "lowercase": {
+          "n": 36,
+          "increased": 0,
+          "decreased": 0,
+          "unchanged": 36,
+          "mean_delta": 0,
+          "max_delta": 0,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j01",
+            "resume_id": "r01",
+            "baseline_score": 43,
+            "score": 43,
+            "delta": 0
+          }
+        },
+        "negated_missing_terms": {
+          "n": 36,
+          "increased": 31,
+          "decreased": 0,
+          "unchanged": 5,
+          "mean_delta": 21.14,
+          "max_delta": 52,
+          "min_delta": 0,
+          "warning_cases": 0,
+          "largest_increase": {
+            "job_id": "j07",
+            "resume_id": "r03",
+            "baseline_score": 0,
+            "score": 52,
+            "delta": 52
+          }
+        }
+      }
+    }
+  },
+  "input_rejections": {
+    "passed": 29,
+    "total": 29
+  },
+  "padding_accepted_modes": [
+    "compatibility",
+    "evidence",
+    "requirement_fit",
+    "legacy_frequency"
+  ],
+  "mcp": {
+    "passed": 76,
+    "total": 76,
+    "unique_result_ids": 72
+  }
+}

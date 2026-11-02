@@ -83,6 +83,8 @@ The Docker image starts **ats-auditor-mcp**, not the FastAPI demo. A passing /he
 
 ### Scoring review criteria
 
+The versioned `benchmarks/quality_v1/` collection has a frozen manifest and data-only validator (`python benchmarks/validate_quality_corpus.py`). Read its README, `docs/DATA_QUALITY_AUDIT.md` and `benchmarks/quality_v1_runs/2026-11-03/RESULTS.md`: annotations await independent review and source-informed jobs are fictional. The subsequent exploratory scoring run exposed unresolved weaknesses without tuning the scorer; the collection is no longer unexecuted. Preserve evaluation provenance and per-record data licenses.
+
 When changing a scorer:
 - Show an input-to-output example with fictional job and resume text.
 - Explain the role of token/alias matching, weighting, job emphasis, skills-only claims versus contextual experience, and any floors/penalties.

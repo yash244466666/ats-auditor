@@ -1,0 +1,12 @@
+{
+  "RESULTS.md": "86011a987022ec12e75919a4d9a1c01bc8b9d5f21626c3029498c38730dd42f6",
+  "archive.json": "8b4c1b79e2479a0af311dd30044a02d80f2699fb977aceb9c036769223a69a62",
+  "input_checks.json": "ac9d4312eda1a70c22bb6b06b5387709000076fdc499293a92cae4aff9e37c7c",
+  "mcp_checks.json": "74fb57e6cc5f0854efecee23fc4df0159a709ddf94fa9bb9e6f274102d7b0331",
+  "observations.jsonl.gz": "a3d19d8016170594463caf0c6dcdd4d177fbbeb8f1c8f85ac9d52cc009578ca4",
+  "protocol.json": "11c1bbfcdf6cd29c8cb0975ebfbb774da7bb2fdd1edd7f87595e2aa54dabb08d",
+  "selected_full_results.json": "3440f97050361c5d296071aa750dcdcfa35611869b91d762ce1ce0454d718e1d",
+  "summary.json": "60fecf01aac978dad9619cbd65c0a22098b0a9c5dbfd817f4641febe440f0b97",
+  "variant_hashes.json": "76e7f695587deb0a4a1371854cd8c57d651510f9310896d799925e79426574dc",
+  "vocabulary_audit.json": "ffa9630f3023ae72b81d4ff911fde77a9fb78a2cc3dd17f5c48ee94d5e10a3d7"
+}

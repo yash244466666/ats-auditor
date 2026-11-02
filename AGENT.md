@@ -131,6 +131,8 @@ Always run targeted tests for modified code and the full suite before a release.
 
 ## 7. Data ethics, benchmarking and evaluation rules
 
+- Versioned test inputs live in `benchmarks/quality_v1/`; read its README and `docs/DATA_QUALITY_AUDIT.md` before using them. Run `python benchmarks/validate_quality_corpus.py` for data-only checks. The first exploratory scoring results are in `benchmarks/quality_v1_runs/2026-11-03/RESULTS.md`; do not describe this collection as unexecuted or its provisional labels as gold truth. Keep frozen inputs, annotations and run records separate; if used for tuning, collect a fresh evaluation set. Per-record job-fixture licenses differ from the MIT code license.
+
 - Use **fictional data** in repository tests and demos. Do not copy real resumes or applicant identities into tracked files, prompts, public logs or PRs.
 - Do not call scores 'ATS pass rates', guaranteed interview chances, employer eligibility determinations or a faithful replication of Upplai's private algorithms.
 - Existing v0.4 calibration report: 12 fictional resume/job pairs had an **inspected/calibrated** mean absolute error of **4.67 points**, with a **22-point** worst mismatch, relative to observed external tool output. It is **not** blind validation or a generalization guarantee.
