@@ -1,0 +1,67 @@
+{
+  "protocol_version": 1,
+  "reporting_date_asia_dhaka": "2026-11-03",
+  "source_commit": "168f67811201c8ce2bce5a9c71332af0b418a3f3",
+  "runner_sha256": "2bc21b0f1a9ff8df6d70f655ae59d4c3edbf0f10989afb6b899fd34a5a454b43",
+  "corpus_hashes": {
+    "sources.json": "42b4698755af0fb1a284454a0d2c0fd77d66ed03ad28f8fd5a18804cc5e8beb0",
+    "resumes.json": "29207edc55f72614639963709dad1de882273114887d90c168c01bf5eab27738",
+    "jobs.json": "79d8c1a94a70c98105f56b9a0623d141ab47c30056cd2855da0efe4286d49d67",
+    "labels.json": "2ba6b4870a018e7fb9eeafbccd4ec4c3ed26c44ab1ec421c1d685fe0ae5257a8"
+  },
+  "engine_sha256": {
+    "__init__.py": "5936e7afaf635f5d8c57b7cbf0e1e56be8078eb2f9f4668a9ab6587b9b1b5c78",
+    "api.py": "aa23414a54734b213a3e0ac7c96b985dcfbfa0b6b31991e518c9a30e568c6467",
+    "cli.py": "f01b25dff27a9dd396832207a8b449a3a3bc13ec18133f0fc4a1a1814f35cb90",
+    "engine.py": "eac03f5ab9aa7a8979027a1fd05764e36490490a8f97014b6f6b872effcdd066",
+    "mcp_server.py": "dcf99add268fb33671bf0eeb7c4c12c4b2514e274fbdac84fd5f78d0ae98fe9f",
+    "requirement_fit.py": "22123159cfb84146d0cd0580e7a7c07556dcee6921057642d34023ec22f96a3a",
+    "service.py": "eb93fb458fb31b32ce886317713f9295438c6e21e31c7c48f626d5ae735fab25",
+    "source_approx.py": "453f54603df1c28fcb6b2aab28ba35f79fc92cf2003034c457a5c6b38c59c187"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "packages": {
+      "ats-auditor": "0.4.0",
+      "mcp": "1.30.0",
+      "fastapi": "0.162.0",
+      "pytest": "9.2.0"
+    }
+  },
+  "design": {
+    "baseline_pairs": 144,
+    "modes": [
+      "compatibility",
+      "evidence",
+      "requirement_fit",
+      "legacy_frequency"
+    ],
+    "repeats_per_baseline": 2,
+    "anchor_pairs": 36,
+    "variants_per_anchor": 18,
+    "repetition_counts": [
+      1,
+      5,
+      10,
+      25,
+      50
+    ],
+    "planned_core_scoring_calls": 3744,
+    "planned_valid_mcp_tool_calls": 72
+  },
+  "acceptance": [
+    "Valid inputs return bounded scores and consistent keyword counts.",
+    "Repeated identical inputs return identical core results.",
+    "Expected-invalid string inputs raise ValueError.",
+    "Both MCP tools return matching human-readable and structured data."
+  ],
+  "diagnostics_not_accuracy_gates": [
+    "Aligned-vs-other ordering is a hypothesis, not numeric gold truth.",
+    "Record all increases without new evidence; distinguish existing-word repetition from new-word injection.",
+    "Report neutral case/spacing/heading sensitivity and negation limitations without tuning against results.",
+    "No per-requirement semantic accuracy, Upplai MAE or hiring accuracy is computed.",
+    "This is local serial scoring plus in-process MCP checks, not server load or public endpoint testing."
+  ],
+  "clock_utc_at_start": "2026-11-02T19:42:48.190571+00:00"
+}

@@ -3,6 +3,8 @@
 Created 2026-11-02 (Asia/Dhaka), against repository baseline `f802ecf9`.
 
 **Ready for exploratory scoring/stress tests after structural checks. Not independently validated gold data.**
+**Evaluated 2026-11-03:** the [first local stress run](../quality_v1_runs/2026-11-03/RESULTS.md) recorded 3,744 core scoring calls, 76 in-process MCP checks and scoring weaknesses. The frozen payloads were preserved. This collection is now observed evaluation data, not an unexecuted holdout; no scoring coefficients were tuned during the run.
+
 The corpus was authored and its requirement evidence annotated before running ATS Auditor on it. No new-corpus scoring or external ATS queries were performed during collection. The source and label author had access to the existing implementation, so this is not a blind, independent-author evaluation.
 
 ## Contents and use

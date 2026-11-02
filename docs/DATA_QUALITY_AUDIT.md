@@ -6,6 +6,8 @@ Date: 2026-11-02 (Asia/Dhaka). Baseline inspected: `f802ecf9`. Scope: test-data 
 
 **Existing data is useful for regression checks but insufficient for broad scoring validation.** The new [quality-v1 corpus](../benchmarks/quality_v1/README.md) expands exploratory coverage and makes expected requirement evidence inspectable. It is synthetic, single-author data pending independent review, so it does not resolve real-world generalization or provide official ATS ground truth.
 
+**Follow-up 2026-11-03:** [The first local scoring/stress run](../benchmarks/quality_v1_runs/2026-11-03/RESULTS.md) has now been executed against the preserved frozen payloads. Technical execution passed, while substantive scoring weaknesses were observed. Historical statements below about no scoring during collection remain true; the collection is no longer an unexecuted holdout. No labels or scorer coefficients were tuned to these outputs.
+
 ## Existing-data inventory
 
 Reproduce counts with `python benchmarks/validate_quality_corpus.py`; the tool parses fixtures without executing the scoring engine.
