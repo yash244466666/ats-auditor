@@ -52,6 +52,23 @@ outside the two release directories. Install/refresh the gate with:
 sudo install -o root -g root -m 755 deploy/ats-deploy.sh /usr/local/sbin/ats-deploy
 ```
 
+## Server bootstrap (Ubuntu/Debian)
+
+`deploy/bootstrap-ubuntu.sh` creates everything the workflow expects: Docker
+and Compose v2, the `atsdeploy` account (locked password, `docker` group), the
+two release directories, the forced-command gate at
+`/usr/local/sbin/ats-deploy`, and one `authorized_keys` line for the deploy
+key.
+
+```sh
+# on the VPS, from a checkout of this repository
+sudo DEPLOY_PUBKEY="$(cat ~/.ssh/ats-deploy-ed25519.pub)" ./deploy/bootstrap-ubuntu.sh
+```
+
+It is idempotent — re-run it to refresh the gate after editing
+`deploy/ats-deploy.sh`. The public Caddy block is host-specific and applied by
+hand (see below).
+
 ## GitHub secrets
 
 Repository (or per-environment) **encrypted** secrets:
