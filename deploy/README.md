@@ -114,6 +114,8 @@ docker exec caddy caddy reload   --config /etc/caddy/Caddyfile --adapter caddyfi
 
 ## Dependency note
 
+The [public SkillSpan benchmark](../benchmarks/public_skillspan/README.md) is a local/offline evaluation tool, not a production service. It introduces no runtime dependency or VPS task. Do not download corpora onto the VPS or send applicant data to the unauthenticated MCP endpoint for benchmark work. CI tests the adapter using fictional inputs without network downloads.
+
 `pyproject.toml` pins `mcp>=1.28,<2`. The server uses `FastMCP`; mcp 2.x renamed
 it to `MCPServer` and the container exits at import time. CI starts the
 built image, calls `/health`, and exercises real in-memory MCP client tool calls

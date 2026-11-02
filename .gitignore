@@ -17,3 +17,5 @@ __pycache__/
 .idea/
 # User-specific analysis outputs must never enter source control.
 analysis_truey_*.json
+# External datasets remain local; recorded runs contain aggregate metrics only.
+benchmarks/.cache/

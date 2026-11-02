@@ -83,6 +83,8 @@ The Docker image starts **ats-auditor-mcp**, not the FastAPI demo. A passing /he
 
 ### Scoring review criteria
 
+For external extraction evaluation, read `benchmarks/public_skillspan/README.md`. The offline runner checks pinned data hashes and reports exact-span metrics for uncapped catalog scans, not resume-fit accuracy. External data stays in an ignored cache; CI unit tests use fictional sentences with no network download. Keep observed test baselines distinct from future untouched holdouts.
+
 When changing a scorer:
 - Show an input-to-output example with fictional job and resume text.
 - Explain the role of token/alias matching, weighting, job emphasis, skills-only claims versus contextual experience, and any floors/penalties.

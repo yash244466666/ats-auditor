@@ -4,6 +4,8 @@
 
 ## Non-negotiable defaults
 
+- Read `benchmarks/public_skillspan/README.md` before running the public extraction benchmark. Keep external data in the ignored cache and extraction metrics separate from resume-fit claims; tests use fictional text only.
+
 - Work against the current repository HEAD; treat docs/PROJECT_STATUS.md as a dated record, not a live monitor.
 - Make scoped, tested changes on dev/a review branch; open a PR and pass required Python 3.11/3.12/3.13 and Docker checks before **squash-merging** into protected main.
 - Distinguish experimental ATS matching scores from hiring decisions and proprietary ATS outputs. Never fabricate experience or benchmark accuracy.

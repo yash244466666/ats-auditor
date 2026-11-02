@@ -87,6 +87,8 @@ ChatGPT cannot connect to `localhost` on the VPS. The published URL is `https://
 
 ## Scoring modes
 
+**Independent extraction evaluation:** [SkillSpan benchmark](benchmarks/public_skillspan/README.md) compares the existing vocabularies with published expert span labels. Run `python benchmarks/evaluate_skillspan.py --download --output /tmp/skillspan-new-run`. This measures catalog extraction, not resume-fit or hiring accuracy; no external dataset download occurs during normal tests or production scoring.
+
 **Compatibility (default)**: Expanded dictionary of requirements, missing keyword penalties, job-description frequency and title salience, tuned against observed third-party results for seven technical jobs. On 12 fictional-resume/job comparisons, development/inspected-validation MAE 4.67 points, with a worst observed difference of 22 points. This is NOT blind validation or exact Upplai parity.
 
 **Legacy frequency** (`legacy_frequency`): Prior v0.2 count-based heuristic, preserved for backwards-compatible experiments.

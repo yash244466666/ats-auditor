@@ -28,6 +28,8 @@
 
 ## Documentation pointers
 
+- **Public extraction benchmark (review branch, 2026-11-02 UTC):** [SkillSpan protocol](../benchmarks/public_skillspan/README.md) adds pinned external expert skill/knowledge labels, source/data hash checks, exact-span metrics and overlap diagnostics. This is vocabulary extraction validation, not real-world resume-fit accuracy. Runtime scoring, production deployment and deferred authentication are unchanged; see the recorded run for measured results once available.
+
 - [Project README](../README.md): scoring modes and local or MCP usage.
 - [VPS deployment](../deploy/README.md): SSH gate, CI/CD, Caddy and ports.
 - [Security policy](../SECURITY.md): current unauthenticated-exposure warning.
