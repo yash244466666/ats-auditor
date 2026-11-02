@@ -28,7 +28,7 @@
 
 ## Documentation pointers
 
-- **Public extraction benchmark (review branch, 2026-11-02 UTC):** [SkillSpan protocol](../benchmarks/public_skillspan/README.md) adds pinned external expert skill/knowledge labels, source/data hash checks, exact-span metrics and overlap diagnostics. This is vocabulary extraction validation, not real-world resume-fit accuracy. Runtime scoring, production deployment and deferred authentication are unchanged; see the recorded run for measured results once available.
+- **Public extraction benchmark (review branch, 2026-11-02 UTC):** [SkillSpan protocol](../benchmarks/public_skillspan/README.md) adds pinned external expert skill/knowledge labels, source/data hash checks, exact-span metrics and overlap diagnostics. The [recorded baseline](../benchmarks/public_skillspan/RESULTS.md) reports requirement-fit catalog precision 59.06%, recall 11.08%, F1 18.66% across 3,569 official test sentence records and 2,265 gold spans. These uncapped vocabulary scans are not full scoring modes or real-world resume-fit accuracy. Runtime scoring, production deployment and deferred authentication are unchanged.
 
 - [Project README](../README.md): scoring modes and local or MCP usage.
 - [VPS deployment](../deploy/README.md): SSH gate, CI/CD, Caddy and ports.

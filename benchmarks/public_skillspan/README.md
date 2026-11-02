@@ -2,6 +2,8 @@
 
 This benchmark evaluates existing ATS Auditor vocabularies against externally authored expert skill/knowledge annotations. It does **not** measure resume fit, employer ATS scores, evidence verification, or hiring outcomes. No new model, runtime dependency, or scoring change is introduced.
 
+[First recorded baseline and limitations](RESULTS.md).
+
 ## Data and attribution
 
 SkillSpan, by Mike Zhang, Kristian Jensen, Sif Sonniks and Barbara Plank, NAACL 2022: [paper](https://aclanthology.org/2022.naacl-main.366/), [repository](https://github.com/kris927b/SkillSpan), [author dataset card](https://huggingface.co/datasets/jjzha/skillspan/blob/main/README.md).
